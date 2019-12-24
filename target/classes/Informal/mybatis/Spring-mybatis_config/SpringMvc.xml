@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                       http://www.springframework.org/schema/beans/spring-beans.xsd
+                       http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--<import resource="Application.xml"></import>-->
+    <!--里面配置了参数绑定的bean-->
+
+
+    <!--支持对静态资源html，Js等的访问conversion-service="conversionService"-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+    <mvc:annotation-driven ></mvc:annotation-driven>
+    <!--<mvc:resources location="/web-source/Html/" mapping="/Css/**"></mvc:resources>
+    <mvc:resources location="/web-source/Html/" mapping="/Html/**"></mvc:resources>
+    <mvc:resources location="/web-source/Img/" mapping="/Img/**"></mvc:resources>
+    <mvc:resources location="/web-source/Js/" mapping="/Js/**"></mvc:resources>
+    <mvc:resources mapping="/ajax/**" location="/web-source/ajax/"></mvc:resources>-->
+    <context:component-scan base-package="Informal.mybatis.Controller"></context:component-scan>
+    <!--<bean name="/queryItems" class="Informal.mybatis.Controller.UserController"></bean>
+    一个一个控制器配置太麻烦，所以用mvc注解-->
+    <!--配置springmvc的非注解处理器映射器
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+
+    配置springmvc的非注解处理器适配器
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"></bean>
+
+    注解和非注解必须分别配对使用，不能一个注解一个非注解加起来，否则出错
+
+    注解的适配器和映射器如下,可以由<mvc:annotation-config>代替，极大的简化了操作
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean>
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
+-->
+    <!--自定义参数类型绑定，需要注入到适配器里面，因此在mvc-annotation中加上参数绑定的东西-->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <list>
+                <bean class="Informal.mybatis.Convert.Convert"></bean>
+            </list>
+        </property>
+    </bean>
+    <!--配置视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/Jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--添加对其他数据类型的支持例如图片上传等-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--设置最大上传的数据大小-->
+        <property name="maxUploadSize" value="5242880">
+        </property>
+    </bean>
+
+    <!--配置校验器-->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator"></property>
+        <property name="validationMessageSource" ref="messageSource"></property>
+    </bean>
+    <!--错误信息校验文件-->
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+
+
+    <!-- 资源文件名 -->
+    <property name="basenames">
+        <list>
+            <!--这里显示红色但是不影响开发-->
+            <!--<value>classpath:CustomValidationMessage.properties</value>-->
+        </list>
+    </property>
+    <!-- 资源文件编码格式 -->
+    <property name="fileEncodings" value="utf-8"/>
+    <!-- 对资源文件内容缓存时间，单位秒 -->
+    <property name="cacheSeconds" value="120"/>
+  </bean>
+</beans>

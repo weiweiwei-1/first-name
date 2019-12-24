@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+<bean id="transtraction" class="Informal.Spring.Non_annotation.Transtraction.Transtraction"></bean>
+    <bean id="logger" class="Informal.Spring.Non_annotation.Logger.Logger"></bean>
+    <bean id="logger2" class="Informal.Spring.Non_annotation.Logger.Logger2"></bean>
+    <aop:config>
+        <!--aop:aspect配置日志类-->
+        <aop:aspect id="logger" ref="logger">
+            <!--before定义日志类的方法,pointcut定义要检查的类中的方法-->
+       <!--表达式的写法：访问修饰符 返回值 包名...包名.类名.方法名
+            访问修饰符可以省略
+            例如void Informal.Spring.Non_annotation.Transtraction.Transtraction.check()
+            全通配方式*.*..*.*(..)
+            包名可以使用通配符，但是，有几个包就要写几个
+            method是日志类的方法，pointcut是日志要索引的方法-->
+            <aop:before method="Before" pointcut="execution(public void Informal.Spring.Non_annotation.Transtraction.Transtraction.check())"></aop:before>
+            <aop:around method="Around" pointcut="execution(public void Informal.Spring.Non_annotation.Transtraction.Transtraction.connect())"></aop:around>
+            <aop:after method="After" pointcut="execution(public void Informal.Spring.Non_annotation.Transtraction.Transtraction.transport())"></aop:after>
+        </aop:aspect>
+<aop:aspect id="logger2" ref="logger2">
+    <aop:pointcut id="log2" expression="execution(public void Informal.Spring.Non_annotation.Transtraction.Transtraction.check())"></aop:pointcut>
+    <aop:before method="before" pointcut-ref="log2"></aop:before>
+    <aop:after method="after" pointcut-ref="log2"></aop:after>
+</aop:aspect>
+    </aop:config>
+</beans>

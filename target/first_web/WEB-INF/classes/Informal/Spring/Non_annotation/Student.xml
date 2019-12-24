@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="Student" class="Informal.Spring.Non_annotation.Model.Student">
+    <!--property属性可以不设置，但是构造方法一定要设置-->
+    <property name="name" value="曾庆威"></property>
+    <property name="age" value="22"></property>
+    <property name="birthday" ref="date"></property>
+    <constructor-arg name="hobby" value="basketball"></constructor-arg>
+    <constructor-arg name="school" value="合肥工业大学"></constructor-arg>
+</bean>
+    <bean id="date" class="java.util.Date">
+        <!--<property name="time" value="1996"></property>-->
+        <!--日期不好设置-->
+    </bean>
+    <bean id="teacher" class="Informal.Spring.Non_annotation.Model.Teacher">
+        <property name="student" ref="Student"></property>
+        <constructor-arg name="student2" ref="student2"></constructor-arg>
+    </bean>
+    <bean id="student2" class="Informal.Spring.Non_annotation.Model.Student2">
+        <property name="name" value="曾晓丹"></property>
+        <property name="age" value="24"></property>
+    </bean>
+</beans>

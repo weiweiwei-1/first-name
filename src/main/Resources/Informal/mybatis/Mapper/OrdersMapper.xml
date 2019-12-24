@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Informal.mybatis.Dao.OrdersMapper">
+    <sql id="baseOrdersList">id,user_id,number,createtime,note</sql>
+    <sql id="selectiveList">
+        <if test="id!=null">
+            id=#{id,jdbcType=INTEGER},
+        </if>
+        <if test="userId!=null">
+            user_id=#{userId,jdbcType=INTEGER},
+        </if>
+        <if test="number!=null">
+            number=#{number,jdbcType=VARCHAR},
+        </if>
+        <if test="createtime!=null">
+            createtime=#{createtime,jdbcType=DATE},
+        </if>
+        <if test="note!=null">
+            note=#{note,jdbcType=VARCHAR},
+        </if>
+    </sql>
+
+    <resultMap id="ordersResultMap" type="Orders"><!--Informal.mybatis.Model.-->
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="user_id" property="userId" jdbcType="INTEGER"></result>
+        <result column="number" property="number" jdbcType="VARCHAR"></result>
+        <result column="createtime" property="createtime" jdbcType="DATE"></result>
+        <result column="note" property="note" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <select id="selectByPrimaryKey" parameterType="integer" resultMap="ordersResultMap">
+        select
+        <include refid="baseOrdersList"></include>
+        from orders where id=#{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectLike" resultMap="ordersResultMap" parameterType="string">
+         select
+         <include refid="baseOrdersList"></include>
+        from orders
+        <where>
+            or id like binary concat('%',#{condition},'%')
+            or user_id like binary concat('%',#{condition},'%')
+            or number like binary concat('%',#{condition},'%')
+            or createtime like binary concat('%',#{condition},'%')
+            or note like binary concat('%',#{condition},'%')
+        </where>
+    </select>
+
+    <select id="selectAll" resultMap="ordersResultMap">
+        select
+        <include refid="baseOrdersList"></include>
+        from orders where 1=1
+    </select>
+
+    <select id="selectByUserId" parameterType="integer" resultMap="ordersResultMap">
+        select
+        <include refid="baseOrdersList"></include>
+        from orders where user_id=#{id}
+    </select>
+
+    <insert id="insertSelective" parameterType="orders">
+        insert into orders
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">
+                id,
+            </if>
+            <if test="userId!=null">
+                user_id,
+            </if>
+            <if test="number!=null">
+                number,
+            </if>
+            <if test="createtime!=null">
+                createtime,
+            </if>
+            <if test="note!=null">
+                note,
+            </if>
+        </trim>
+            values
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <!--<include refid="selectiveList"></include>-->
+                <if test="id!=null">
+                    #{id},
+                </if>
+                <if test="userId!=null">
+                    #{userId},
+                </if>
+                <if test="number!=null">
+                    #{number},
+                </if>
+                <if test="createtime!=null">
+                    #{createtime},
+                </if>
+                <if test="note!=null">
+                    #{note},
+                </if>
+            </trim>
+
+    </insert>
+
+    <delete id="deleteByPrimaryKey" parameterType="integer">
+        delete from orders where id=#{id}
+    </delete>
+
+    <update id="updateByPrimaryKey" parameterType="orders">
+        update orders set
+        id=#{id},
+        user_id=#{userId},
+        number=#{number},
+        createtime=#{createtime},
+        note=#{note}
+        where
+        id=#{id}
+    </update>
+
+    <update id="updateByPrimaryKeySelective" parameterType="orders">
+        update orders
+        <set>
+            <include refid="selectiveList"></include>
+        </set>
+        where id=#{id}
+    </update>
+</mapper>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slideToggle</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <!--除此之外还有slidedown和slideup-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideToggle("slow");
+                $(".flip").text("收起来");
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        div.panel,p.flip
+        {
+            margin:0px;
+            padding:5px;
+            text-align:center;
+            background:#e5eecc;
+            border:solid 1px #c3c3c3;
+        }
+        div.panel
+        {
+            height:120px;
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="panel">
+    <p>W3School - 领先的 Web 技术教程站点</p>
+    <p>在 W3School，你可以找到你所需要的所有网站建设教程。</p>
+</div>
+
+<p class="flip">展开</p>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Informal.mybatis.Dao.MessageMapper">
+    <resultMap id="BaseResultMap" type="message">
+        <id property="id" column="id"></id>
+        <result property="senderId" column="senderId"></result>
+        <result property="receiverId" column="receiverId"></result>
+        <result property="content" column="content"></result>
+        <result property="sendTime" column="sendTime"></result>
+        <result property="status" column="status"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,senderId,receiverId,content,sendTime,status
+    </sql>
+
+    <insert id="insertMessage" parameterType="message">
+        <selectKey keyProperty="id" resultType="integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into message
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null and id!=''">
+                id,
+            </if>
+            <if test="senderId!=null and senderId!=''">
+                senderId,
+            </if>
+            <if test="receiverId!=null and receiverId!=''">
+                receiverId,
+            </if>
+            <if test="content!=null and content!=''">
+                content,
+            </if>
+            <if test="sendTime!=null and sendTime!=''">
+                sendTime,
+            </if>
+            <if test="status!=null">
+                status,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null and id!=''">
+                #{id},
+            </if>
+            <if test="senderId!=null and senderId!=''">
+                #{senderId},
+            </if>
+            <if test="receiverId!=null and receiverId!=''">
+                #{receiverId},
+            </if>
+            <if test="content!=null and content!=''">
+                #{content},
+            </if>
+            <if test="sendTime!=null and sendTime!=''">
+                #{sendTime},
+            </if>
+            <if test="status!=null and status!=''">
+                #{status},
+            </if>
+        </trim>
+    </insert>
+
+
+
+    <select id="selectMessages" resultMap="BaseResultMap">
+      /*(select id,content,senderId,receiverId,sendTime from message where senderId=#{senderId} and receiverId=#{receiverId}
+      or senderId=#{receiverId} and receiverId=#{senderId} order by id desc limit 30) order by id*/
+      select * from (select id,senderId,receiverId,content,sendTime from message where senderId=#{senderId} and receiverId=#{receiverId}
+     union all
+select id,senderId,receiverId,content,sendTime from message where senderId=#{receiverId} and receiverId=#{senderId} order by id desc limit 30) as messageList order by id
+    </select>
+
+    <select id="selectUnReadMessageList" parameterType="integer" resultType="UnReadMessageList">
+        select id,count(id) as countId,senderId,receiverId,content,sendTime from message where receiverId=#{userId} and status=0 group by senderId order by senderId
+    </select>
+
+    <select id="selectByIdAndUserId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from message where id=#{id} and receiverId=#{userId}
+    </select>
+
+    <delete id="deleteMessages" parameterType="message">
+        delete from message where senderId=#{senderId} and receiverId=#{receiverId}
+    </delete>
+
+    <delete id="deleteMessageById" parameterType="integer">
+        delete from message where id=#{id}
+    </delete>
+
+    <delete id="deleteMessageByIdAndSenderId">
+        delete from message where id=#{id} and senderId=#{senderId}
+    </delete>
+
+    <select id="selectLastUnReadMessage" parameterType="message" resultMap="BaseResultMap">
+        select * from
+        (select id,senderId,receiverId,content from message where senderId=#{senderId} and receiverId=#{receiverId}
+        union all
+        select id,senderId,receiverId,content from message where senderId=#{receiverId} and receiverId=#{senderId})
+        as LsatUnReadMessageTable
+        order by id desc limit 0,1
+    </select>
+
+    <select id="frendChatList" parameterType="Integer" resultType="FriendChatList">
+        select id as id,count(id) as countId,max(id) as maxId,senderId as senderId,receiverId as receiverId,content as content
+        from message where receiverId=#{receiverId} and status=0 group by senderId
+    </select>
+
+    <delete id="deleteAllMessages" parameterType="message">
+        delete from message where senderId=#{senderId} and receiverId=#{receiverId} or senderId=#{receiverId} and receiverId=#{senderId}
+     </delete>
+
+    <delete id="withDrawUserMessages" parameterType="message">
+        delete from message where senderId=#{senderId} and receiverId=#{receiverId}
+    </delete>
+</mapper>

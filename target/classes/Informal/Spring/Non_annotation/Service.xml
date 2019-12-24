@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="Service" class="Informal.Spring.Non_annotation.Service.Impl.ServiceImpl">
+    <property name="age">
+        <!--set用list-->
+        <list>
+            <value>21</value>
+            <value>22</value>
+        </list>
+    </property>
+    <property name="hobby">
+        <!--map用props-->
+        <props>
+            <prop key="hobby1">篮球</prop>
+            <prop key="hobby2">足球</prop>
+        </props>
+    </property>
+    <property name="name">
+        <!--list用array-->
+       <array>
+           <value>曾庆威</value>
+           <value>曾晓丹</value>
+       </array>
+    </property>
+    <property name="school">
+        <!--数组集合用set-->
+       <set>
+           <value>合肥工业大学</value>
+           <value>兴宁一中</value>
+       </set>
+    </property>
+    <property name="sports">
+        <!--property用map属性-->
+        <map>
+            <entry key="sports1" value="篮球"></entry>
+            <entry key="sports2" value="羽毛球"></entry>
+        </map>
+    </property>
+</bean>
+</beans>

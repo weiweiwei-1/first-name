@@ -1,0 +1,145 @@
+<!--
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+    &lt;!&ndash;这里的mapper不是mapper映射文件，下面的方法和类是独立的，跟mapper接口的方法不同&ndash;&gt;
+    &lt;!&ndash;查询&ndash;&gt;
+    <select id="FindUserById" parameterType="integer" resultType="Informal.mybatis.Model.User">
+        SELECT * FROM USER WHERE id=#{id}
+    </select>
+
+    <select id="selectAll" resultType="Informal.mybatis.Model.User">
+        select * from user
+    </select>
+    &lt;!&ndash;插入参数类型是实体类型，不管有没有赋值，每一个注入字段属性都会被插入，没有赋值的，插入空值
+    insert：把所有值插入,但是要注意加入数据库字段有default,default是不会起作用的
+    注意:用了ignore,就不会报错&ndash;&gt;
+    <insert id="InsertUser" parameterType="Informal.mybatis.Model.User">
+        insert IGNORE into USER(id,username,birthday) value(#{id},#{username},#{birthday})
+    </insert>
+
+
+    &lt;!&ndash;selective是非空的才插入，只有注入字段属性赋值了之后才插入，没有赋值不插入
+    selectKey只有在insert时候才用，其他数据库操作方法不用
+    insertSelective：只会插入有值的数据，并且不会忽略数据库字段有default的&ndash;&gt;
+    <insert id="insertSelective" parameterType="Informal.mybatis.Model.User">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            select LAST_INSERT_ID()
+        </selectKey>
+&#45;&#45;         当用ignore时，插入已经存在的主键，系统不会报错，但是系统不能更新
+    insert IGNORE into user
+    <trim prefix="(" suffix=")" prefixOverrides="and" suffixOverrides=",">
+     <if test="id!=null">
+         and id,
+     </if>
+     <if test="username!=null">
+         username,
+     </if>
+     <if test="sex!=null">
+         sex,
+     </if>
+     <if test="birthday!=null">
+         birthday,
+     </if>
+     <if test="address!=null">
+         address,
+     </if>
+    </trim>
+    <trim prefix=" values(" suffix=")" suffixOverrides=",">
+        <if test="id!=null">
+            #{id,jdbcType=INTEGER},
+        </if>
+        <if test="username!=null">
+            #{username,jdbcType=VARCHAR},
+        </if>
+        <if test="sex!=null">
+            #{sex,jdbcType=CHAR},
+        </if>
+        <if test="birthday!=null">
+            #{birthday,jdbcType=DATE},
+        </if>
+        <if test="address!=null">
+            #{address,jdbcType=VARCHAR},
+        </if>
+    </trim>
+    </insert>
+
+
+
+    <insert id="replaceInsert" parameterType="Informal.mybatis.Model.User">
+        REPLACE into user
+       <trim prefix="(" suffix=")" suffixOverrides=",">
+           <if test="id!=null">
+               id,
+           </if>
+           <if test="username!=null">
+               username,
+           </if>
+           <if test="sex!=null">
+               sex,
+           </if>
+           <if test="birthday!=null">
+               birthday,
+           </if>
+           <if test="address!=null">
+               address,
+           </if>
+       </trim>
+       <trim prefix="values(" suffix=")" suffixOverrides=",">
+           <if test="id!=null">
+&#45;&#45;                jdbcType必须是大写的英文字母
+               #{id,jdbcType=INTEGER},
+           </if>
+           <if test="username!=null">
+               #{username,jdbcType=VARCHAR},
+           </if>
+           <if test="sex!=null">
+               #{sex,jdbcType=CHAR},
+           </if>
+           <if test="birthday!=null">
+               #{birthday,jdbcType=DATE},
+           </if>
+           <if test="address!=null">
+               #{address,jdbcType=VARCHAR},
+           </if>
+       </trim>
+    </insert>
+
+    &lt;!&ndash;删除操作参数类型是一个属性&ndash;&gt;
+    <delete id="deleteUserbyId" parameterType="integer">
+        delete from user where id=#{id}
+    </delete>
+
+    <delete id="deleteAllUser">
+        delete from user where id!=1 and id!=10
+    </delete>
+
+    &lt;!&ndash;修改操作参数类型是实体，注入属性不能忽视默认字段，如果默认字段不空，属性未设置，那么默认字段也要变成空的&ndash;&gt;
+    <update id="updateUser" parameterType="Informal.mybatis.Model.User" >
+        update User set username=#{username},birthday=#{birthday} where id=#{id}
+    </update>
+
+    <update id="updateBySelectiveKey" parameterType="Informal.mybatis.Model.User">
+        update user
+        <set>
+            <trim suffixOverrides=",">
+                <if test="username!=null">
+                    username=#{username,jdbcType=VARCHAR},
+                </if>
+                <if test="sex!=null">
+                    sex=#{sex,jdbcType=CHAR},
+                </if>
+                <if test="birthday!=null">
+                    birthday=#{birthday,jdbcType=DATE},
+                </if>
+                <if test="address!=null">
+                    address=#{address,jdbcType=VARCHAR},
+                </if>
+            </trim>
+&#45;&#45;             如果不加where，则对整个表进行操作
+            <where>
+                id=#{id,jdbcType=INTEGER}
+            </where>
+        </set>
+    </update>
+</mapper>-->

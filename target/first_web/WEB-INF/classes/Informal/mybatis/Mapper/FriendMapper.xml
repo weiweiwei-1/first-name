@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Informal.mybatis.Dao.FriendMapper">
+    <resultMap id="BaseResultMap" type="friend">
+        <id property="id" column="id"/>
+        <result property="userId" column="userId"></result>
+        <result property="friendId" column="friendId"></result>
+        <result property="userMark" column="userMark"></result>
+        <result property="friendMark" column="friendMark"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,friendId,userMark,friendMark
+    </sql>
+
+    <select id="selectFriendList" resultMap="BaseResultMap" parameterType="friend">
+        select id,friendMark as friendMark from friend where userId=#{userId}
+        union all
+        select id,userMark as friendMark from friend where friendId=#{userId}
+    </select>
+
+    <select id="selectFriendListById" parameterType="integer" resultMap="BaseResultMap">
+        select id,friendId,friendMark as friendMark from friend where userId=#{userId}
+        union all
+        select id,userId as friendId,userMark as friendMark from friend where friendId=#{userId}
+    </select>
+
+    <select id="selectByIdAndUserId" resultMap="BaseResultMap">
+        select id,userId,friendId,userMark,friendMark from friend where id=#{id} and (userId=#{userId} or friendId=#{userId})
+    </select>
+
+    <select id="selectFriendUnion" parameterType="friend" resultMap="BaseResultMap">
+        select id,userId,friendId,userMark,friendMark from friend where userId=#{userId} and friendId=#{friendId}
+        union all
+        select id,userId,friendId,userMark,friendMark from friend where userId=#{friendId} and friendId=#{userId}
+    </select>
+
+    <select id="selectFriendOr" parameterType="friend" resultMap="BaseResultMap">
+        select id,userId,friendId,userMark,friendMark from friend where userId=#{userId} and friendId=#{friendId} or userId=#{friendId} and friendId=#{userId}
+    </select>
+
+    <select id="selectFriendById" parameterType="integer" resultMap="BaseResultMap">
+        select id,userId,friendId from friend where id=#{id}
+    </select>
+
+    <insert id="insertFriend" parameterType="friend">
+        insert into friend
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId!=null">
+                userId,
+            </if>
+            <if test="friendId!=null">
+                friendId,
+            </if>
+            <if test="userMark!=null">
+                userMark,
+            </if>
+            <if test="friendMark!=null">
+                friendMark,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId!=null">
+                #{userId},
+            </if>
+            <if test="friendId!=null">
+                #{friendId},
+            </if>
+            <if test="userMark!=null">
+                #{userMark},
+            </if>
+            <if test="friendMark!=null">
+                #{friendMark},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateFriendMark" parameterType="friend">
+        update friend
+        <set>
+            <if test="friendMark!=null">
+                friendMark=#{friendMark},
+            </if>
+        </set>
+        where
+        userId=#{userId} and friendId=#{friendId}
+    </update>
+
+    <update id="updateUserMark" parameterType="friend">
+        update friend
+        <set>
+            <if test="friendMark!=null">
+                userMark=#{friendMark},
+            </if>
+        </set>
+        where
+        userId=#{friendId} and friendId=#{userId}
+    </update>
+
+    <update id="updateFriendMarkById" parameterType="friend">
+        update friend
+        <set>
+            <if test="friendMark!=null and friendMark!=''">
+                friendMark=#{friendMark},
+            </if>
+        </set>
+        where
+        id=#{id} and userId=#{userId}
+    </update>
+
+    <update id="updateUserMarkById" parameterType="friend">
+        update friend
+        <set>
+            <if test="friendMark!=null and friendMark!=''">
+                userMark=#{friendMark}
+            </if>
+        </set>
+        where
+        id=#{id} and friendId=#{userId}
+    </update>
+
+    <delete id="deleteFriend" parameterType="friend">
+        delete from friend where userId=#{userId} and friendId=#{friendId}
+    </delete>
+
+    <delete id="deleteUser" parameterType="friend">
+        delete from friend where userId=#{friendId} and friendId=#{userId}
+    </delete>
+
+    <delete id="deleteFriendById" parameterType="integer">
+        delete from friend where id=#{id}
+    </delete>
+
+    <select id="judgeUserIdPosition" parameterType="friend" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from friend where userId=#{userId} and friendId=#{friendId}
+    </select>
+
+    <select id="judgeFriend" parameterType="friend" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from friend where userId=#{userId} and friendId=#{friendId}
+        union all
+        select
+        <include refid="Base_Column_List"></include>
+        from friend where userId=#{friendId} and friendId=#{userId}
+    </select>
+
+
+</mapper>

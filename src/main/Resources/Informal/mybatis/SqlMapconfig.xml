@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--MyBatis全局配置文件-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--<properties resource="properties/db.properties"></properties>-->
+
+    <typeAliases>
+        <package name="Informal.mybatis.Model"></package>
+        <!--这个只对xml的文件起作用，而对类的全限定名是没有作用的，作用于类会报错-->
+    </typeAliases>
+
+   <!-- <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"></setting>
+        <setting name="cacheEnabled" value="true"></setting>
+    </settings>-->
+    <!--environment现在这里配置，当有spring配置之后，environment配置可以去除
+    environment必须要与transactionManger和dateSource匹配，否则程序报错-->
+  <!--<environments default="development">
+       <environment id="development">
+           <transactionManager type="JDBC"></transactionManager>
+           <dataSource type="POOLED">
+               <property name="driver" value="${jdbc.driver}"></property>
+               <property name="url" value="${jdbc.url}"></property>
+               <property name="username" value="${jdbc.username}"></property>
+               <property name="password" value="${jdbc.password}"></property>
+           </dataSource>
+       </environment>
+   </environments>-->
+<!--<mappers>-->
+    <!--如果在spring中配置了mspperLocations，这些绝对不能再配置，否则会因为加载两次而报错-->
+    <!--<mapper resource="Informal/mybatis/sqlmap/User.xml"></mapper>-->
+    <!--<mapper resource="Informal/mybatis/Mapper/UserMapper.xml"></mapper>-->
+    <!--<mapper resource="Informal/mybatis/Mapper/OrdersMapper.xml"></mapper>-->
+    <!--mapper加载的资源除了是resource，还可以是url或者是class，url为路径，class为类的完全限定类名
+    如果是class限定，那么class和xml映射文件必须在同一个文件夹，并且名字必须要相同
+    如果是想批量的加载mapper,那么可以使用package name=“”的代理接口来实现,但是条件是类名相同，并且在同一个目录
+    否则不能加载xml映射文件，会报错，这个都是为了加载映射文件，跟spring的扫描接口不同。
+
+    mapper和package只能同时存在一个，如果同时存在，会报错,当用了spring时，这个基本没有用，不用配置-->
+    <!--<package name="Informal.mybatis.Dao"></package>-->
+<!--</mappers>-->
+</configuration>

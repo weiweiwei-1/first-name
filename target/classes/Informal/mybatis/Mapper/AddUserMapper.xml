@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Informal.mybatis.Dao.AddUserMapper">
+    <resultMap id="BaseResultMap" type="addUser">
+        <id property="id" column="id"></id>
+        <result property="addId" column="addId"></result>
+        <result property="beAddId" column="beAddId"></result>
+        <result property="addId" column="addId"></result>
+        <result property="addTime" column="addTime"></result>
+        <result property="addName" column="addName"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,addId,beAddId,addId,addTime,addName
+    </sql>
+
+    <insert id="insertAddUser" parameterType="addUser">
+        <selectKey keyProperty="id" resultType="integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into adduser
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">
+                id,
+            </if>
+            <if test="addId!=null">
+                addId,
+            </if>
+            <if test="beAddId!=null">
+                beAddId,
+            </if>
+            <if test="addTime!=null">
+                addTime,
+            </if>
+            <if test="addName!=null">
+                addName,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">
+                #{id},
+            </if>
+            <if test="addId!=null">
+                #{addId},
+            </if>
+            <if test="beAddId!=null">
+                #{beAddId},
+            </if>
+            <if test="addTime!=null">
+                #{addTime},
+            </if>
+            <if test="addName!=null">
+                #{addName},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectAddUserByUserId" parameterType="integer" resultMap="BaseResultMap">
+        select id,beAddId,addId,addTime,addName from adduser where beAddId=#{userId}
+    </select>
+
+    <select id="selectByBothId" parameterType="addUser" resultMap="BaseResultMap">
+        select id from adduser where beAddId=#{beAddId} and addId=#{addId}
+    </select>
+
+    <select id="selectByIdAndBeAddId" resultMap="BaseResultMap">
+        select id from adduser where id=#{id} and beAddId=#{beAddId}
+    </select>
+
+    <select id="selectAddUserById" parameterType="integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from adduser where id=#{id}
+    </select>
+
+    <delete id="deleteAddUser" parameterType="addUser">
+        delete from adduser where addId=#{addId} and beAddId=#{beAddId}
+    </delete>
+
+    <delete id="deleteAddUserById" parameterType="integer">
+        delete from adduser where id=#{id}
+    </delete>
+</mapper>

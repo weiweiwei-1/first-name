@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Informal.mybatis.Dao.UserMapper">
+   <!-- ******注意，对于查询来说，如果设置了查询条件，
+    但是属性值没有进行设置，那么查询为空，除非设置了test条件判断，当
+    属性值不为空时才进行查询，否则忽略查询条件-->
+
+    <!--<where>标签体中没有生成任何查询条件，则不会生成where关键字;
+    如果生成了SQL语句，同时SQL语句以and/or开头，则自动剔除多余的and/or关键字
+    set和where类似，用于生成update语句中的set关键字，如果标签体为空，
+    则不会生成set关键;如果标签体不为空，则会自动剔除所生成SQL语句末尾的多余的逗号
+    -->
+    <!--**注意：sql片段可以定义所有的语句，也是可以在所有的xml映射文件中引用sql片段
+    *jdbcType在查询语句中可能是没有作用的，但是在插入操作时，必须要指定jdbcType，否则遇到插入
+    空值，插入会失败，因此插入操作，必须要用jdbcType
+    进行模糊查询时，参数类型最好是String
+   -->
+
+    <sql id="Base_column_list">
+        id,username,birthday,sex,address
+    </sql>
+
+    <sql id="Select_RowConstraint">
+        <if test="id!=null and id!=''">
+            and id=#{id,jdbcType=INTEGER}
+        </if>
+        <if test="username!=null and username!=''">
+            and username=#{username,jdbcType=VARCHAR}
+        </if>
+        <if test="birthday!=null and birthday!=''">
+            and birthday=#{birthday,jdbcType=DATE}
+        </if>
+        <if test="sex!=null and sex!=''">
+            and sex=#{sex,jdbcType=CHAR}
+        </if>
+        <if test="address!=null and address!=''">
+            and address=#{address,jdbcType=VARCHAR}
+        </if>
+    </sql>
+
+    <sql id="Insert or Update_RowConstraint">
+        <if test="id!=null and id!=''">
+            id=#{id,jdbcType=INTEGER},
+        </if>
+        <if test="username!=null and username!=''">
+            username=#{username,jdbcType=VARCHAR},
+        </if>
+        <if test="birthday!=null and birthday!=''">
+            birthday=#{birthday,jdbcType=DATE},
+        </if>
+        <if test="sex!=null and sex!=''">
+            sex=#{sex,jdbcType=CHAR},
+        </if>
+        <if test="address!=null and address!=''">
+            address=#{address,jdbcType=VARCHAR},
+        </if>
+    </sql>
+
+    <!--在jdbcType中，大多时候你只须简单地指定属性名，其他的事情 MyBatis 会自己去推断，顶多要为可能为空的列指定 jdbcType。-->
+
+    <!--Date显示格式：YYYY-MM-DD；DateTime显示格式：YYYY-MM-DD HH:mm:ss。DateTime更加精确-->
+    <resultMap id="userResultMap" type="Informal.mybatis.Model.User">
+        <id column="id" jdbcType="INTEGER" property="id"></id>
+        <result column="username" jdbcType="VARCHAR" property="username"></result>
+        <result column="birthday" jdbcType="DATE" property="birthday"></result>
+        <result column="sex" jdbcType="CHAR" property="sex"></result>
+        <result column="address" jdbcType="VARCHAR" property="address"></result>
+        <collection property="orders" ofType="Informal.mybatis.Model.Orders">
+            <id column="id" jdbcType="INTEGER" property="id" ></id>
+            <result column="user_id" jdbcType="INTEGER" property="userId"></result>
+            <result column="number" jdbcType="VARCHAR" property="number"></result>
+            <result column="createtime" jdbcType="DATE" property="createtime"></result>
+            <result column="note" jdbcType="VARCHAR" property="note"></result>
+        </collection>
+    </resultMap>
+
+    <insert id="insert" parameterType="Informal.mybatis.Model.User">
+        insert into user
+        <trim prefix="(" suffix=")">
+            <include refid="Base_column_list"></include>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            #{id,jdbcType=INTEGER},#{username,jdbcType=VARCHAR},#{birthday,jdbcType=DATE},
+            #{sex,jdbcType=CHAR},#{address,jdbcType=VARCHAR},
+        </trim>
+    </insert>
+
+    <insert id="insertSelective" parameterType="Informal.mybatis.Model.User">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <!--<include refid="Base_column_list"></include>
+            id,username,birthday,sex,address-->
+            <if test="id!=null">
+                id,
+            </if>
+            <if test="username!=null">
+                username,
+            </if>
+            <if test="birthday!=null">
+                birthday,
+            </if>
+            <if test="sex!=null">
+                sex,
+            </if>
+            <if test="address!=null">
+                address,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="username!=null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="birthday!=null">
+                #{birthday,jdbcType=DATE},
+            </if>
+            <if test="sex!=null">
+                #{sex,jdbcType=CHAR},
+            </if>
+            <if test="address!=null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+
+    <!--这个方法，将原来主键的所有记录删除，然后插入新的数据-->
+    <insert id="insertReplace" parameterType="Informal.mybatis.Model.User">
+        replace into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <!--<include refid="Base_column_list"></include>
+            id,username,birthday,sex,address-->
+            <if test="id!=null">
+                id,
+            </if>
+            <if test="username!=null">
+                username,
+            </if>
+            <if test="birthday!=null">
+                birthday,
+            </if>
+            <if test="sex!=null">
+                sex,
+            </if>
+            <if test="address!=null">
+                address,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="username!=null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="birthday!=null">
+                #{birthday,jdbcType=DATE},
+            </if>
+            <if test="sex!=null">
+                #{sex,jdbcType=CHAR},
+            </if>
+            <if test="address!=null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="insertMap" parameterType="object">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null and id!=''">
+                id,
+            </if>
+            <if test="username!=null and username!=''">
+                username,
+            </if>
+            <if test="birthday!=null and birthday!=''">
+                birthday,
+            </if>
+            <if test="sex!=null and sex!=''">
+                sex,
+            </if>
+            <if test="address!=null and address!=''">
+                address,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <include refid="Insert or Update_RowConstraint"></include>
+        </trim>
+    </insert>
+
+
+    <insert id="InsertManyforeach" parameterType="list">
+        insert into user
+        <trim prefix="(" suffix=")">
+              <include refid="Base_column_list"></include>
+        </trim>
+        values
+        <foreach collection="list" item="item" separator=",">
+            (id=#{item.id,jdbcType=INTEGER},
+               username=#{item.username,jdbcType=VARCHAR},
+               birthday=#{item.birthday,jdbcType=DATE},
+               sex=#{item.sex,jdbcType=CHAR},
+               address=#{item.address,jdbcType=VARCHAR})
+               <!--上面的重复语句，用sql语句来代替
+               <include refid="Insert or Update_RowConstraint"></include>-->
+        </foreach>
+    </insert>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from user where id=#{id,jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteByData" parameterType="java.lang.Integer">
+        delete from user where id>=#{a,jdbcType=INTEGER} and id&lt;=#{b,jdbcType=INTEGER}
+    </delete>
+
+    <update id="updateByPrimaryKey" parameterType="Informal.mybatis.Model.User">
+        update user
+        <set>
+            <trim suffixOverrides=",">
+            username=#{username,jdbcType=VARCHAR},
+            birthday=#{birthday,jdbcType=DATE},
+            sex=#{sex,jdbcType=CHAR},
+            address=#{address,jdbcType=VARCHAR},
+            </trim>
+        </set>
+        where id=#{id,jdbcType=INTEGER}
+    </update>
+
+<update id="updateByPrimarykeySelective" parameterType="Informal.mybatis.Model.User">
+    update user
+    <set>
+        <!--<if test="id!=null">-->
+            <!--id=#{id,jdbcType=INTEGER},-->
+        <!--</if>-->
+        <if test="username!=null">
+            username=#{username,jdbcType=VARCHAR},
+        </if>
+        <if test="birthday!=null">
+            birthday=#{birthday,jdbcType=DATE},
+        </if>
+        <if test="sex!=null">
+            sex=#{sex,jdbcType=CHAR},
+        </if>
+        <if test="address!=null">
+            address=#{address,jdbcType=VARCHAR},
+        </if>
+    </set>
+    where id=#{id,jdbcType=INTEGER}
+</update>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select
+        <include refid="Base_column_list"></include>
+        from user where id=#{id,jdbcType=NUMERIC}
+    </select>
+
+    <select id="selectByObject" parameterType="Informal.mybatis.Model.User" resultMap="userResultMap">
+        select
+        <include refid="Base_column_list"></include>
+        from user where 1=1
+        <if test="id!=null and id!=''">
+            and id=#{id,jdbcType=INTEGER}
+        </if>
+        <if test="username!=null and username!=''">
+            and username=#{username,jdbcType=VARCHAR}
+        </if>
+        <if test="birthday!=null and birthday!=''">
+            and birthday=#{birthday,jdbcType=DATE}
+        </if>
+        <if test="sex!=null and sex!=''">
+            and sex=#{sex,jdbcType=CHAR}
+        </if>
+        <if test="address!=null and address!=''">
+            and address=#{address,jdbcType=VARCHAR}
+        </if>
+    </select>
+
+    <!--<select id="selectUserAndOrders" resultMap="userResultMap">-->
+        <!--select orders.* from user,orders-->
+        <!--<where>-->
+            <!--orders.user_id=user.id-->
+        <!--</where>-->
+    <!--</select>-->
+
+    <!--不能用'%#{username}%',否则会出错，必须要用'$#{username}%'，但是可能导致sql的注入，
+    降低数据库的安全性，所以要#{}注入数据，则只能用concat('%', #{username}, '%')才不会出错
+    #{}在传入数据时会给数据加""，而${}在传入数据时不能给数据加"",会导致sql注入的不安全性
+
+
+    对于if语句如果符合if里面的条件那么里面的sql语句才会执行否则不能执行-->
+
+
+    <select id="selectLike" parameterType="hashmap" resultMap="userResultMap">
+        select * from user where username like
+        <if test="username!=null and username!=''">
+            concat('%',#{username},'%')
+        </if>
+        and sex=#{sex}
+    </select>
+
+    <select id="selectLikeObject" parameterType="map" resultMap="userResultMap">
+        select
+        <include refid="Base_column_list"></include>
+        from user
+        <where>
+            <if test="id!=null and id!=''">
+                and id like concat('%',#{id},'%')
+            </if>
+            <if test="username!=null and username!=''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="birthday!=null and birthday!=''">
+                and birthday like concat('%',#{birthday},'%')
+            </if>
+            <if test="address!=null and address!=''">
+                and address like concat('%',#{address},'%')
+            </if>
+            <if test="sex!=null">
+                and sex like concat('%',#{sex},'%')
+            </if>
+        </where>
+    </select>
+
+
+    <!--这里的查询语句中<![CDATA[]]>中的作用，是为了防止特殊字符转义，加了这个，忽略了转义
+    对于binary，强调按照字节进行比较而不是按照字符比较，可以区分大小写，如果不加binary，那么
+    不能区分大小写-->
+    <select id="selectLikeParam" parameterType="java.lang.String" resultMap="userResultMap">
+        select <include refid="Base_column_list"></include>
+        from user
+        <where>
+            or id like concat('%',#{param},'%')
+            <![CDATA[
+            or username like binary concat('%',upper(#{param}),'%')]]>
+            or birthday like binary concat('%',#{param},'%')
+            or sex like concat('%',#{param},'%')
+            or address like concat('%',#{param},'%')
+        </where>
+    </select>
+
+    <select id="selectByName" parameterType="string" resultMap="userResultMap">
+        select * from user where username=#{name}
+    </select>
+
+    <select id="selectTwoproperties" parameterType="user" resultMap="userResultMap">
+        select * from user where user.sex=#{sex} and user.username=#{username}
+    </select>
+
+    <select id="selectAll" resultMap="userResultMap">
+        select * from user where 1=1
+    </select>
+
+    <!--注意，由于参数表现在foreach里面，因此在parameterType可以不定义,当然定义了也没什么
+    这里item就是要设置的属性参数，-->
+    <select id="selectForeachList" resultMap="userResultMap" parameterType="list">
+        select * from user
+        where id in
+        <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+             #{item}
+    </foreach>
+    </select>
+
+    <select id="selectForeachArray" parameterType="arraylist" resultMap="userResultMap">
+        select * from user where username in
+        <foreach collection="mingzi" item="item" index="index" open="(" close=")" separator=",">
+            #{item,jdbcType=INTEGER}
+        </foreach>
+    </select>
+
+    <select id="selectForeachMap" parameterType="map" resultMap="userResultMap">
+        select * from user where
+        id in
+        <foreach collection="arrays" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+        and username like concat('%',#{username},'%')
+        and sex in
+        <foreach collection="lists" item="sex" open="(" close=")" separator=",">
+            #{sex}
+        </foreach>
+    </select>
+
+    <select id="selectChoose" parameterType="user" resultMap="userResultMap">
+        select * from user where
+        <choose>
+            <when test="id!=null and id!=''">
+                id=#{id,jdbcType=INTEGER}
+            </when>
+            <when test="username!=null and username!=''">
+                username=#{username,jdbcType=VARCHAR}
+            </when>
+            <otherwise>
+                sex='男'
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="selectUserNameById" parameterType="integer" resultType="string">
+        select username from user where id=#{userId}
+    </select>
+
+</mapper>
+
