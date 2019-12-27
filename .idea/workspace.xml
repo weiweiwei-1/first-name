@@ -12,7 +12,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml" line="21" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eba484d-174a-466c-9b3b-8326b47aa563" name="Default" comment="" />
+    <list default="true" id="9eba484d-174a-466c-9b3b-8326b47aa563" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +61,7 @@
       <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="133">
               <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,7 +73,7 @@
       <file leaf-file-name="MessageServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="608">
               <caret line="42" column="72" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,7 +85,7 @@
       <file leaf-file-name="FriendMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
+            <state relative-caret-position="114">
               <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructureTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -104,8 +106,8 @@
       <file leaf-file-name="DataStructure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="513">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,8 +118,8 @@
       <file leaf-file-name="AddUserServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+            <state relative-caret-position="306">
+              <caret line="88" column="50" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +139,8 @@
       <file leaf-file-name="ServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+            <state relative-caret-position="1311">
+              <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3045#3046#0" expanded="true" />
@@ -151,8 +153,8 @@
       <file leaf-file-name="FriendChatList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/FriendChatList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-595">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="114">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -313,10 +315,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="12" />
-    <option name="width" value="1352" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -324,7 +327,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -583,8 +585,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1050,7 +1053,8 @@
       <workItem from="1576167752553" duration="20099000" />
       <workItem from="1576501994117" duration="23023000" />
       <workItem from="1576889134305" duration="20973000" />
-      <workItem from="1577111505468" duration="10663000" />
+      <workItem from="1577111505468" duration="11402000" />
+      <workItem from="1577377043638" duration="247000" />
     </task>
     <servers />
   </component>
@@ -1087,7 +1091,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1564883000" />
+    <option name="totallyTimeSpent" value="1565869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1115,9 +1119,8 @@
       <window_info anchor="right" id="JSF" order="6" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.3867121" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.3867121" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3282313" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.22959183" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
@@ -1126,7 +1129,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.38265306" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.2322239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.23600605" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" sideWeight="0.50793654" side_tool="true" weight="0.260181" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1136,6 +1139,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.32867134" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.22959183" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1650,9 +1654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1670,11 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
           <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1697,20 +1693,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/FriendChatList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="114">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1723,8 +1712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+        <state relative-caret-position="1311">
+          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3045#3046#0" expanded="true" />
@@ -1735,7 +1724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="133">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1745,7 +1734,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="608">
           <caret line="42" column="72" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1756,13 +1745,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructureTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
+        <state relative-caret-position="114">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1772,8 +1761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="513">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1782,8 +1771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+        <state relative-caret-position="306">
+          <caret line="88" column="50" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
