@@ -23,6 +23,7 @@
         select id,friendId,friendMark as friendMark from friend where userId=#{userId}
         union all
         select id,userId as friendId,userMark as friendMark from friend where friendId=#{userId}
+        order by friendId
     </select>
 
     <select id="selectByIdAndUserId" resultMap="BaseResultMap">
@@ -44,6 +45,9 @@
     </select>
 
     <insert id="insertFriend" parameterType="friend">
+        <selectKey keyProperty="id" order="AFTER" resultType="integer">
+            select LAST_INSERT_ID()
+        </selectKey>
         insert into friend
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="userId!=null">

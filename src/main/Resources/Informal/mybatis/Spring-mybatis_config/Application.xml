@@ -22,7 +22,8 @@
 -->
     <context:annotation-config></context:annotation-config>
     <context:component-scan base-package="Informal.mybatis">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>
+        <!--取消对配置配置的注解扫描，下面的语句是取消对@Controller注解的扫描-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>-->
     </context:component-scan>
     <!--基于@Service的注解，使得在Service类上可以使用@Transactional注解-->
 

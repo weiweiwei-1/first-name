@@ -13,7 +13,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eba484d-174a-466c-9b3b-8326b47aa563" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/FriendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/FriendMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,103 +80,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flow-window.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="116" column="6" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flow-window.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="42" column="72" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataStructureTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructureTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataStructure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddUserServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="88" column="50" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mymessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/Mymessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3045#3046#0" expanded="true" />
-                <element signature="e#3100#3101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendChatList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/FriendChatList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -174,8 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>searchfor</find>
-      <find>关闭窗口</find>
       <find>关闭</find>
       <find>user-</find>
       <find>preserve</find>
@@ -204,6 +177,8 @@
       <find>enableweb</find>
       <find>submitre</find>
       <find>login</find>
+      <find>blue</find>
+      <find>username</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -215,16 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Complex_test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/testlll.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxPack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/shiro_cache/JedisShiroCacheManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxFirst.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/MyWebSocketHandler.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Photo.java" />
@@ -266,6 +231,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/base.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" />
       </list>
     </option>
   </component>
@@ -321,7 +296,9 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -368,6 +345,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -516,16 +503,6 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="Mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Informal" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="Spring-mybatis_config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -533,17 +510,7 @@
               <item name="first_web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Informal" type="462c0819:PsiDirectoryNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -551,6 +518,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -567,7 +551,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="Jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="Websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="mainproject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -579,6 +563,23 @@
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web-source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web-source" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -586,8 +587,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -598,7 +599,7 @@
     <property name="last_opened_file_path" value="E:/java/黑马程序员_超全面的JavaWeb教程-源码笔记/JavaWeb视频教程_day20-资料源码/day20_code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -634,7 +635,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceTest.selectUnReadMessageList">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -796,6 +797,7 @@
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <file path="$PROJECT_DIR$/../web-repository">
           <settings>
@@ -1054,17 +1056,14 @@
       <workItem from="1576501994117" duration="23023000" />
       <workItem from="1576889134305" duration="20973000" />
       <workItem from="1577111505468" duration="11402000" />
-      <workItem from="1577377043638" duration="247000" />
+      <workItem from="1577377043638" duration="5949000" />
+      <workItem from="1577535871870" duration="52000" />
+      <workItem from="1577535961810" duration="83000" />
+      <workItem from="1577536102380" duration="41437000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MapperTest_selectLastUnReadMessage2 - 2019.12.22 at 13h 37m 03s.xml">
-      <configuration name="MapperTest.selectLastUnReadMessage2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.22 at 13h 52m 42s.xml">
-      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 25m 44s.xml">
       <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
     </history-entry>
@@ -1089,9 +1088,15 @@
     <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.24 at 21h 15m 52s.xml">
       <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.28 at 18h 25m 34s.xml">
+      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.28 at 18h 47m 23s.xml">
+      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1565869000" />
+    <option name="totallyTimeSpent" value="1613143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1110,17 +1115,18 @@
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50226927" side_tool="true" weight="0.43707484" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3282313" />
       <window_info anchor="right" id="Maven Projects" order="11" weight="0.33888048" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="12" weight="0.32980332" />
-      <window_info id="Structure" order="1" sideWeight="0.50680274" side_tool="true" weight="0.24357034" />
       <window_info anchor="right" id="JSF" order="6" />
+      <window_info id="Structure" order="1" sideWeight="0.50680274" side_tool="true" weight="0.24357034" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.3867121" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282313" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.26916525" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3270869" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.22959183" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
@@ -1129,20 +1135,19 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.38265306" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.23600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.23600605" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" sideWeight="0.50793654" side_tool="true" weight="0.260181" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" sideWeight="0.50510204" side_tool="true" weight="0.24357034" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3290469" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.32867134" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.22959183" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1189,18 +1194,6 @@
           <line>48</line>
           <properties />
           <option name="timeStamp" value="414" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AServlet.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="985" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AServlet.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="986" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Test_null.java</url>
@@ -1405,206 +1398,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/maven_default_respoit/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/builders/JUnit4Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/WebSocketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserNewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1801">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/WebSocketHandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceNewImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserServiceNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/ItemsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Judge/AddUserIDJudge.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/AddUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Judge/Judge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Friend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/AddUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/src.zip!/java/util/concurrent/ConcurrentSkipListMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="3095" column="23" selection-start-line="3095" selection-start-column="23" selection-end-line="3095" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/Websocket/ChatPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="92" column="33" lean-forward="true" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/reupdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/MyWebSocketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="313" column="50" lean-forward="true" selection-start-line="313" selection-start-column="50" selection-end-line="313" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/AddUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="133" column="28" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/AddUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
@@ -1681,14 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1714,11 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
           <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3045#3046#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1726,9 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1736,9 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="42" column="72" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1753,9 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1763,19 +1534,224 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="88" column="50" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="50" />
+        <state relative-caret-position="344">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTrational/ajaxTra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxPackget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxPack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/ajax/AjaxPackage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1767" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/animate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/changemany.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/fade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery_jar/jquery-3.0.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/delete-success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/ajax/testjquery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/ajax/ajax1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="120" column="4" lean-forward="true" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/addUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="102" lean-forward="true" selection-end-line="4" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="117" column="59" lean-forward="true" selection-start-line="117" selection-start-column="59" selection-end-line="117" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/relogin.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/updateaddress.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/Websocket/ChatPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="628" column="38" lean-forward="true" selection-start-line="628" selection-start-column="38" selection-end-line="628" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="116" column="6" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>

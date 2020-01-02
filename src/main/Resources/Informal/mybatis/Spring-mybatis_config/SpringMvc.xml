@@ -23,11 +23,10 @@
     <!--支持对静态资源html，Js等的访问conversion-service="conversionService"-->
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
     <mvc:annotation-driven ></mvc:annotation-driven>
-    <!--<mvc:resources location="/web-source/Html/" mapping="/Css/**"></mvc:resources>
-    <mvc:resources location="/web-source/Html/" mapping="/Html/**"></mvc:resources>
-    <mvc:resources location="/web-source/Img/" mapping="/Img/**"></mvc:resources>
-    <mvc:resources location="/web-source/Js/" mapping="/Js/**"></mvc:resources>
-    <mvc:resources mapping="/ajax/**" location="/web-source/ajax/"></mvc:resources>-->
+    <!--<mvc:resources location="/CSS/" mapping="/CSS/**"></mvc:resources>
+    <mvc:resources location="/Javascript/" mapping="/Javascript/**"></mvc:resources>
+-->
+    <!--在Controller包中，实现对Controller包内的类的注解扫描-->
     <context:component-scan base-package="Informal.mybatis.Controller"></context:component-scan>
     <!--<bean name="/queryItems" class="Informal.mybatis.Controller.UserController"></bean>
     一个一个控制器配置太麻烦，所以用mvc注解-->

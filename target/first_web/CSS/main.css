@@ -1,0 +1,124 @@
+input{
+    font-size:20px;
+    width:280px;
+    height:33px;
+    border:1px solid #ccc;
+}
+
+span{
+    font-size:10px;
+    color:#ca0c16;
+}
+
+#content{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;  /*使用弹性布局*/
+    overflow:hidden;
+    justify-content:center;
+    align-items:center;
+    background-color:deepskyblue;
+}
+
+h2{
+    color:blue;
+}
+
+#login-block{
+    position:absolute;
+    width:450px;
+    height:440px;
+    background-color:white;
+    text-align:center;
+}
+
+#login-head{
+    width:450px;
+    height:80px;
+    line-height:80px;
+    text-align:center;
+}
+
+#login-content{
+    position:absolute;
+    width:450px;
+    height:300px;
+    justify-content:center;
+    align-items:center;
+}
+
+.username-block{
+    position:relative;
+    width:450px;
+    height:120px;
+    line-height:120px;
+    text-align:center;
+    align-items:center;
+}
+
+.username-text{
+    position:absolute;
+    width:450px;
+    height:20px;
+    top:40px;
+}
+
+.username-error{
+    position:absolute;
+    width:450px;
+    height:20px;
+    top:30px;
+}
+
+.password-block{
+    position:relative;
+    width:450px;
+    height:120px;
+    line-height:50px;
+    text-align:center;
+}
+
+.password-text{
+    position:absolute;
+    width:450px;
+    height:20px;
+}
+
+#loginPassword{
+    letter-spacing: 10px;
+}
+
+.password-error{
+    position:absolute;
+    width:450px;
+    height:20px;
+    top:30px;
+}
+
+#register-confirm,#login{
+    cursor:pointer;
+}
+
+.swap-register-login{
+    position:absolute;
+    text-align:right;
+    width:400px;
+    height:20px;
+    top:50px;
+}
+
+.login-button{
+    position:relative;
+    width:450px;
+    height:40px;
+}
+
+#login{
+    width:200px;
+    height:40px;
+    background-color:#f40;
+    border-color:transparent;
+}

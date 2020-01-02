@@ -15,21 +15,24 @@
     </sql>
 
     <insert id="insertMessage" parameterType="message">
+        <selectKey keyProperty="id" resultType="integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
         insert into message
         <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="id!=null">
+            <if test="id!=null and id!=''">
                 id,
             </if>
-            <if test="senderId!=null">
+            <if test="senderId!=null and senderId!=''">
                 senderId,
             </if>
-            <if test="receiverId!=null">
+            <if test="receiverId!=null and receiverId!=''">
                 receiverId,
             </if>
-            <if test="content!=null">
+            <if test="content!=null and content!=''">
                 content,
             </if>
-            <if test="sendTime!=null">
+            <if test="sendTime!=null and sendTime!=''">
                 sendTime,
             </if>
             <if test="status!=null">
@@ -38,22 +41,22 @@
         </trim>
         values
         <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="id!=null">
+            <if test="id!=null and id!=''">
                 #{id},
             </if>
-            <if test="senderId!=null">
+            <if test="senderId!=null and senderId!=''">
                 #{senderId},
             </if>
-            <if test="receiverId!=null">
+            <if test="receiverId!=null and receiverId!=''">
                 #{receiverId},
             </if>
-            <if test="content!=null">
+            <if test="content!=null and content!=''">
                 #{content},
             </if>
-            <if test="sendTime!=null">
+            <if test="sendTime!=null and sendTime!=''">
                 #{sendTime},
             </if>
-            <if test="status!=null">
+            <if test="status!=null and status!=''">
                 #{status},
             </if>
         </trim>
@@ -62,13 +65,15 @@
 
 
     <select id="selectMessages" resultMap="BaseResultMap">
-      select * from
-      (select id,content,sendTime from message where senderId=#{senderId} and receiverId=#{receiverId}
-      union all
-      select id,content,sendTime from message where senderId=#{receiverId} and receiverId=#{senderId}
-      order by id desc limit 4)
-      as Messages
-      order by id
+      /*(select id,content,senderId,receiverId,sendTime from message where senderId=#{senderId} and receiverId=#{receiverId}
+      or senderId=#{receiverId} and receiverId=#{senderId} order by id desc limit 30) order by id*/
+      select * from (select id,senderId,receiverId,content,sendTime from message where senderId=#{senderId} and receiverId=#{receiverId}
+     union all
+select id,senderId,receiverId,content,sendTime from message where senderId=#{receiverId} and receiverId=#{senderId} order by id desc limit 30) as messageList order by id
+    </select>
+
+    <select id="selectUnReadMessageList" parameterType="integer" resultType="UnReadMessageList">
+        select id,count(id) as countId,senderId,receiverId,content,sendTime from message where receiverId=#{userId} and status=0 group by senderId order by senderId
     </select>
 
     <select id="selectByIdAndUserId" resultMap="BaseResultMap">
@@ -77,12 +82,16 @@
         from message where id=#{id} and receiverId=#{userId}
     </select>
 
-    <delete id="deleteMessage" parameterType="message">
-        delete from message where id=#{id} and senderId=#{senderId} and receiverId=#{receiverId}
+    <delete id="deleteMessages" parameterType="message">
+        delete from message where senderId=#{senderId} and receiverId=#{receiverId}
     </delete>
 
     <delete id="deleteMessageById" parameterType="integer">
         delete from message where id=#{id}
+    </delete>
+
+    <delete id="deleteMessageByIdAndSenderId">
+        delete from message where id=#{id} and senderId=#{senderId}
     </delete>
 
     <select id="selectLastUnReadMessage" parameterType="message" resultMap="BaseResultMap">
@@ -94,7 +103,7 @@
         order by id desc limit 0,1
     </select>
 
-    <select id="frendChatList" parameterType="Integer" resultType="Informal.mybatis.Model.enty.FriendChatList">
+    <select id="frendChatList" parameterType="Integer" resultType="FriendChatList">
         select id as id,count(id) as countId,max(id) as maxId,senderId as senderId,receiverId as receiverId,content as content
         from message where receiverId=#{receiverId} and status=0 group by senderId
     </select>
