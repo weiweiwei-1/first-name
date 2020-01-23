@@ -1,6 +1,6 @@
 function openwindow(){
-    var content2=document.getElementById("content2")
-    content2.style.display="block";
+    var content2=document.getElementById("content2");
+    content2.style.display="flex";
     //获取弹窗得div
     var modal = document.getElementById('myModal');
     // 获取 <span> 元素，用于关闭弹窗 （X）

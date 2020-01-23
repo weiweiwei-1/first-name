@@ -83,6 +83,7 @@ document.enter.submit();
          pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt"%>
+<% String appPath = request.getContextPath(); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -91,15 +92,17 @@ document.enter.submit();
     <link href="CSS/main.css"  rel="stylesheet" type="text/css">
     <link href="CSS/base.css" rel="stylesheet" type="text/css">
     <link href="CSS/flow-window.css" rel="stylesheet" type="text/css">
-    <script src="Javascript/flow-window.js" rel="script" type="text/javascript"></script>
     <script src="jquery_jar/jquery-3.0.0.js" rel="script" type="text/javascript"></script>
     <script src="Javascript/login.js" rel="script" type="text/javascript"></script>
+    <script src="Javascript/register.js" rel = "script" type="text/javascript"></script>
+    <%--<script src="Javascript/flow-window.js" rel="script" type="text/javascript"></script>--%>
+
 </head>
 <body>
 <div id="content" >
     <div id="login-block">
         <div id="login-head">
-            <h2>欢迎进入小网!</h2>
+            <h2>欢迎登录!</h2>
         </div>
         <div id="login-content">
             <div class="username-block">
@@ -107,17 +110,20 @@ document.enter.submit();
                 <div class="username-error"> <span class="usernameError"></span></div>
             </div>
             <div class="password-block">
-                <div class="password-text"><input type="password" name="password" id="loginPassword" placeholder="密 码"></div>
+                <div class="password-text"><input type="password" name="password" id="loginPassword" placeholder="密码"></div>
                 <div class="password-error"><span class="passwordError"></span></div>
-                <div class="swap-register-login"><span id="register-confirm">还没有账号？注册一个账号吧</span></div>
+                <div class="swap-register-login">
+                    <div class="rememberme-register"><input id="rememberMe" type="checkbox" name="rememberMe"><span id="rememberMe-text">记住我</span></div>
+                    <div class="rememberme-register"><span id="register-confirm">还没有账号？点击注册</span></div></div>
             </div>
-            <div class="login-button"><button type="button" id="login" onclick="openwindow()">登录</button></div>
+            <div class="login-button"><button type="button" id="login"<%--onclick="openwindow()"--%>>登 录</button></div>
         </div>
     </div>
 </div>
 <div id="content2">
     <div id="register-block">
-        <div id="register-head"></div>
+        <div id="close"><span class="close">&times;</span></div>
+        <div id="register-head"><span id="head-line">欢迎注册!</span></div>
         <div id="register-content">
             <div id="username-block">
                 <div id="username-text"><input type="text" name="username" id="registerUsername" placeholder="邮箱"></div>
@@ -132,30 +138,14 @@ document.enter.submit();
                 <div id="passwordConfirm-error"><span id="passwordConfirmError"></span></div>
             </div>
             <div id="confirm-code">
-                <div id="confirmCode-input"><input type="text" name="confirmCode" id="confirmCode"></div>
+                <div id="confirmCode-input">验证码:&nbsp;&nbsp;<input type="text" name="confirmCode" id="confirmCode"></div>
                 <div id="sendConfirmcode"><button type="button" id="sendCode">发送验证码</button></div>
             </div>
-            <div id="register-button"><button type="button" id="register">注册</button></div>
+            <div id="register-button"><button type="button" id="register">注 册</button></div>
         </div>
     </div>
 </div>
-<%--<div id="myModal" class="modal">
-    <!-- 弹窗内容 -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>器件信息添加</h2>
-        </div>
-        <div class="modal-body">
-            <p>这是你需要设计填写需求得内容，如登录等等</p>
-            姓名： <input type="text" name=""><br>
-            密码： <input type="password" name="">
-        </div>
-        <div class="modal-footer">
-            <button class="ok">确定</button>&nbsp;<button class="no">取消</button>
-        </div>
-    </div>
-</div>--%>
+</div>
 </body>
 <html>
 

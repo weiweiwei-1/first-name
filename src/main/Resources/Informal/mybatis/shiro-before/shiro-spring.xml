@@ -67,7 +67,6 @@
                 <!--/usernewList/toUpdateUser=authc-->
                 /usernewList/deleteuser=authc
                 <!--/usernewList/deleteSome=authc-->
-                /WebSocket/Websocket1=authc
                 /usernewList/submitUser=authc
                 /ForAllList/UpdateInformationPage=authc
                 /ForAllList/updateaddress=authc
@@ -81,7 +80,7 @@
 
 
     <!--<bean id="customShiroCacheManager" class="com.lottery.shiro.cache.CustomShiroCacheManager">-->
-        <!--<property name="shiroCacheManager" ref="jedisShiroCacheManager" />-->
+    <!--<property name="shiroCacheManager" ref="jedisShiroCacheManager" />-->
     <!--</bean>-->
     <!--<bean id="jedisShiroCacheManager" class="com.lottery.shiro.cache.JedisShiroCacheManager">-->
     <!--</bean>-->

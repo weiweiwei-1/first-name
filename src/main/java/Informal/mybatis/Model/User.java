@@ -34,7 +34,11 @@ public class User implements Serializable{
     private String sex;
 
     @Size(min=1,max = 50,message = "长度必须小于50个字符大于1字符",groups={AddValidator.class})
+    private String email;
+
     private String address;
+
+    private String password;
 
     private Integer age;
 
@@ -99,6 +103,14 @@ public class User implements Serializable{
         this.sex = sex;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -114,6 +126,14 @@ public class User implements Serializable{
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Integer getAge() {
@@ -187,9 +207,18 @@ public class User implements Serializable{
                 ", username='" + username + '\'' +
                 ", birthday=" + birthday +
                 ", sex='" + sex + '\'' +
+                ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", photo='" + photo + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", occupation='" + occupation + '\'' +
+                ", school='" + school + '\'' +
+                ", company='" + company + '\'' +
+                ", hobby='" + hobby + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", orders=" + orders +
                 '}';
     }
-
-
 }

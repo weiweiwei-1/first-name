@@ -1,5 +1,8 @@
 package Informal.mybatis.Controller;
 
+import Informal.mybatis.Controller.ShiroException.NullAccountException;
+import Informal.mybatis.Controller.ShiroException.NullCredentialsException;
+import Informal.mybatis.Controller.Warning.LoginAndRegisterResult;
 import Informal.mybatis.Judge.Judge;
 import Informal.mybatis.Model.Items;
 import Informal.mybatis.Model.User;
@@ -8,6 +11,8 @@ import Informal.mybatis.Service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -32,115 +37,116 @@ public class ForAll {
     private UserService userService;
     @Autowired
     private ItemsService itemsService;
-    @RequestMapping(value="/ForUserAndItems",method={RequestMethod.GET,RequestMethod.POST})
-    public String ForUserAndItems(Model model){
+
+    @RequestMapping(value = "/ForUserAndItems", method = {RequestMethod.GET, RequestMethod.POST})
+    public String ForUserAndItems(Model model) {
         List<User> user = userService.selectAll();
-        List<Items> items=itemsService.selectAll();
-        User user1=(User)SecurityUtils.getSubject().getPrincipal();
-        Subject subject=SecurityUtils.getSubject();
-        System.out.println("当前用户为："+user1);
+        List<Items> items = itemsService.selectAll();
+        User user1 = (User) SecurityUtils.getSubject().getPrincipal();
+        Subject subject = SecurityUtils.getSubject();
+        System.out.println(subject);
+        System.out.println("当前用户为：" + user1);
         System.out.println("当前session为：");
-        Session session=subject.getSession();
-        System.out.println("session的主机地址为"+session.getHost());
-        System.out.println("session的id为"+session.getId());
-        if(subject.isAuthenticated()) {
-            Judge judge=new Judge();
-            List<User> user2=userService.selectAll();
-            if(!judge.isContain(user1,user2))
-            {
+        Session session = subject.getSession();
+        System.out.println("session的主机地址为" + session.getHost());
+        System.out.println("session的id为" + session.getId());
+        if (subject.isAuthenticated()) {
+            Judge judge = new Judge();
+            List<User> user2 = userService.selectAll();
+            if (!judge.isContain(user1, user2)) {
                 subject.logout();
                 session.touch();
                 session.stop();
-                String logininfo="请登录";
-                String register="没有账号？请注册";
-                model.addAttribute("logininfo",logininfo);
-                model.addAttribute("register",register);
+                String logininfo = "请登录";
+                String register = "没有账号？请注册";
+                model.addAttribute("logininfo", logininfo);
+                model.addAttribute("register", register);
+            } else {
+                User user3 = userService.selectByName(user1.getUsername());
+                model.addAttribute("user", user3);
+                model.addAttribute("username", user3.getUsername());
             }
-            else{
-                User user3=userService.selectByName(user1.getUsername());
-                model.addAttribute("user",user3);
-                model.addAttribute("username",user3.getUsername());
-            }
+        } else {
+            String logininfo = "请登录";
+            String register = "没有账号？请注册";
+            model.addAttribute("logininfo", logininfo);
+            model.addAttribute("register", register);
         }
-        else{
-            String logininfo="请登录";
-            String register="没有账号？请注册";
-            model.addAttribute("logininfo",logininfo);
-            model.addAttribute("register",register);
-        }
-        model.addAttribute("userList",user);
-        model.addAttribute("itemsList",items);
+        model.addAttribute("userList", user);
+        model.addAttribute("itemsList", items);
         return "newUser";
     }
+
     @Transactional
     @RequestMapping(value = "/searchforall", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public Map searchforall(@RequestParam String condition){
-        List<User> users=userService.selectLike(condition);
-        List<Items> items=itemsService.selectLike(condition);
-        Map<String,Object> map=new HashMap<>();
-        map.put("users",users);
-        map.put("items",items);
+    public Map searchforall(@RequestParam String condition) {
+        List<User> users = userService.selectLike(condition);
+        List<Items> items = itemsService.selectLike(condition);
+        Map<String, Object> map = new HashMap<>();
+        map.put("users", users);
+        map.put("items", items);
         System.out.println(users);
         return map;
     }
 
     @RequestMapping("/backtotable")
-    public String backtotable(){
+    public String backtotable() {
         return "forward:ForUserAndItems";
     }
 
-    @RequestMapping(value="/forregister",method={RequestMethod.GET,RequestMethod.POST})
-    public String forregister(/*@ModelAttribute User user,Model model*/){
+    @RequestMapping(value = "/forregister", method = {RequestMethod.GET, RequestMethod.POST})
+    public String forregister() {
         return "register";
     }
 
-   @RequestMapping(value="/register",method={RequestMethod.GET,RequestMethod.POST})
-   @ResponseBody
-    public Map<String,String> register(User user){
-       Map<String,String> map=new HashMap<>();
-       String UsernameError;
-       String AddressError;
-       String Symbol="1";
-       if(StringUtils.isBlank(user.getUsername())){
-           UsernameError="用户名不能为空";Symbol="0";
-       }
-       else if(userService.selectByName(user.getUsername())!=null){
-           UsernameError="用户已经存在";Symbol="0";
-       }
-       else{
-           UsernameError="";
-       }
-
-       if(StringUtils.isBlank(user.getAddress())){
-           AddressError="地址不能为空";Symbol="0";
-       }
-       else if(user.getAddress().length()<4){
-           AddressError="地址长度太短";Symbol="0";
-       }
-       else{
-           AddressError="";
-       }
-       if(Symbol.equals("0")){
-           map.put("usernameError",UsernameError);
-           map.put("addressError",AddressError);
-           map.put("Symbol","0");
-       }
-       else{
-           userService.insert(user);
-           map.put("Symbol","1");
-           Subject subject=SecurityUtils.getSubject();
-           try {
-               subject.login(new UsernamePasswordToken(user.getUsername(),user.getAddress()));
-           }catch(AuthenticationException ex){
-               System.out.println("授权登录失败");
-           }
-           Session session=subject.getSession();
-           System.out.println("session对象为:");
-           System.out.println(session.getAttribute("username"));
-       }
-       return map;
+    @RequestMapping(value = "/register", method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
+    public Map<String, String> register(String username, String address, String sureAddress) {
+        Map<String, String> map = new HashMap<>();
+        String usernameError = null;
+        String addressError = null;
+        String sureAddressError = null;
+        String Symbol = "1";
+        if (StringUtils.isBlank(username)) {
+            usernameError = LoginAndRegisterResult.NULL_USERNAME_ERROR;
+            Symbol = "0";
+        } else if (userService.selectByName(username) != null) {
+            usernameError = LoginAndRegisterResult.USERNAME_EXIST_ERROR;
+            Symbol = "0";
+        }
+        if (StringUtils.isBlank(address)) {
+            addressError = LoginAndRegisterResult.NULL_PASSWORD_ERROR;
+            Symbol = "0";
+        } else if (address.length() < 4) {
+            addressError = LoginAndRegisterResult.PASSWORD_FORMAT_ERROR;
+            Symbol = "0";
+        } else if (!sureAddress.equals(address)) {
+            sureAddressError = LoginAndRegisterResult.PASSWORD_CONFIRM_ERROR;
+            Symbol = "0";
+        }
+        if (Symbol.equals("0")) {
+            map.put("usernameError", usernameError);
+            map.put("addressError", addressError);
+            map.put("sureAddressError", sureAddressError);
+            map.put("Symbol", Symbol);
+        } else {
+            map.put("Symbol", Symbol);
+            try {
+                User user = new User();
+                user.setUsername(username);
+                user.setAddress(address);
+                userService.insert(user);
+                SecurityUtils.getSubject().login(new UsernamePasswordToken(username, address));
+            } catch (Exception e) {
+                map.remove("Symbol", Symbol);
+                Symbol = "2";
+                map.put("Symbol", Symbol);
+            }
+        }
+        return map;
     }
+
 
 
     @RequestMapping(value="/forlogin")
@@ -151,39 +157,25 @@ public class ForAll {
     @RequestMapping(value="/login",method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Map login3(User user){
-        String username=user.getUsername();
-        String address=user.getAddress();
-        String result;
-        if(username.isEmpty()){
-            result="0";//用户名不能为空
+        Map<String, String> map = new HashMap<>();
+        //只要输入就不为空，只是空字符
+        System.out.println(user.getUsername());
+        System.out.println(user.getAddress());
+        Subject subject = SecurityUtils.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(),user.getAddress());
+        try {
+            subject.login(token);
+        }catch (NullAccountException nae) {
+            map.put("NullAccountError", LoginAndRegisterResult.NULL_USERNAME_ERROR);
+            return map;
+        }catch (UnknownAccountException uae) {
+            map.put("UnknownAccountError", LoginAndRegisterResult.USERNAME_ERRROR);
+            return map;
+        }catch (NullCredentialsException nce) {
+            map.put("NullCredentialsError", LoginAndRegisterResult.NULL_PASSWORD_ERROR);
+        }catch (IncorrectCredentialsException ice) {
+            map.put("IncorrectCrdentialsError", LoginAndRegisterResult.PASSWORD_ERROR);
         }
-        else{
-            User user1=userService.selectByName(username);
-            System.out.println(user1);
-            if(user1==null){
-                result="1";//用户不存在
-            }
-            else if(!address.equals(user1.getAddress())){
-                result="2";//地址错误
-            }
-            else{
-                result="3";//登录成功
-                Subject subject=SecurityUtils.getSubject();
-                try{
-                    UsernamePasswordToken token=new UsernamePasswordToken(username,address);
-                    token.setRememberMe(true);
-                    subject.login(token);
-                }
-                catch(AuthenticationException ex){
-                    System.out.println("登陆异常，请查看是否其他人在别处登陆了账号");
-                }
-                Session session=subject.getSession();
-                session.setAttribute("username",user.getUsername());
-                System.out.println(session.getAttribute("username"));
-            }
-        }
-        Map<String,String> map=new HashMap<>();
-        map.put("result",result);
         return map;
     }
 
@@ -208,6 +200,7 @@ public class ForAll {
         Subject subject=SecurityUtils.getSubject();
         subject.logout();
         Session session=subject.getSession();
+        System.out.println("logout的session的id为："+ session.getId());
         session.stop();
         return "forward:ForUserAndItems";
     }

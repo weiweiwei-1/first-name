@@ -1,17 +1,29 @@
+span{
+    color:#ca0c16;
+    font-size:0.875rem;
+}
+
 input{
-    font-size:20px;
-    width:280px;
-    height:33px;
+    outline:none;
+    border-radius:8px;
+    font-size:0.880rem;
     border:1px solid #ccc;
 }
 
-span{
-    font-size:10px;
-    color:#ca0c16;
+#loginUsername,#loginPassword{
+    width:280px;
+    height:33px;
+   /* outline:none;
+    border-radius:8px;
+    font-size:0.880rem;
+    border:1px solid #ccc;*/
+}
+
+#rememberMe-text{
+    color:dodgerblue;
 }
 
 #content{
-    position:absolute;
     top:0;
     left:0;
     height:100%;
@@ -88,7 +100,7 @@ h2{
 }
 
 #loginPassword{
-    letter-spacing: 10px;
+    letter-spacing:8px;
 }
 
 .password-error{
@@ -102,12 +114,34 @@ h2{
     cursor:pointer;
 }
 
+#register-confirm{
+    color:#3d96dc;
+}
+
 .swap-register-login{
     position:absolute;
     text-align:right;
-    width:400px;
+    width:450px;
     height:20px;
-    top:50px;
+    top:12vh;
+    display:flex;
+}
+
+.rememberme-register{
+    width:225px;
+    height:40px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.rememberme{
+    text-align:center;
+}
+
+.register{
+    text-align:center;
 }
 
 .login-button{
@@ -117,8 +151,11 @@ h2{
 }
 
 #login{
-    width:200px;
-    height:40px;
+    width:12vw;
+    height:5vh;
     background-color:#f40;
     border-color:transparent;
+    cursor:pointer;
+    color:white;
+    font:20px Arial;
 }

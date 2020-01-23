@@ -2,19 +2,19 @@ package Informal.mybatis.Controller.ShiroException;
 
 import org.apache.shiro.authc.AccountException;
 
-public class NullCountException extends AccountException {
-    public NullCountException() {
+public class NullAccountException extends AccountException {
+    public NullAccountException() {
     }
 
-    public NullCountException(String message) {
+    public NullAccountException(String message) {
         super(message);
     }
 
-    public NullCountException(Throwable cause) {
+    public NullAccountException(Throwable cause) {
         super(cause);
     }
 
-    public NullCountException(String message,Throwable cause) {
+    public NullAccountException(String message, Throwable cause) {
         super(message, cause);
     }
 }

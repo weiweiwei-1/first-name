@@ -3,22 +3,23 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--<bean id="securityManeger" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+<bean id="securityManeger" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
     <property name="realm" ref="myRealms"></property>
-    <property name="sessionManager" ref="sessionManager"></property>
     <property name="rememberMeManager" ref="rememberMeManager"></property>
 </bean>
 
 <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
     <property name="globalSessionTimeout" value="1800000"></property>
     <property name="deleteInvalidSessions" value="true"></property>
-    &lt;!&ndash;<property name="sessionValidationSchedulerEnabled" value="true"></property>
-    <property name="sessionValidationScheduler" ref="sessionValidationScheduler"></property>&ndash;&gt;
+    <property name="sessionValidationSchedulerEnabled" value="true"></property>
+    <property name="sessionValidationScheduler" ref="sessionValidationScheduler"></property>
+    <!--下面的注释目的是为了在跳转到登录的url时可以不在url后面带有jsessionId，但是需要的shiro版本为1.3及以上，如果是1.2就不能编译成功-->
+    <property name="sessionIdUrlRewritingEnabled" value="false" />
 </bean>
 
-&lt;!&ndash; <bean id="sessionValidationScheduler" class="org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler">
+ <bean id="sessionValidationScheduler" class="org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler">
      <property name="interval" value="1800000"></property>
- </bean>&ndash;&gt;
+ </bean>
 
 <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
     <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"></property>
@@ -28,15 +29,22 @@
     <constructor-arg value="rememberMe"></constructor-arg>
     <property name="httpOnly" value="true"></property>
     <property name="maxAge" value="604800"></property>
-    &lt;!&ndash;默认是记住7天的时间&ndash;&gt;
+    <!--默认是记住7天的时间-->
 </bean>
+    <bean id="formAuthenticationFilter" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
+        <!-- 定义出需要使用的参数，此参数与表单一一对应 -->
+        <property name="usernameParam" value="username"/>
+        <property name="passwordParam" value="address"/>
+        <property name="rememberMeParam" value="rememberMe"/>
+        <property name="loginUrl" value="/ForAllList/login"/>
+    </bean>
 
 <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
     <property name="securityManager" ref="securityManeger"></property>
     <property name="loginUrl" value="/"></property>
     <property name="filterChainDefinitions">
         <value>
-            &lt;!&ndash;/usernewList/toUpdateUser=authc&ndash;&gt;
+            <!--/usernewList/toUpdateUser=authc-->
             /usernewList/deleteuser=authc
             /WebSocket/Websocket1=user
             /usernewList/submitUser=authc
@@ -49,6 +57,6 @@
         </value>
     </property>
 
-</bean>-->
+</bean>
 
 </beans>

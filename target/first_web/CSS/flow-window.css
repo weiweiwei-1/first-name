@@ -10,104 +10,116 @@
     align-items:center;
 }
 
+button{
+    border-radius:8px;
+    border:0;
+    outline:none;
+    font:0.75rem Arial,Serif;
+}
+
+#close{
+    font:1.55rem Arial,Serilf;
+    text-align:right;
+}
+
+.close{
+    position:relative;
+    right:0.5vw;
+    font:1.55rem Arial,Serilf;
+    cursor:pointer;
+}
+
 #register-block{
-    position:absolute;
-    width:500px;
-    height:450px;
+    width:35vw;
+    height:480px;
     background-color:white;
     text-align:center;
 }
 
 #register-head{
-    background-color:red;
-    width:450px;
-    height:80px;
-    line-height:80px;
+    width:35vw;
+    height:9vh;
     text-align:center;
-
+    font:1.25rem Arial,Serilf;
 }
 
-
-/*
-.modal {
-    display: none; !* 默认隐藏 *!
-    !*生成绝对定位的元素，相对于浏览器窗口进行定位。*!
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    !*设置弹窗位置*!
-    padding-top: 200px;
-    padding-bottom: 300px;
-    !*浮在全屏上*!
-    width: 100%;
-    height:  100%;
-    !*overflow：auto；如果内容被修剪，则浏览器会显示滚动条，以便查看其余内容。*!
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    text-align: center;
+#head-line{
+    font:1.875rem Arial,Serilf;
+    font-weight:800;
+    color:blue;
 }
 
-!* 弹窗内容 *!
-.modal-content {
-    !*position: relative;*!
-    !*弹窗背景色设置*!
-    background-color: #fefefe;
-    margin: auto;
-    padding: 200px auto;
-    width: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+#register-content{
+    width:35vw;
+    height:350px;
 }
 
-!* 添加动画 *!
-@-webkit-keyframes animatetop {
-    from {top:-200px; opacity:0}
-    to {top:0; opacity:1}
+#username-text,#password-text,#passwordConfirm-text{
+    width:35vw;
+    height:60px;
 }
 
-@keyframes animatetop {
-    from {top:-200px; opacity:0}
-    to {top:0; opacity:1}
+#registerUsername,#registerPassword,#passwordConfirm{
+    position:relative;
+    width:20vw;
+    height:5vh;
+    top:3vh;
+    /*outline:none;
+    border-radius:8px;
+    font-size:0.880rem;
+    border:1px solid #ccc;*/
 }
 
-!* 关闭按钮 *!
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+#confirm-code{
+    width:35vw;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+#confirmCode-input,#sendConfirmcode{
+    width:20vw;
+    height:5vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
 
-.modal-header {
-    display: block;
-    line-height: 30px;
-    padding: 2px 10px;
-    background-color: blue;
-    color: white;
-    text-align: left;
+#confirmCode{
+    width:6vw;
+    height:4vh;
+    outline:none;
+    border-radius:8px;
+    border:1px solid #ccc;
 }
 
-.modal-body {
-    padding: 2px 16px;
-    font-size: 18px;
-    height: 200px;
+#sendCode{
+    width:8vw;
+    height:5vh;
+    position:relative;
+    right:8vw;
+    color:white;
+    background-color:#317ef3;
+    border-color:transparent;
+    cursor:pointer;
 }
 
-.modal-footer {
-    display: block;
-    line-height: 30px;
-    padding: 2px 10px;
-    background-color: blue;
-    color: white;
-}*/
+#register-button{
+    width:35vw;
+    height:15vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#register{
+    width:16vw;
+    height:6vh;
+    background-color:#f40;
+    border-color:transparent;
+    cursor:pointer;
+    color:white;
+    /*font:20px Arial;*/
+    font:1.25rem Arial,Serilf;
+}

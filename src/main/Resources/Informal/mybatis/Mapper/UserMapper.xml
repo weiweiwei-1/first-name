@@ -105,6 +105,12 @@
             <if test="address!=null">
                 address,
             </if>
+            <if test="email!=null">
+                email,
+            </if>
+            <if test="password!=null">
+                password,
+            </if>
         </trim>
         <trim prefix="values(" suffix=")" suffixOverrides=",">
             <if test="id!=null">
@@ -121,6 +127,12 @@
             </if>
             <if test="address!=null">
                 #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="email!=null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="password!=null">
+                #{password,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>

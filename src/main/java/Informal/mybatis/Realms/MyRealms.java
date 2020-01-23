@@ -1,7 +1,11 @@
 package Informal.mybatis.Realms;
 
+import Informal.mybatis.Controller.ShiroException.NullAccountException;
+import Informal.mybatis.Controller.ShiroException.NullCredentialsException;
 import Informal.mybatis.Model.User;
 import Informal.mybatis.Service.UserService;
+import com.alibaba.druid.sql.visitor.functions.Char;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -19,13 +23,22 @@ public class MyRealms extends AuthorizingRealm {
 //    认证
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken)
             throws AuthenticationException {
-        String username=(String)authenticationToken.getPrincipal();
-        User user=userService.selectByName(username);
-        if(user==null){
-            throw new UnknownAccountException("当前用户不存在");
+        UsernamePasswordToken token = (UsernamePasswordToken)authenticationToken;
+        String username = (String)token.getPrincipal();
+        String password = String.valueOf(token.getPassword());
+        if (StringUtils.isBlank(username)) {
+            throw new NullAccountException("用户名不能为空");
+        } else {
+            User user = userService.selectByName(username);
+            if (user == null) {
+                throw new UnknownAccountException("用户名不存在");
+            } else if (StringUtils.isBlank(password)) {
+                throw new NullCredentialsException("密码不能为空");
+            } else if (!password.equals(user.getAddress())) {
+                throw new IncorrectCredentialsException("密码错误");
+            }
+            return new SimpleAuthenticationInfo(user, password, username);
         }
-        String address=user.getAddress();
-        return new SimpleAuthenticationInfo(user,address,username);
     }
     @Override
 //    授权

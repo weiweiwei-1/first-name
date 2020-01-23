@@ -10,31 +10,52 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/AddUserService.java" line="9" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java" line="8" />
     <bookmark url="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/Javascript/register.js" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eba484d-174a-466c-9b3b-8326b47aa563" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullAccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/Chatting/chatting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/FriendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/FriendMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/Application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ForAll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Realms/MyRealms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Realms/MyRealms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/CSS/flow-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/CSS/flow-window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Javascript/flow-window.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Javascript/flow-window.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Javascript/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Jsp/Chatting/chatting.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ForAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ForAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Realms/MyRealms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Realms/MyRealms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/ehcache-core-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-core-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-ehcache-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-spring-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-web-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -80,29 +101,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/base.css">
+      <file leaf-file-name="MyRealms.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
+      <file leaf-file-name="LoginAndRegisterResult.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="247">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flow-window.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css">
+      <file leaf-file-name="newUser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="627">
+              <caret line="240" column="47" lean-forward="true" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -110,26 +131,59 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="116" column="6" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+            <state relative-caret-position="104">
+              <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flow-window.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="ForAll.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+              <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3797#3798#0" expanded="true" />
+                <element signature="e#3845#3846#0" expanded="true" />
+                <element signature="e#4015#4016#0" expanded="true" />
+                <element signature="e#4048#4049#0" expanded="true" />
+                <element signature="e#5975#5976#0" expanded="true" />
+                <element signature="e#6005#6006#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="267" column="34" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2840">
+              <caret line="219" column="58" lean-forward="true" selection-start-line="219" selection-start-column="58" selection-end-line="219" selection-end-column="58" />
+              <folding>
+                <element signature="e#2838#2839#0" expanded="true" />
+                <element signature="e#2866#2867#0" expanded="true" />
+                <element signature="e#2908#2909#0" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,44 +195,44 @@
       <list>
         <option value="Jsp File" />
         <option value="FxmlFile" />
-        <option value="spring-beans.schema" />
         <option value="HTML File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>关闭</find>
-      <find>user-</find>
-      <find>preserve</find>
-      <find>ForUser</find>
-      <find>form4</find>
-      <find>register</find>
-      <find>dele</find>
-      <find>post</find>
-      <find>对</find>
-      <find>注销</find>
-      <find>修改</find>
       <find>ajax</find>
       <find>upda</find>
       <find>update</find>
       <find>log</find>
-      <find>logout</find>
       <find>sele</find>
       <find>searc</find>
       <find>mybatis</find>
       <find>selectl</find>
-      <find>shiro</find>
       <find>aspect</find>
       <find>alibaba</find>
       <find>aspe</find>
       <find>jdbc</find>
       <find>enableweb</find>
       <find>submitre</find>
-      <find>login</find>
       <find>blue</find>
       <find>username</find>
+      <find>validator</find>
+      <find>shiro</find>
+      <find>preserve</find>
+      <find>logout</find>
+      <find>用户名不存在</find>
+      <find>input</find>
+      <find>confirmCo</find>
+      <find>password</find>
+      <find>password-error</find>
+      <find>register-confirm</find>
+      <find>span</find>
+      <find>commo</find>
+      <find>register</find>
+      <find>login</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -190,33 +244,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Photo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Memory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Adduser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/FriendChatList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Friend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/WebSocketHandshakeInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Judge/AddUserIDJudge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/AddUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Judge/Judge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/AddUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/AddUserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/AddUserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread1.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread3.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Jsp/reupdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/FriendServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/SqlMapconfig.xml" />
@@ -233,14 +265,36 @@
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/CSS/base.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/CSS/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/Warning.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/CountEcxeption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCountEcxeption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCountException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login-window.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" />
       </list>
     </option>
   </component>
@@ -291,10 +345,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1346" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -304,6 +356,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -374,6 +427,50 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="NewController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ShiroException" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Warning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -426,6 +523,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -458,7 +565,7 @@
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="test4" type="462c0819:PsiDirectoryNode" />
-              <item name="formalProjectTest" type="462c0819:PsiDirectoryNode" />
+              <item name="springMvctest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -469,7 +576,7 @@
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="test4" type="462c0819:PsiDirectoryNode" />
-              <item name="Jsontest" type="462c0819:PsiDirectoryNode" />
+              <item name="Static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -494,6 +601,26 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro-before" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -550,8 +677,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="mainproject" type="462c0819:PsiDirectoryNode" />
+              <item name="Spare" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -588,7 +714,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,12 +724,19 @@
     <property name="last_opened_file_path" value="E:/java/黑马程序员_超全面的JavaWeb教程-源码笔记/JavaWeb视频教程_day20-资料源码/day20_code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="project.structure.side.proportion" value="0.3033088" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA-workspace\first_web\src\main\Resources\Informal\mybatis\Spring-mybatis_config" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\Resources\Informal\mybatis\shiro-before" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\ajax" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\Css\jquery_jar" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Informal.mybatis" />
     </key>
@@ -614,13 +746,6 @@
       <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source" />
       <recent name="E:\IDEA-workspace\first_web\src\main\webapp\WEB-INF\Jsp" />
       <recent name="E:\IDEA-workspace\first_web\src\main\webapp\jquery_jar" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\ajax" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\Css\jquery_jar" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\Css" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -636,6 +761,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration name="StaticBlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.Static.StaticBlock" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.test4.Static.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="UserUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.Controller.Base.UserUtils" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.Controller.Base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -685,29 +832,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ServiceTest.permitAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="first_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.test4.formalProjectTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Informal.mybatis.test4.formalProjectTest" />
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.formalProjectTest.ServiceTest" />
-      <option name="METHOD_NAME" value="permitAddUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="ServiceTest.selectUnReadMessageList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="first_web" />
       <extension name="coverage">
@@ -721,29 +845,6 @@
       <option name="PACKAGE_NAME" value="Informal.mybatis.test4.formalProjectTest" />
       <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.formalProjectTest.ServiceTest" />
       <option name="METHOD_NAME" value="selectUnReadMessageList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="first_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.test4.formalProjectTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Informal.mybatis.test4.formalProjectTest" />
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.formalProjectTest.ServiceTest" />
-      <option name="METHOD_NAME" value="sendMessage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -947,19 +1048,19 @@
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="Tomcat Server.tanchu.jsp" />
-      <item itemvalue="JUnit.ServiceTest.sendMessage" />
-      <item itemvalue="JUnit.ServiceTest.permitAddUser" />
       <item itemvalue="JUnit.MapperTest.selectLastUnReadMessage2" />
       <item itemvalue="JUnit.ServiceTest.selectUnReadMessageList" />
       <item itemvalue="JUnit.DataStructureTest.testMixSort" />
+      <item itemvalue="Application.StaticBlock" />
+      <item itemvalue="Application.UserUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserUtils" />
+        <item itemvalue="Application.StaticBlock" />
         <item itemvalue="JUnit.ServiceTest.selectUnReadMessageList" />
         <item itemvalue="JUnit.DataStructureTest.testMixSort" />
         <item itemvalue="JUnit.MapperTest.selectLastUnReadMessage2" />
-        <item itemvalue="JUnit.ServiceTest.sendMessage" />
-        <item itemvalue="JUnit.ServiceTest.permitAddUser" />
       </list>
     </recent_temporary>
   </component>
@@ -1060,6 +1161,17 @@
       <workItem from="1577535871870" duration="52000" />
       <workItem from="1577535961810" duration="83000" />
       <workItem from="1577536102380" duration="41437000" />
+      <workItem from="1577977877328" duration="29568000" />
+      <workItem from="1578227478853" duration="5445000" />
+      <workItem from="1578233008378" duration="1497000" />
+      <workItem from="1578234550312" duration="23549000" />
+      <workItem from="1578501669988" duration="16596000" />
+      <workItem from="1579091203557" duration="1490000" />
+      <workItem from="1579175225636" duration="7879000" />
+      <workItem from="1579184713161" duration="1617000" />
+      <workItem from="1579186380245" duration="98000" />
+      <workItem from="1579186724391" duration="5923000" />
+      <workItem from="1579321787915" duration="66153000" />
     </task>
     <servers />
   </component>
@@ -1096,7 +1208,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1613143000" />
+    <option name="totallyTimeSpent" value="1772958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1112,7 +1224,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50226927" side_tool="true" weight="0.43707484" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5030257" side_tool="true" weight="0.3713799" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3282313" />
       <window_info anchor="right" id="Maven Projects" order="11" weight="0.33888048" />
       <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
@@ -1124,18 +1236,18 @@
       <window_info id="Structure" order="1" sideWeight="0.50680274" side_tool="true" weight="0.24357034" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.26916525" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969743" weight="0.085178874" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3270869" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.22959183" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.2725724" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38265306" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46678025" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.23600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.28971255" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" sideWeight="0.50793654" side_tool="true" weight="0.260181" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1149,6 +1261,45 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.32867134" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3282313" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3282313" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46678025" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50510204" side_tool="true" weight="0.24357034" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5030257" side_tool="true" weight="0.3713799" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.22827938" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3270869" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.33888048" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.22692889" />
+      <window_info anchor="right" id="Database" order="12" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" sideWeight="0.50793654" side_tool="true" weight="0.260181" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" sideWeight="0.50680274" side_tool="true" weight="0.24357034" />
+      <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3290469" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969743" weight="0.39011925" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1280,116 +1431,86 @@
           <option name="timeStamp" value="1581" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>186</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java</url>
+          <line>39</line>
           <properties />
-          <option name="timeStamp" value="1676" />
+          <option name="timeStamp" value="1768" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>187</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java</url>
+          <line>37</line>
           <properties />
-          <option name="timeStamp" value="1677" />
+          <option name="timeStamp" value="1782" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>188</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <line>135</line>
           <properties />
-          <option name="timeStamp" value="1678" />
+          <option name="timeStamp" value="1792" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>189</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <line>136</line>
           <properties />
-          <option name="timeStamp" value="1679" />
+          <option name="timeStamp" value="1793" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>190</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <line>137</line>
           <properties />
-          <option name="timeStamp" value="1681" />
+          <option name="timeStamp" value="1794" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>206</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <line>138</line>
           <properties />
-          <option name="timeStamp" value="1682" />
+          <option name="timeStamp" value="1795" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>207</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <line>139</line>
           <properties />
-          <option name="timeStamp" value="1683" />
+          <option name="timeStamp" value="1796" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>208</line>
-          <properties />
-          <option name="timeStamp" value="1684" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1776" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>209</line>
-          <properties />
-          <option name="timeStamp" value="1685" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1777" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>211</line>
-          <properties />
-          <option name="timeStamp" value="1686" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1778" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>212</line>
-          <properties />
-          <option name="timeStamp" value="1687" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1779" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="1688" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>215</line>
-          <properties />
-          <option name="timeStamp" value="1689" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="1690" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>217</line>
-          <properties />
-          <option name="timeStamp" value="1691" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>219</line>
-          <properties />
-          <option name="timeStamp" value="1692" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java</url>
-          <line>220</line>
-          <properties />
-          <option name="timeStamp" value="1693" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
+          <line>43</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1780" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1711" />
+      <option name="time" value="1797" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="servletRequest" />
+        <watch expression="servletRequest" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1397,250 +1518,39 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>servletRequest</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/SqlMapconfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2831">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="457" selection-start-line="457" selection-end-line="457" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="3209" selection-start-line="3209" selection-end-line="3209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/FriendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml">
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar!/org/apache/shiro/cache/ehcache/EhCacheManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="76" />
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="3971">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/FriendChatList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/Mymessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="42" column="72" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/AddUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTrational/ajaxTra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxPackget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/AjaxTest/AjaxPack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/ajax/AjaxPackage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1767" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/animate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/changemany.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/Html/fade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery_jar/jquery-3.0.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1053">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/delete-info.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/delete-success.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1649,50 +1559,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/ajax/testjquery.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/editAllUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-source/ajax/ajax1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="120" column="4" lean-forward="true" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/addUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="102" lean-forward="true" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="117" column="59" lean-forward="true" selection-start-line="117" selection-start-column="59" selection-end-line="117" selection-end-column="59" />
-        </state>
+        <state relative-caret-position="-1197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/relogin.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-        </state>
+        <state relative-caret-position="-117" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/tanchu.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/updateaddress.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1701,57 +1582,318 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/Websocket/ChatPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="102" column="64" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="628" column="38" lean-forward="true" selection-start-line="628" selection-start-column="38" selection-end-line="628" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="266">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/base.css">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/shiro-before/shiro-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="785">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="116" column="6" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+        <state relative-caret-position="190">
+          <caret line="85" column="63" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="141">
+          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="112" column="21" lean-forward="true" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="-532">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/UnknownAccountException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/DefineException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AuthenticationException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AccountException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/DisabledAccountException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/LockedAccountException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/springMvctest/cachedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="235" column="29" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/orders.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullAccountException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/src.zip!/javax/security/auth/login/CredentialException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/jsp/PageContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery_jar/jquery-3.0.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/constraints/Min.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="267" column="34" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2840">
+          <caret line="219" column="58" lean-forward="true" selection-start-line="219" selection-start-column="58" selection-end-line="219" selection-end-column="58" />
+          <folding>
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
+            <element signature="e#3845#3846#0" expanded="true" />
+            <element signature="e#4015#4016#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#5975#5976#0" expanded="true" />
+            <element signature="e#6005#6006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="240" column="47" lean-forward="true" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1809,12 +1951,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>first_web</last-edited>
+          <last-edited>Spring|first_web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.3033088" />
               </list>
             </option>
           </splitter-proportions>
@@ -1834,11 +1975,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: javax.jms:jms:1.1</last-edited>
+          <last-edited>Maven: org.quartz-scheduler:quartz:2.2.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3033088" />
               </list>
             </option>
           </splitter-proportions>
