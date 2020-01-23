@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--<bean id="securityManeger" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+    <property name="realm" ref="myRealms"></property>
+    <property name="sessionManager" ref="sessionManager"></property>
+    <property name="rememberMeManager" ref="rememberMeManager"></property>
+</bean>
+
+<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+    <property name="globalSessionTimeout" value="1800000"></property>
+    <property name="deleteInvalidSessions" value="true"></property>
+    &lt;!&ndash;<property name="sessionValidationSchedulerEnabled" value="true"></property>
+    <property name="sessionValidationScheduler" ref="sessionValidationScheduler"></property>&ndash;&gt;
+</bean>
+
+&lt;!&ndash; <bean id="sessionValidationScheduler" class="org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler">
+     <property name="interval" value="1800000"></property>
+ </bean>&ndash;&gt;
+
+<bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+    <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"></property>
+    <property name="cookie" ref="rememberMeCookie"></property>
+</bean>
+<bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+    <constructor-arg value="rememberMe"></constructor-arg>
+    <property name="httpOnly" value="true"></property>
+    <property name="maxAge" value="604800"></property>
+    &lt;!&ndash;默认是记住7天的时间&ndash;&gt;
+</bean>
+
+<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+    <property name="securityManager" ref="securityManeger"></property>
+    <property name="loginUrl" value="/"></property>
+    <property name="filterChainDefinitions">
+        <value>
+            &lt;!&ndash;/usernewList/toUpdateUser=authc&ndash;&gt;
+            /usernewList/deleteuser=authc
+            /WebSocket/Websocket1=user
+            /usernewList/submitUser=authc
+            /ForAllList/submitReupdate=authc
+            /ForAllList/UpdateInformationPage=authc
+            /ForAllList/updateaddress=authc
+            /usernewList/addUser=authc
+            /usernewList/add=user
+            /**=anon
+        </value>
+    </property>
+
+</bean>-->
+
+</beans>
