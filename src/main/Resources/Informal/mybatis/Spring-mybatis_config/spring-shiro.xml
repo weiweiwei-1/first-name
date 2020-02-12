@@ -31,12 +31,13 @@
     <property name="maxAge" value="604800"></property>
     <!--默认是记住7天的时间-->
 </bean>
+
     <bean id="formAuthenticationFilter" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
         <!-- 定义出需要使用的参数，此参数与表单一一对应 -->
-        <property name="usernameParam" value="username"/>
-        <property name="passwordParam" value="address"/>
+        <property name="usernameParam" value="email"/>
+        <property name="passwordParam" value="password"/>
         <property name="rememberMeParam" value="rememberMe"/>
-        <property name="loginUrl" value="/ForAllList/login"/>
+        <property name="loginUrl" value="/ChatPage/login"/>
     </bean>
 
 <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">

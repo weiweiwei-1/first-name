@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="htmlEmail" class = "org.apache.commons.mail.HtmlEmail" scope="prototype">
+    <property name="SSL" value="true"></property>
+    <property name="debug" value="true"></property>
+    <property name="hostName" value="SMTP.qq.com"></property>
+    <property name="smtpPort" value="587"></property>
+    <property name="authenticator" ref="authenticator"></property>
+    <property name="from" value="2198626335@qq.com"></property>
+    <property name="subject" value="微聊网站注册验证码"></property>
+</bean>
+
+    <bean id="authenticator" class="org.apache.commons.mail.DefaultAuthenticator">
+        <constructor-arg name="userName" value="2198626335@qq.com"></constructor-arg>
+        <constructor-arg name="password" value="xeiunzxvunqreagh"></constructor-arg>
+    </bean>
+
+    <!--HtmlEmail不能直接注入，如果发送邮件，必须每次都new一个对象，因此spring注入的HtmlEmail不能使用，会报IllegalStateException，
+    该方法被抛弃-->
+</beans>

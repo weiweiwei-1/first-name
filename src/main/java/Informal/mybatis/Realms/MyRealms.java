@@ -24,20 +24,22 @@ public class MyRealms extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken)
             throws AuthenticationException {
         UsernamePasswordToken token = (UsernamePasswordToken)authenticationToken;
-        String username = (String)token.getPrincipal();
+        String email = (String)token.getPrincipal();
         String password = String.valueOf(token.getPassword());
-        if (StringUtils.isBlank(username)) {
-            throw new NullAccountException("用户名不能为空");
+        System.out.println(email);
+        System.out.println(password);
+        if (StringUtils.isBlank(email)) {
+            throw new NullAccountException("邮箱不能为空");
         } else {
-            User user = userService.selectByName(username);
+            User user = userService.selectByEmail(email);
             if (user == null) {
-                throw new UnknownAccountException("用户名不存在");
+                throw new UnknownAccountException("邮箱不存在");
             } else if (StringUtils.isBlank(password)) {
                 throw new NullCredentialsException("密码不能为空");
-            } else if (!password.equals(user.getAddress())) {
+            } else if (!password.equals(user.getPassword())) {
                 throw new IncorrectCredentialsException("密码错误");
             }
-            return new SimpleAuthenticationInfo(user, password, username);
+            return new SimpleAuthenticationInfo(user, password, email);
         }
     }
     @Override

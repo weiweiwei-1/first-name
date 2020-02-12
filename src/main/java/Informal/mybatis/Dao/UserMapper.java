@@ -26,9 +26,11 @@ public interface UserMapper {
     List<User> selectLikeObject(Map<String,String> map);
     List<User> selectLikeParam(@Param("param") String object);
     User selectByName(@Param("name")String name);
+    User selectByEmail(@Param("email")String email);
     User selectTwoproperties(User user);
     List<User> selectAll();
     List<User> selectForeachList(List<Integer> id);
+    List<User> selectFriendPhoto(List<Integer> id);
     List<User> selectForeachArray(@Param("mingzi")String []names);
     //用了@Param,collection里面的array或者list可以用Param参数代替
     List<User> selectForeachMap(Map<String,Object> map);   //这里用了map传参，定义了多种类型的数据，非常灵活

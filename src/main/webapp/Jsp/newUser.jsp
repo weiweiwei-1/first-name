@@ -173,7 +173,7 @@ $(function () {
     });
 
     //点击登录，页面显示函数
-    $("#login").click(function(){
+    $("#loginorigin").click(function(){
         $("#form4").remove();
         $("#form2").remove();
         if(document.getElementById("form3")){
@@ -661,7 +661,7 @@ $("#register").click(function () {
     <tr>
         <span id="user-name" style="font-size:9px;color:red;cursor:pointer;font-size:20px">${username}</span>
         <input type="hidden" name="username" value="${username}" id="username">
-        <span id="login" style="color:red;cursor:pointer">${logininfo}</span>
+        <span id="loginorigin" style="color:red;cursor:pointer">${logininfo}</span>
         <span id="register" style="color:red;cursor:pointer">${register}</span>
     </tr>
 

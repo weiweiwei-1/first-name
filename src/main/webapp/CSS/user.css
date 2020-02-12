@@ -1,0 +1,192 @@
+li{
+    list-style-type: none   ;
+}
+
+.userBox{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:none;
+    background:rgba(0,0,0,0.4);
+    z-index:1001;
+    /*-moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);*/
+}
+
+.userCenter{
+    position:absolute;
+    background-color:#fff;
+    top:20%;
+    left:25%;
+    width:600px;
+    height:400px;
+    border-radius: 15px;
+    border: transparent;
+    z-index:1003;
+    overflow: auto;
+    opacity: 1;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.user-head{
+    width:600px;
+    height:100px;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+}
+
+.img-block {
+    width: 100px;
+    height: 100px;
+    /*position:relative;*/
+    text-align: center;
+    display: block;
+    /*border: 1px dotted #000;*/
+    position: absolute;
+
+}
+
+.img-edit{
+    position:relative;
+    left:100px;
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+}
+
+.edit{
+    margin:5px 0;
+    color: #6DC4A4;
+    background: none;
+    outline:none;
+    border: 1px solid #6DC4A4;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.img-block input{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline:none;
+    cursor: pointer;
+    opacity: 0;
+    display:block;
+    /*background-image:none;*/
+    /*z-index: 111;*/
+}
+
+.img-block img{
+    width:100%;
+    height:100%;
+    /*margin:10px 0;*/
+    border-radius:50%;
+    cursor:pointer;
+    display:inline-block;
+    /*z-index: 111;*/
+}
+
+p{
+    display:none;
+}
+
+.user-information {
+    width: 550px;
+    height: 300px;
+    margin: 20px 0 20px 50px;
+    display: inline-block;
+}
+
+table{
+    width:550px;
+    height:190px;
+}
+
+tr{
+    margin:10px 0;
+}
+
+td input{
+    border:1px transparent;
+    border-radius:5px;
+    width:180px;
+    height:20px;
+    outline:none;
+    font:1rem Arial,Serilf;
+}
+
+#user-email{
+    font:1rem Arial,Serilf;
+}
+
+td button{
+    width:70px;
+    height:25px;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    background:orange;
+    cursor:pointer;
+}
+
+.introduction-head{
+    margin:10px 4px;
+    text-align:center;
+}
+
+.introduction-content{
+    position:relative;
+    right:80px;
+    margin:10px 4px;
+    width:260px;
+    height:50px;
+    border-radius:10px;
+    border:1px solid deepskyblue;
+    outline:none;
+    font:1rem Arial Serif;
+}
+
+table tr:last-child{
+    text-align:center;
+}
+
+.img-Box{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:none;
+    background:rgba(0,0,0,0.4);
+    z-index:1005;
+    text-align:center;
+}
+
+.preview-img{
+    position:absolute;
+    top:20%;
+    left:25%;
+    width:600px;
+    height:400px;
+    border-radius: 15px;
+    border: transparent;
+    z-index:1007;
+    overflow: auto;
+    opacity: 1;
+}
+
+

@@ -58,7 +58,7 @@
 
     <!--添加对其他数据类型的支持例如图片上传等-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!--设置最大上传的数据大小-->
+        <!--设置最大上传的数据大小，这里最大的数据是5M-->
         <property name="maxUploadSize" value="5242880">
         </property>
     </bean>

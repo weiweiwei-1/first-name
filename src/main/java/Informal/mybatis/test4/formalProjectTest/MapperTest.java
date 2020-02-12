@@ -3,6 +3,7 @@ package Informal.mybatis.test4.formalProjectTest;
 import Informal.mybatis.Dao.AddUserMapper;
 import Informal.mybatis.Dao.FriendMapper;
 import Informal.mybatis.Dao.MessageMapper;
+import Informal.mybatis.Dao.UserMapper;
 import Informal.mybatis.Model.AddUser;
 import Informal.mybatis.Model.Friend;
 import Informal.mybatis.Model.Message;
@@ -20,6 +21,7 @@ public class MapperTest {
     private FriendMapper friendMapper;
     private AddUserMapper addUserMapper;
     private MessageMapper messageMapper;
+    private UserMapper userMapper;
 
     @Before
     public void setUp() {
@@ -27,6 +29,7 @@ public class MapperTest {
         friendMapper = (FriendMapper) ac.getBean("friendMapper");
         addUserMapper = (AddUserMapper) ac.getBean("addUserMapper");
         messageMapper = (MessageMapper) ac.getBean("messageMapper");
+        userMapper = (UserMapper) ac.getBean("userMapper");
     }
 
     @Test
@@ -163,6 +166,11 @@ public class MapperTest {
     public void insertMessage(){
         Message message=new Message(20,18,"嘻嘻哈");
         messageMapper.insertMessage(message);
+    }
+
+    @Test
+    public void selectByEamil() {
+        userMapper.selectByEmail("123`2123`");
     }
 
 }

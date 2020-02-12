@@ -70,6 +70,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> selectPhotoByList(List<Integer> list) {
+        return userMapper.selectFriendPhoto(list);
+    }
+
+    @Override
     public List<User> selectAll() {
         return userMapper.selectAll();
     }
@@ -180,6 +185,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User selectByName(String name) {
         return userMapper.selectByName(name);
+    }
+
+    @Override
+    public User selectByEmail(String email) {
+        return userMapper.selectByEmail(email);
     }
 
     @Override

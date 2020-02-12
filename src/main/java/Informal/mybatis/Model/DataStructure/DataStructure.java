@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public class DataStructure {
 //      对数组求交集
-        public void mixArraySort(int[] a,int[] b){
+        public static void mixArraySort(int[] a,int[] b){
         int A=a.length,B=b.length;
         if(A>B){
             System.out.println("错误不能求值");
@@ -45,9 +45,9 @@ public class DataStructure {
                 return null;
             }else {
                 while (i < mLength && j < fLength) {
-                    if (message.get(i).getSenderId() < friendList.get(j).getFriendId()) {
+                    if (message.get(i).getFriendId() < friendList.get(j).getFriendId()) {
                         i++;
-                    } else if (message.get(i).getSenderId() > friendList.get(j).getFriendId()) {
+                    } else if (message.get(i).getFriendId() > friendList.get(j).getFriendId()) {
                         j++;
                     } else {
                         message.get(i).setFriendMark(friendList.get(j).getFriendMark());

@@ -6,56 +6,302 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java" line="94" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/AddUserService.java" line="9" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java" line="8" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml" line="21" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java" line="97" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js" line="23" />
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/Javascript/register.js" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eba484d-174a-466c-9b3b-8326b47aa563" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullAccountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/EmailConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/ConfirmCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/EmailCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/RandomName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ChatPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ExtrateOperate/EmailOperate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Logger/LoginAndRegisterLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/UserInformationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/EmailFormatCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/MailValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/ReadAndUnReadMessageList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ConverTest/ConvertFirst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/EmailFormatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/EmailTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/ExceptionTset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/MailValidAutomatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/MailValidOriginal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/SendEmailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/ShortMailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/quickEmailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/css/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/font_Icon/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/font_Icon/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/font_Icon/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/font_Icon/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/img/bqxtb01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/img/icon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/img/icon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/img/icon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/A-right-show/rightChat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/White-chat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/css/app.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-Light-BETA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/fonts/inter-ui/Inter-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/icons/themify/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/js/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/js/examples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/man_avatar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/man_avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/man_avatar3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/man_avatar4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/man_avatar5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/women_avatar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/women_avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/women_avatar4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/img/women_avatar5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/svg/undraw_product_tour_foyt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/dist/media/svg/undraw_warning_cyit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/reset-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/vendor/bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/vendor/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/vendor/enjoyhint/enjoyhint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/B-white-europen/vendor/enjoyhint/enjoyhint.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/GreenChat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/css/app.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/fonts/inter-ui/Inter-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/fonts/inter-ui/Inter-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/fonts/inter-ui/Inter-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/fonts/inter-ui/Inter-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/fonts/inter-ui/Inter-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/icons/themify/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/js/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/js/examples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/avatar8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/img/small-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/dist/media/svg/undraw_warning_cyit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/reset-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/vendor/bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/C-greenChat/vendor/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/ChatBase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/qq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/updatePassword.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/css/qq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/20170926103645_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/img/em_55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/D-qq/qq.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Flow/Flow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Flow/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Flow/js/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Flow/js/jquery.leanModal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Flow/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_03_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/20170926103645_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/addFriend.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/em_55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/friend.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/jiao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/me.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/message.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/originImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/updateUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jquery-min/jquery-3.0.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/ChatPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/chat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/Chatting/chatting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/Items/editItems.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/Items/editItems.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ForAll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/Base/UserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/Base/UserUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ForAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ForAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ItemsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/ItemsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Dao/MessageMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/DataStructure/DataStructureTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/enty/UnReadMessageList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Model/enty/UnReadMessageList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Realms/MyRealms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Realms/MyRealms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/CSS/flow-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/CSS/flow-window.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/Javascript/flow-window.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Javascript/flow-window.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/Jsp/Chatting/chatting.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Javascript/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Javascript/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Jsp/Items/editItems.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Jsp/Items/editItems.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/Jsp/newUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/Jsp/newUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/Base/UserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/Base/UserUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ForAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ForAll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ItemsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/ItemsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/MessageMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/DataStructure/DataStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/DataStructure/DataStructureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/DataStructure/DataStructureTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/enty/UnReadMessageList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Model/enty/UnReadMessageList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Realms/MyRealms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Realms/MyRealms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/ehcache-core-2.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-core-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-ehcache-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-spring-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/shiro-web-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/MessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/MapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/Informal/mybatis/test4/formalProjectTest/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/first_web/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/first_web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/first_web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -68,9 +314,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/first_web$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1580107226456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/first_web$index_jsp__1_.ic" NAME="index.jsp (1) Coverage Results" MODIFIED="1552753600575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/first_web$MailValid.ic" NAME="MailValid Coverage Results" MODIFIED="1580055048402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Informal.mybatis.test4.EmailTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/first_web$ConfirmCode.ic" NAME="ConfirmCode Coverage Results" MODIFIED="1580375191788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Informal.mybatis.Controller.Base.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/first_web$classtransformtest.ic" NAME="classtransformtest Coverage Results" MODIFIED="1553095794909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Informal.mybatis.Dao_input_test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/first_web$EmailFormatTest.ic" NAME="EmailFormatTest Coverage Results" MODIFIED="1580108791339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Informal.mybatis.test4.EmailTest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/first_web$testlll.ic" NAME="testlll Coverage Results" MODIFIED="1573662643589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Informal.mybatis.test4.*</FILTER>
@@ -101,38 +357,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyRealms.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java">
+      <file leaf-file-name="updateUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/updateUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+            <state relative-caret-position="240">
+              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAndRegisterResult.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="338">
+              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
+      <file leaf-file-name="chat.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/chat.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="240" column="47" lean-forward="true" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
+            <state relative-caret-position="479">
+              <caret line="206" column="20" lean-forward="true" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
+              <folding>
+                <element signature="n#tr#1;n#table#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="UserUpdateController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
+            <state relative-caret-position="186">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatPageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ChatPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-95">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1581497567029" expanded="true" signature="1302:1962" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/MessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgeJudge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/user.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="125" column="16" lean-forward="true" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -140,50 +445,17 @@
       <file leaf-file-name="ForAll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3797#3798#0" expanded="true" />
-                <element signature="e#3845#3846#0" expanded="true" />
-                <element signature="e#4015#4016#0" expanded="true" />
-                <element signature="e#4048#4049#0" expanded="true" />
-                <element signature="e#5975#5976#0" expanded="true" />
-                <element signature="e#6005#6006#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2527">
+              <caret line="198" column="37" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
+      <file leaf-file-name="ItemsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="267" column="34" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2840">
-              <caret line="219" column="58" lean-forward="true" selection-start-line="219" selection-start-column="58" selection-end-line="219" selection-end-column="58" />
-              <folding>
-                <element signature="e#2838#2839#0" expanded="true" />
-                <element signature="e#2866#2867#0" expanded="true" />
-                <element signature="e#2908#2909#0" expanded="true" />
-                <element signature="e#2942#2943#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1083">
+              <caret line="77" column="53" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -203,36 +475,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ajax</find>
-      <find>upda</find>
-      <find>update</find>
-      <find>log</find>
-      <find>sele</find>
-      <find>searc</find>
-      <find>mybatis</find>
-      <find>selectl</find>
-      <find>aspect</find>
-      <find>alibaba</find>
-      <find>aspe</find>
-      <find>jdbc</find>
-      <find>enableweb</find>
-      <find>submitre</find>
-      <find>blue</find>
-      <find>username</find>
-      <find>validator</find>
-      <find>shiro</find>
-      <find>preserve</find>
-      <find>logout</find>
-      <find>用户名不存在</find>
-      <find>input</find>
-      <find>confirmCo</find>
-      <find>password</find>
-      <find>password-error</find>
-      <find>register-confirm</find>
-      <find>span</find>
-      <find>commo</find>
-      <find>register</find>
+      <find>.message-time</find>
+      <find>.clearfloat .right</find>
+      <find>RightCont</find>
+      <find>.author-name</find>
+      <find>.clearfloat .left</find>
+      <find>chatBox</find>
+      <find>.newsList</find>
+      <find>img</find>
+      <find>author-name</find>
+      <find>btn-outline</find>
+      <find>.headImg</find>
+      <find>display</find>
+      <find>loginorigin</find>
+      <find>user-name</find>
+      <find>friend</find>
+      <find>friend-message</find>
+      <find>outline</find>
+      <find>pointer</find>
+      <find>border</find>
+      <find>input3</find>
+      <find>font</find>
+      <find>conR</find>
+      <find>text</find>
+      <find>opaci</find>
+      <find>button</find>
+      <find>.close</find>
+      <find>edit</find>
       <find>login</find>
+      <find>编辑</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -244,57 +516,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/ThreadTest/Thread3.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/reupdate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/FriendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/SqlMapconfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/MapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/DataStructure/DataStructureTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/DataStructure/DataStructure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/Application.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/EmailConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ExtrateOperate/EmailOperate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/EmailTest/MapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/EmailCode.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/ChatPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/ChatBase.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/SpringMvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/CSS/base.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/flow-window.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/shiro-spring.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/CSS/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/Warning.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/CountEcxeption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCountEcxeption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCountException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login-window.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/Items/editItems.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/A-right-show/rightChat.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/B-white-europen/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/C-greenChat/GreenChat.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/D-qq/css/qq.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/D-qq/qq.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/B-white-europen/White-chat.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/tanchuang.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Flow/Flow.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/qq.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/chat.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/updatePassword.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/Javascript/register.js" />
         <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/ReadAndUnReadMessageList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/UserInformationResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/chat.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CSS/user.css" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ChatPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Javascript/updateUser.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java" />
       </list>
     </option>
   </component>
@@ -344,9 +616,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1346" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -357,6 +631,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,29 +715,28 @@
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="NewController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Informal" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="ShiroException" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Informal" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
               <item name="Warning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Convert" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -492,17 +767,6 @@
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Informal" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -555,6 +819,61 @@
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="test4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test4" type="462c0819:PsiDirectoryNode" />
+              <item name="ConverTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test4" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test4" type="462c0819:PsiDirectoryNode" />
+              <item name="formalProjectTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test4" type="462c0819:PsiDirectoryNode" />
+              <item name="Jsontest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test4" type="462c0819:PsiDirectoryNode" />
+              <item name="Mappertest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -620,6 +939,16 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="Informal" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="Mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Informal" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="shiro-before" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -653,6 +982,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Flow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="Javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -661,7 +998,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Jquery-min" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -670,6 +1007,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="Jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="Items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="mainproject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
@@ -689,63 +1044,44 @@
             </path>
             <path>
               <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web-source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="first_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web-source" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="first_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="submitre&#9;null&#9;null&#10;submit&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentSkipListMap.SubMap.SubMapIter&#10;forupdate&#9;null&#9;null&#10;forupda&#9;null&#9;null&#10;itemsRelate&#9;null&#9;null&#10;orders&#9;PSI&#9;JAVA://Informal.mybatis.Model.Orders&#10;/ForAllList&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="itemsR&#9;null&#9;null&#10;submitre&#9;null&#9;null&#10;submit&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentSkipListMap.SubMap.SubMapIter&#10;forupdate&#9;null&#9;null&#10;forupda&#9;null&#9;null&#10;itemsRelate&#9;null&#9;null&#10;orders&#9;PSI&#9;JAVA://Informal.mybatis.Model.Orders&#10;/ForAllList&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/java/黑马程序员_超全面的JavaWeb教程-源码笔记/JavaWeb视频教程_day20-资料源码/day20_code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3033088" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\Jquery-min" />
       <recent name="E:\IDEA-workspace\first_web\src\main\Resources\Informal\mybatis\Spring-mybatis_config" />
       <recent name="E:\IDEA-workspace\first_web\src\main\Resources\Informal\mybatis\shiro-before" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp" />
       <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\ajax" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source\Css\jquery_jar" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Informal.mybatis" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\WebsocketClient" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\web-source" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\WEB-INF\Jsp" />
-      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\jquery_jar" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\Img" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\Flow" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\D-qq" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\C-greenChat" />
+      <recent name="E:\IDEA-workspace\first_web\src\main\webapp\B-white-europen" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -761,19 +1097,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="StaticBlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.Static.StaticBlock" />
-      <module name="first_web" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.test4.Static.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="UserUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.Controller.Base.UserUtils" />
+    <configuration name="ConfirmCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.Controller.Base.ConfirmCode" />
       <module name="first_web" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -783,77 +1108,52 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="EmailFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.EmailTest.EmailFormatTest" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.test4.EmailTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="EmailTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.EmailTest.EmailTest2" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.test4.EmailTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MailValidAutomatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.EmailTest.MailValidAutomatic" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.test4.EmailTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.EmailTest.MapTest" />
+      <module name="first_web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Informal.mybatis.test4.EmailTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="DataStructureTest.testMixSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="first_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.Model.DataStructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Informal.mybatis.Model.DataStructure" />
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.Model.DataStructure.DataStructureTest" />
-      <option name="METHOD_NAME" value="testMixSort" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MapperTest.selectLastUnReadMessage2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="first_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.test4.formalProjectTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Informal.mybatis.test4.formalProjectTest" />
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.formalProjectTest.MapperTest" />
-      <option name="METHOD_NAME" value="selectLastUnReadMessage2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceTest.selectUnReadMessageList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="first_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Informal.mybatis.test4.formalProjectTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Informal.mybatis.test4.formalProjectTest" />
-      <option name="MAIN_CLASS_NAME" value="Informal.mybatis.test4.formalProjectTest.ServiceTest" />
-      <option name="METHOD_NAME" value="selectUnReadMessageList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1048,19 +1348,19 @@
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="Tomcat Server.tanchu.jsp" />
-      <item itemvalue="JUnit.MapperTest.selectLastUnReadMessage2" />
-      <item itemvalue="JUnit.ServiceTest.selectUnReadMessageList" />
-      <item itemvalue="JUnit.DataStructureTest.testMixSort" />
-      <item itemvalue="Application.StaticBlock" />
-      <item itemvalue="Application.UserUtils" />
+      <item itemvalue="Application.MailValidAutomatic" />
+      <item itemvalue="Application.EmailFormatTest" />
+      <item itemvalue="Application.ConfirmCode" />
+      <item itemvalue="Application.EmailTest2" />
+      <item itemvalue="Application.MapTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserUtils" />
-        <item itemvalue="Application.StaticBlock" />
-        <item itemvalue="JUnit.ServiceTest.selectUnReadMessageList" />
-        <item itemvalue="JUnit.DataStructureTest.testMixSort" />
-        <item itemvalue="JUnit.MapperTest.selectLastUnReadMessage2" />
+        <item itemvalue="Application.MapTest" />
+        <item itemvalue="Application.EmailTest2" />
+        <item itemvalue="Application.ConfirmCode" />
+        <item itemvalue="Application.EmailFormatTest" />
+        <item itemvalue="Application.MailValidAutomatic" />
       </list>
     </recent_temporary>
   </component>
@@ -1171,44 +1471,51 @@
       <workItem from="1579184713161" duration="1617000" />
       <workItem from="1579186380245" duration="98000" />
       <workItem from="1579186724391" duration="5923000" />
-      <workItem from="1579321787915" duration="66153000" />
+      <workItem from="1579321787915" duration="66959000" />
+      <workItem from="1579791436927" duration="34782000" />
+      <workItem from="1580023695175" duration="758000" />
+      <workItem from="1580024493522" duration="72350000" />
+      <workItem from="1580291356239" duration="48267000" />
+      <workItem from="1580400643767" duration="172820000" />
+      <workItem from="1581154455537" duration="5375000" />
+      <workItem from="1581302636188" duration="91927000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 25m 44s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 14h 10m 11s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 27m 30s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 17h 16m 44s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.23 at 22h 27m 42s.xml">
-      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 29m 25s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 32m 53s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 29m 39s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 47m 11s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 29m 50s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 47m 50s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 30m 02s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataStructureTest_testMixSort - 2019.12.23 at 22h 50m 37s.xml">
-      <configuration name="DataStructureTest.testMixSort" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 30m 17s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.24 at 21h 15m 52s.xml">
-      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 30m 26s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.28 at 18h 25m 34s.xml">
-      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 30m 37s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_selectUnReadMessageList - 2019.12.28 at 18h 47m 23s.xml">
-      <configuration name="ServiceTest.selectUnReadMessageList" configurationId="JUnit" />
+    <history-entry file="ConvertFirst_isEmailTest - 2020.01.25 at 22h 31m 01s.xml">
+      <configuration name="ConvertFirst.isEmailTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1772958000" />
+    <option name="totallyTimeSpent" value="2200043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1220,11 +1527,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5030257" side_tool="true" weight="0.3713799" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.505295" side_tool="true" weight="0.23339012" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3282313" />
       <window_info anchor="right" id="Maven Projects" order="11" weight="0.33888048" />
       <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
@@ -1236,29 +1543,29 @@
       <window_info id="Structure" order="1" sideWeight="0.50680274" side_tool="true" weight="0.24357034" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969743" weight="0.085178874" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.494705" visible="true" weight="0.27768314" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3270869" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.2725724" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.16865417" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32879046" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46678025" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.28971255" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4892368" visible="true" weight="0.25642964" />
       <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info id="Web" order="6" sideWeight="0.50793654" side_tool="true" weight="0.260181" />
+      <window_info id="Web" order="6" sideWeight="0.5107632" side_tool="true" weight="0.20499243" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3270869" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" sideWeight="0.50510204" side_tool="true" weight="0.24357034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.32867134" />
+      <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.3270869" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3290469" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
     </layout>
     <layout-to-restore>
@@ -1271,22 +1578,21 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.46678025" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" id="JSF" order="6" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.50510204" side_tool="true" weight="0.24357034" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34013605" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5030257" side_tool="true" weight="0.3713799" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.22827938" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3270869" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3282313" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Maven Projects" order="11" weight="0.33888048" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4920635" visible="true" weight="0.22692889" />
       <window_info anchor="right" id="Database" order="12" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1297,8 +1603,9 @@
       <window_info anchor="right" id="CDI" order="8" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3290469" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969743" weight="0.39011925" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3282313" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969743" weight="0.39011925" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1431,82 +1738,274 @@
           <option name="timeStamp" value="1581" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java</url>
+          <line>94</line>
           <properties />
-          <option name="timeStamp" value="1768" />
+          <option name="timeStamp" value="1973" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java</url>
+          <line>95</line>
           <properties />
-          <option name="timeStamp" value="1782" />
+          <option name="timeStamp" value="1974" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
-          <line>135</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>54</line>
           <properties />
-          <option name="timeStamp" value="1792" />
+          <option name="timeStamp" value="2038" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
-          <line>136</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="1793" />
+          <option name="timeStamp" value="2039" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="2040" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="2041" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="2042" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="2043" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="2044" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="2045" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="2046" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="2047" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="2048" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="2049" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="2052" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="2053" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="2054" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="2055" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="2056" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="2057" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="2058" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="2059" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
           <line>137</line>
           <properties />
-          <option name="timeStamp" value="1794" />
+          <option name="timeStamp" value="2060" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
           <line>138</line>
           <properties />
-          <option name="timeStamp" value="1795" />
+          <option name="timeStamp" value="2061" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java</url>
-          <line>139</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java</url>
+          <line>5</line>
           <properties />
-          <option name="timeStamp" value="1796" />
+          <option name="timeStamp" value="2062" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
-          <line>39</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1776" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="2063" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
-          <line>40</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1777" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java</url>
+          <line>8</line>
+          <properties />
+          <option name="timeStamp" value="2064" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
-          <line>41</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1778" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="2065" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
-          <line>42</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1779" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="2066" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js</url>
-          <line>43</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1780" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="2067" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="2068" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="2069" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="2070" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="2071" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="2072" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="2073" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="2074" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="2075" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="2076" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="2077" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="2078" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="2079" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="2080" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="2081" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1797" />
+      <option name="time" value="2082" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1528,372 +2027,400 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar!/org/apache/shiro/cache/ehcache/EhCacheManager.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/WebSocketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="133">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserNewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3971">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="133">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/cache/ehcache.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/delete-info.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/delete-success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/editAllUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1197" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/relogin.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/tanchu.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/updateaddress.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/shiro-before/shiro-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        <state relative-caret-position="171">
+          <caret line="122" column="29" lean-forward="true" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/flow-window.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="85" column="63" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="112" column="21" lean-forward="true" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/flow-window.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/UnknownAccountException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/DefineException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AuthenticationException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AccountException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/DisabledAccountException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/LockedAccountException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/NewController/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/springMvctest/cachedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="235" column="29" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/ChatPage.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/orders.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/FriendServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullAccountException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        <state relative-caret-position="157">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ShiroException/NullCredentialsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-          <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/src.zip!/javax/security/auth/login/CredentialException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="e#2263#2264#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/jsp/PageContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/Static/StaticBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery_jar/jquery-3.0.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Spare/JspSpare.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven_default_respoit/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/constraints/Min.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#1082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="267" column="34" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="342">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2840">
-          <caret line="219" column="58" lean-forward="true" selection-start-line="219" selection-start-column="58" selection-end-line="219" selection-end-column="58" />
+        <state relative-caret-position="1672">
+          <caret line="146" column="18" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
           <folding>
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-            <element signature="e#2908#2909#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
+            <element signature="e#3519#3520#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/FriendService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/UnReadMessageList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/FriendMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/FriendMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/test4/formalProjectTest/ServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="102" column="59" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="59" />
+          <folding>
+            <element signature="e#2874#2875#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/enty/ReadAndUnReadMessageList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3845#3846#0" expanded="true" />
-            <element signature="e#4015#4016#0" expanded="true" />
-            <element signature="e#4048#4049#0" expanded="true" />
-            <element signature="e#5975#5976#0" expanded="true" />
-            <element signature="e#6005#6006#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/MessageMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
+        <state relative-caret-position="94">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/MessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="240" column="47" lean-forward="true" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
+        <state relative-caret-position="352">
+          <caret line="84" column="52" lean-forward="true" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/Items/editItems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/shiro-before/shiro-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Spring-mybatis_config/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="38" column="61" lean-forward="true" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Realms/MyRealms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        <state relative-caret-position="114">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/MessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-749">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="137" column="53" lean-forward="true" selection-start-line="137" selection-start-column="53" selection-end-line="137" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/MyWebSocketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Websocket/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/RandomName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ExtrateOperate/EmailOperate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/UserInformationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-548">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Model/DataStructure/DataStructureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/DateTransform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/IntegerToString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Base/UserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Informal/mybatis/Mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="283" column="34" lean-forward="true" selection-start-line="283" selection-start-column="34" selection-end-line="283" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Service/Impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#2023#2024#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#6404#6405#0" expanded="true" />
+            <element signature="e#6458#6459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/Warning/LoginAndRegisterResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/newUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="422" column="35" lean-forward="true" selection-start-line="422" selection-start-column="35" selection-end-line="422" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="77" column="53" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CSS/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="125" column="16" lean-forward="true" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ForAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2527">
+          <caret line="198" column="37" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Jsp/mainproject/chat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="206" column="20" lean-forward="true" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
+          <folding>
+            <element signature="n#tr#1;n#table#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Javascript/updateUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/ChatPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1581497567029" expanded="true" signature="1302:1962" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Convert/AgeJudge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informal/mybatis/Controller/UserUpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1907,7 +2434,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3033088" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1920,7 +2447,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3033088" />
               </list>
             </option>
           </splitter-proportions>
@@ -1931,7 +2458,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3033088" />
               </list>
             </option>
           </splitter-proportions>
@@ -1943,7 +2470,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3033088" />
               </list>
             </option>
           </splitter-proportions>
@@ -1975,7 +2502,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.quartz-scheduler:quartz:2.2.1</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

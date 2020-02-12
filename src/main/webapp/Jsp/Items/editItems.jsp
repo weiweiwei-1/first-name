@@ -9,14 +9,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>编辑商品</title>
     <script type="text/javascript">
-        function submitItems(){
+       /* function submitItems(){
             document.editItems.action="${pageContext.request.contextPath }/itemsRelate/editSubmit";
             document.editItems.submit();
-        }
+        }*/
     </script>
 </head>
 <body>
-<form name="editItems" method="post" action="/itemsRelate/editItems" enctype="multipart/form-data">
+<form name="editItems" method="post" action="${pageContext.request.contextPath }/itemsRelate/editSubmit" enctype="multipart/form-data">
     <table align="center" cellspacing="0px" border="1">
         <tr>
             <td>商品id</td>
@@ -37,14 +37,6 @@
         </tr>
         <tr>
             <td>商品图片</td>
-            <%--<td><input type="text" name="pic" value="${items.pic}"></td>--%>
-            <%--<td>
-                <c:if test="${items.pic}!=null">
-                    <img src="/web-store/${items.pic}" width=100 height=100/>
-                </c:if>
-                <br/>
-                <input type="file" name="items_pic">
-            </td>--%>
             <td>
                 <c:if test="${items.pic !=null}">
                     <img src="/web-store/${items.pic}" width=100 height=100/>
@@ -59,7 +51,7 @@
             <td><input type="text" name="createtime" value="<fmt:formatDate value="${items.createtime}" pattern="yyyy-MM-dd"/>"></td>
         </tr>
     </table>
-    <input type="button" value="提交" onclick="submitItems()" align="middle">
+    <input type="submit" value="提交" <%--onclick="submitItems()"--%> align="middle">
 </form>
 </body>
 </html>

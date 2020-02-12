@@ -5,11 +5,15 @@ import Informal.mybatis.Dao.MessageMapper;
 import Informal.mybatis.Model.DataStructure.DataStructure;
 import Informal.mybatis.Model.Friend;
 import Informal.mybatis.Model.Message;
+import Informal.mybatis.Model.User;
+import Informal.mybatis.Model.enty.ReadAndUnReadMessageList;
 import Informal.mybatis.Model.enty.UnReadMessageList;
 import Informal.mybatis.Service.MessageService;
+import Informal.mybatis.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -19,7 +23,8 @@ public class MessageServiceImpl implements MessageService {
     @Autowired
     private FriendMapper friendMapper;
     @Autowired
-    private DataStructure dataStructure;
+    UserService userService;
+
     @Override
     public int sendMessage(int userId, int friendId,String content) {
         Message message=new Message(userId,friendId,content);
@@ -38,11 +43,52 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
+    public List<ReadAndUnReadMessageList> readAndUnReadMessageList(int userId) {
+        List<UnReadMessageList> unReadMessageLists = messageMapper.selectUnReadMessageList(userId);
+        List<ReadAndUnReadMessageList> readAndUnReadMessageLists = messageMapper.selectReadAndUnReadMessageList(userId);
+        List<Friend> friendLists = friendMapper.selectFriendListById(userId);
+        int url = unReadMessageLists.size();
+        int raul = readAndUnReadMessageLists.size();
+        int fl = friendLists.size();
+        if (url == 0 || fl == 0) {
+            return null;
+        }
+        int i = 0, j = 0;
+        while (i < url && j < raul) {
+            if (unReadMessageLists.get(i).getFriendId() < readAndUnReadMessageLists.get(j).getFriendId()) {
+                i++;
+                readAndUnReadMessageLists.get(j).setUnReadMessageCount(0);
+            } else if (unReadMessageLists.get(i).getFriendId()>readAndUnReadMessageLists.get(j).getFriendId()) {
+                j++;
+                readAndUnReadMessageLists.get(j).setUnReadMessageCount(0);
+            } else {
+                readAndUnReadMessageLists.get(j).setUnReadMessageCount(unReadMessageLists.get(i).getUnReadMessageCount());
+            }
+        }
+        i = 0; j = 0;
+        while (i < raul && j < fl) {
+            if (readAndUnReadMessageLists.get(i).getFriendId() < friendLists.get(j).getFriendId()) {
+                i++;
+            } else if (readAndUnReadMessageLists.get(i).getFriendId() > friendLists.get(j).getFriendId()) {
+                j++;
+            } else {
+                readAndUnReadMessageLists.get(i).setFriendMark(friendLists.get(j).getFriendMark());
+            }
+        }
+        List<Integer> friendIdLists =  new ArrayList<>();
+        for (ReadAndUnReadMessageList readAndUnReadMessageList: readAndUnReadMessageLists) {
+            friendIdLists.add(readAndUnReadMessageList.getFriendId());
+        }
+        List<User> userLists = userService.selectPhotoByList(friendIdLists);
+        for (i = 0; i < userLists.size(); i++) {
+            readAndUnReadMessageLists.get(i).setFriendPhoto(userLists.get(i).getPhoto());
+        }
+        return readAndUnReadMessageLists;
+    }
+
+    @Override
     public List<UnReadMessageList> unReadMessageList(int userId) {
-        List<UnReadMessageList> messageList=messageMapper.selectUnReadMessageList(userId);
-        List<Friend> friendList=friendMapper.selectFriendListById(userId);
-        System.out.println(dataStructure.createRandomInteger(messageList,friendList));
-        return dataStructure.createRandomInteger(messageList,friendList);
+        return messageMapper.selectUnReadMessageList(userId);
     }
 
     @Override

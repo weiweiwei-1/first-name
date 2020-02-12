@@ -92,11 +92,10 @@ document.enter.submit();
     <link href="CSS/main.css"  rel="stylesheet" type="text/css">
     <link href="CSS/base.css" rel="stylesheet" type="text/css">
     <link href="CSS/flow-window.css" rel="stylesheet" type="text/css">
+    <%--<link rel="icon" href="/static/ico/favicon.ico">--%>
     <script src="jquery_jar/jquery-3.0.0.js" rel="script" type="text/javascript"></script>
     <script src="Javascript/login.js" rel="script" type="text/javascript"></script>
     <script src="Javascript/register.js" rel = "script" type="text/javascript"></script>
-    <%--<script src="Javascript/flow-window.js" rel="script" type="text/javascript"></script>--%>
-
 </head>
 <body>
 <div id="content" >
@@ -105,9 +104,9 @@ document.enter.submit();
             <h2>欢迎登录!</h2>
         </div>
         <div id="login-content">
-            <div class="username-block">
-                <div class="username-text"><input type="text" name="username" id="loginUsername" placeholder="邮  箱"></div>
-                <div class="username-error"> <span class="usernameError"></span></div>
+            <div class="email-block">
+                <div class="email-text"><input type="text" name="email" id="loginEmail" placeholder="邮 箱"></div>
+                <div class="email-error"><span class="emailError"></span></div>
             </div>
             <div class="password-block">
                 <div class="password-text"><input type="password" name="password" id="loginPassword" placeholder="密码"></div>
@@ -116,7 +115,7 @@ document.enter.submit();
                     <div class="rememberme-register"><input id="rememberMe" type="checkbox" name="rememberMe"><span id="rememberMe-text">记住我</span></div>
                     <div class="rememberme-register"><span id="register-confirm">还没有账号？点击注册</span></div></div>
             </div>
-            <div class="login-button"><button type="button" id="login"<%--onclick="openwindow()"--%>>登 录</button></div>
+            <div class="login-button"><button type="button" id="login" <%--onclick="openwindow()"--%>disabled="disabled">登 录</button></div>
         </div>
     </div>
 </div>
@@ -125,9 +124,9 @@ document.enter.submit();
         <div id="close"><span class="close">&times;</span></div>
         <div id="register-head"><span id="head-line">欢迎注册!</span></div>
         <div id="register-content">
-            <div id="username-block">
-                <div id="username-text"><input type="text" name="username" id="registerUsername" placeholder="邮箱"></div>
-                <div id="username-error"><span id="usernameError"></span></div>
+            <div id="email-block">
+                <div id="email-text"><input type="text" name="email" id="registerEmail" placeholder="邮 箱"></div>
+                <div id="email-error"><span id="emailError"></span></div>
             </div>
             <div id="password-block">
                 <div id="password-text"><input type="password" name="password" id="registerPassword" placeholder="密码"></div>
@@ -138,10 +137,13 @@ document.enter.submit();
                 <div id="passwordConfirm-error"><span id="passwordConfirmError"></span></div>
             </div>
             <div id="confirm-code">
-                <div id="confirmCode-input">验证码:&nbsp;&nbsp;<input type="text" name="confirmCode" id="confirmCode"></div>
-                <div id="sendConfirmcode"><button type="button" id="sendCode">发送验证码</button></div>
+                <div id="confirmCode-input">验证码:<%--&nbsp;&nbsp;--%><input type="text" name="confirmCode" id="emailCode"></div>
+                <div id="sendConfirmcode">
+                    <div id="sendConfirmcode-block"><button type="button" id="sendCode">发送验证码</button></div>
+                    <div id="confirmcodeError-block"><span id="confirmcodeError"></span></div>
+                </div>
             </div>
-            <div id="register-button"><button type="button" id="register">注 册</button></div>
+            <div id="register-button"><button type="button" id="register" disabled="disabled">注 册</button></div>
         </div>
     </div>
 </div>

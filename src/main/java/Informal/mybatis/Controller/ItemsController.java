@@ -5,16 +5,14 @@ import Informal.mybatis.Dao.ItemsMapper;
 import Informal.mybatis.Model.Items;
 import Informal.mybatis.Service.ItemsService;
 import Informal.mybatis.validatorgroups.updateValidator;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -40,10 +38,10 @@ public class ItemsController {
         return "Items/editItems";
     }
 
-@RequestMapping("editSubmit")
-    public String editSubmit(Model model, @ModelAttribute @Validated(value={updateValidator.class})
-        Map<String,String> map,/*Items items,String createtime,*/
-    BindingResult bindingResult, /*接收商品的图片  */ MultipartFile items_pic) throws Exception{
+@RequestMapping(value="editSubmit",method={RequestMethod.GET,RequestMethod.POST})
+//BindingResult必须要跟到实体背后
+    public String editSubmit( @RequestParam @ModelAttribute("items")
+ Map<String,String> map,MultipartFile items_pic,Model model) throws Exception{
         int id=Integer.valueOf(map.get("id"));
         String name=map.get("name");
         Float price=Float.valueOf(map.get("price"));
@@ -59,7 +57,7 @@ public class ItemsController {
         Date date=dateFormat.parse(createtime);
         items.setCreatetime(date);
         items.setDetail(detail);
-        if(bindingResult.hasErrors()){
+        /*if(bindingResult.hasErrors()){
             FieldError id1=bindingResult.getFieldError();
             if(id1!=null){
                 String id_error=id1.getDefaultMessage();
@@ -67,13 +65,13 @@ public class ItemsController {
             }
             model.addAttribute("items",items);
             return "Items/editItems";
-        }
+        }*/
+    String originalFilename=items_pic.getOriginalFilename();
 //        如果没有新的文件传输那么items_pic为“”，originalFilename也为空，会报错，因此将isEmpty排除出去
-        if(items_pic!=null/*&&!items_pic.isEmpty()*/){
+        if(originalFilename!=null && originalFilename.length()>0){
 //            存储图片的物理路径,注意，后面必须加斜杠，不然写入路径不能达到预期的效果
             String pic_path="E:\\IDEA-workspace\\web-repository\\";
 //            原始的图片名称
-            String originalFilename=items_pic.getOriginalFilename();
 //            新的图片名称
             String newfilename= UUID.randomUUID()+originalFilename.substring(originalFilename.lastIndexOf("."));
 //            创建file对象

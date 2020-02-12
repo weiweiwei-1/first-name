@@ -7,6 +7,7 @@ import Informal.mybatis.Model.Message;
 import Informal.mybatis.Service.AddUserService;
 import Informal.mybatis.Service.FriendService;
 import Informal.mybatis.Service.MessageService;
+import Informal.mybatis.Service.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -18,12 +19,14 @@ public class ServiceTest {
     private FriendService friendService;
     private AddUserService addUserService;
     private MessageService messageService;
+    private UserService userService;
     @Before
     public void setUp(){
         ApplicationContext ac=new ClassPathXmlApplicationContext("Informal/mybatis/Spring-mybatis_config/Application.xml");
         friendService=(FriendService)ac.getBean("friendServiceImpl");
         addUserService=(AddUserService)ac.getBean("addUserServiceImpl");
         messageService=(MessageService)ac.getBean("messageServiceImpl");
+        userService = (UserService)ac.getBean("userServiceImpl");
     }
 
     @Test
@@ -114,6 +117,11 @@ public class ServiceTest {
     @Test
     public void deleteAllMessages(){
         messageService.deleteAllMessages(15,10);
+    }
+
+    @Test
+    public void selectByEmail() {
+        userService.selectByEmail("123`123");
     }
 
 }

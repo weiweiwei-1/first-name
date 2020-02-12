@@ -1,22 +1,18 @@
 span{
     color:#ca0c16;
-    font-size:0.875rem;
+    font-size:15px;
 }
 
 input{
     outline:none;
     border-radius:8px;
-    font-size:0.880rem;
+    font-size:17px;
     border:1px solid #ccc;
 }
 
-#loginUsername,#loginPassword{
+#loginEmail,#loginPassword{
     width:280px;
     height:33px;
-   /* outline:none;
-    border-radius:8px;
-    font-size:0.880rem;
-    border:1px solid #ccc;*/
 }
 
 #rememberMe-text{
@@ -28,7 +24,7 @@ input{
     left:0;
     height:100%;
     width:100%;
-    display:flex;  /*使用弹性布局*/
+    display:flex;
     overflow:hidden;
     justify-content:center;
     align-items:center;
@@ -62,7 +58,7 @@ h2{
     align-items:center;
 }
 
-.username-block{
+.email-block{
     position:relative;
     width:450px;
     height:120px;
@@ -71,14 +67,14 @@ h2{
     align-items:center;
 }
 
-.username-text{
+.email-text{
     position:absolute;
     width:450px;
     height:20px;
     top:40px;
 }
 
-.username-error{
+.email-error{
     position:absolute;
     width:450px;
     height:20px;
@@ -100,7 +96,7 @@ h2{
 }
 
 #loginPassword{
-    letter-spacing:8px;
+    letter-spacing:6px;
 }
 
 .password-error{
@@ -123,7 +119,7 @@ h2{
     text-align:right;
     width:450px;
     height:20px;
-    top:12vh;
+    top:60PX;
     display:flex;
 }
 
@@ -151,11 +147,11 @@ h2{
 }
 
 #login{
-    width:12vw;
-    height:5vh;
-    background-color:#f40;
+    width:160px;
+    height:40px;
+    background-color:grey;
     border-color:transparent;
     cursor:pointer;
     color:white;
-    font:20px Arial;
+    font:1.25rem Arial,Serilf;
 }

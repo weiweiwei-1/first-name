@@ -19,7 +19,9 @@ public interface UserService {
     int insertMap(Map<String,Object> map);
     User selectByPrimaryKey(Integer id);
     List<User> selectLike(String object);
+    List<User> selectPhotoByList(List<Integer> list);
     User selectByName(String name);
+    User selectByEmail(String email);
     List<User> selectAll();
     String addUser(Map<String,String> user) throws Exception;
     String submitUser(Map<String, String> map, Integer id) throws Exception;

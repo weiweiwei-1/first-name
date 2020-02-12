@@ -17,7 +17,7 @@
    -->
 
     <sql id="Base_column_list">
-        id,username,birthday,sex,address
+        id,photo,email,username,company,school,age,sex,occupation,hobby,birthday,address,password
     </sql>
 
     <sql id="Select_RowConstraint">
@@ -61,10 +61,18 @@
     <!--Date显示格式：YYYY-MM-DD；DateTime显示格式：YYYY-MM-DD HH:mm:ss。DateTime更加精确-->
     <resultMap id="userResultMap" type="Informal.mybatis.Model.User">
         <id column="id" jdbcType="INTEGER" property="id"></id>
+        <result column="photo" jdbcType="VARCHAR" property="photo"></result>
+        <result column="email" jdbcType="VARCHAR" property="email"></result>
         <result column="username" jdbcType="VARCHAR" property="username"></result>
-        <result column="birthday" jdbcType="DATE" property="birthday"></result>
+        <result column="company" jdbcType="VARCHAR" property="company"></result>
+        <result column="school" jdbcType="VARCHAR" property="school"></result>
+        <result column="age" jdbcType="INTEGER" property="age"></result>
         <result column="sex" jdbcType="CHAR" property="sex"></result>
+        <result column="occupation" jdbcType="VARCHAR" property="occupation"></result>
+        <result column="hobby" jdbcType="VARCHAR" property="hobby"></result>
+        <result column="birthday" jdbcType="DATE" property="birthday"></result>
         <result column="address" jdbcType="VARCHAR" property="address"></result>
+        <result column="password" jdbcType="VARCHAR" property="password"></result>
         <collection property="orders" ofType="Informal.mybatis.Model.Orders">
             <id column="id" jdbcType="INTEGER" property="id" ></id>
             <result column="user_id" jdbcType="INTEGER" property="userId"></result>
@@ -81,7 +89,7 @@
         </trim>
         <trim prefix="values(" suffix=")" suffixOverrides=",">
             #{id,jdbcType=INTEGER},#{username,jdbcType=VARCHAR},#{birthday,jdbcType=DATE},
-            #{sex,jdbcType=CHAR},#{address,jdbcType=VARCHAR},
+            #{sex,jdbcType=CHAR},#{address,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR}
         </trim>
     </insert>
 
@@ -252,11 +260,29 @@
         <if test="username!=null">
             username=#{username,jdbcType=VARCHAR},
         </if>
-        <if test="birthday!=null">
-            birthday=#{birthday,jdbcType=DATE},
+        <if test="company!=null">
+            company=#{company,jdbcType=VARCHAR},
+        </if>
+        <if test="school!=null">
+            school=#{school,jdbcType=VARCHAR},
+        </if>
+        <if test="age!=null">
+            age=#{age,jdbcType=INTEGER},
         </if>
         <if test="sex!=null">
-            sex=#{sex,jdbcType=CHAR},
+            sex=#{sex,jdbcType=VARCHAR},
+        </if>
+        <if test="occupation!=null">
+            occupation=#{occupation,jdbcType=VARCHAR},
+        </if>
+        <if test="hobby!=null">
+            hobby=#{hobby,jdbcType=VARCHAR},
+        </if>
+        <if test="introduction!=null">
+            introduction=#{introduction,jdbcType=VARCHAR},
+        </if>
+        <if test="birthday!=null">
+            birthday=#{birthday,jdbcType=DATE},
         </if>
         <if test="address!=null">
             address=#{address,jdbcType=VARCHAR},
@@ -359,6 +385,13 @@
         select * from user where username=#{name}
     </select>
 
+    <select id="selectByEmail" parameterType="string" resultMap="userResultMap">
+        select
+        <include refid="Base_column_list"></include>
+        from user
+        where email=#{email}
+    </select>
+
     <select id="selectTwoproperties" parameterType="user" resultMap="userResultMap">
         select * from user where user.sex=#{sex} and user.username=#{username}
     </select>
@@ -375,6 +408,15 @@
         <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
              #{item}
     </foreach>
+    </select>
+
+    <select id="selectFriendPhoto" resultMap="userResultMap" parameterType="list">
+        select photo from user
+        where id in
+        <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+        order by id
     </select>
 
     <select id="selectForeachArray" parameterType="arraylist" resultMap="userResultMap">

@@ -7,9 +7,10 @@ import java.util.Date;
 @Alias("unReadMessageList")
 public class UnReadMessageList {
     private int id;
-    private int countId;
-    private int senderId;
+    private int unReadMessageCount;
+    private int friendId;
     private int receiverId;
+    private String friendPhoto;
     private String friendMark;
     private String content;
     private Date sendTime;
@@ -22,20 +23,20 @@ public class UnReadMessageList {
         this.id = id;
     }
 
-    public int getCountId() {
-        return countId;
+    public int getUnReadMessageCount() {
+        return unReadMessageCount;
     }
 
-    public void setCountId(int countId) {
-        this.countId = countId;
+    public void setUnReadMessageCount(int unReadMessageCount) {
+        this.unReadMessageCount = unReadMessageCount;
     }
 
-    public int getSenderId() {
-        return senderId;
+    public int getFriendId() {
+        return friendId;
     }
 
-    public void setSenderId(int senderId) {
-        this.senderId = senderId;
+    public void setFriendId(int friendId) {
+        this.friendId = friendId;
     }
 
     public int getReceiverId() {
@@ -52,6 +53,14 @@ public class UnReadMessageList {
 
     public void setFriendMark(String friendMark) {
         this.friendMark = friendMark;
+    }
+
+    public String getFriendPhoto() {
+        return friendPhoto;
+    }
+
+    public void setFriendPhoto(String friendPhoto) {
+        this.friendPhoto = friendPhoto;
     }
 
     public String getContent() {
@@ -74,9 +83,10 @@ public class UnReadMessageList {
     public String toString() {
         return "UnReadMessageList{" +
                 "id=" + id +
-                ", countId=" + countId +
-                ", senderId=" + senderId +
+                ", unReadMessageCount=" + unReadMessageCount +
+                ", friendId=" + friendId +
                 ", receiverId=" + receiverId +
+                ", friendPhoto='" + friendPhoto + '\'' +
                 ", friendMark='" + friendMark + '\'' +
                 ", content='" + content + '\'' +
                 ", sendTime=" + sendTime +

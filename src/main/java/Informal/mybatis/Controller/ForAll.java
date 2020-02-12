@@ -1,16 +1,23 @@
 package Informal.mybatis.Controller;
 
+import Informal.mybatis.Controller.Base.ConfirmCode;
+import Informal.mybatis.Controller.Base.EmailCode;
+import Informal.mybatis.Controller.ExtrateOperate.EmailOperate;
 import Informal.mybatis.Controller.ShiroException.NullAccountException;
 import Informal.mybatis.Controller.ShiroException.NullCredentialsException;
 import Informal.mybatis.Controller.Warning.LoginAndRegisterResult;
+import Informal.mybatis.Convert.EmailFormatCheck;
+import Informal.mybatis.Convert.MailValid;
+import Informal.mybatis.Controller.Base.RandomName;
 import Informal.mybatis.Judge.Judge;
 import Informal.mybatis.Model.Items;
 import Informal.mybatis.Model.User;
 import Informal.mybatis.Service.ItemsService;
 import Informal.mybatis.Service.UserService;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.HtmlEmail;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -37,6 +44,8 @@ public class ForAll {
     private UserService userService;
     @Autowired
     private ItemsService itemsService;
+   /* @Autowired
+    HtmlEmail htmlEmail;*/
 
     @RequestMapping(value = "/ForUserAndItems", method = {RequestMethod.GET, RequestMethod.POST})
     public String ForUserAndItems(Model model) {
@@ -100,44 +109,58 @@ public class ForAll {
         return "register";
     }
 
+   /* @RequestMapping(value = "sendCode", method = {RequestMethod.GET,RequestMethod.POST}, produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public String sendCode(String email){
+        System.out.println("验证码为：" + EmailCode.getEmailCode.get(email));
+        if (!EmailFormatCheck.isEmail(email)) {
+            return LoginAndRegisterResult.EMAIL_FORMAT_ERROR;
+        } else if (!MailValid.validEmail(email,"weichat.online")){
+            return LoginAndRegisterResult.EMAIL_NOTEXIST_ERROR;
+        } else if (userService.selectByEmail(email) != null) {
+            return LoginAndRegisterResult.EMAIL_EXIST_ERROR;
+        } else if (EmailCode.getEmailCode.get(email) != null){
+            return LoginAndRegisterResult.EMAIL_CONFIRMCODE_EXIST_ERROR;
+        } else {
+                return EmailOperate.sendEmail(email);
+        }
+    }
+
     @RequestMapping(value = "/register", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public Map<String, String> register(String username, String address, String sureAddress) {
+    public Map<String, String> register(String email, String password, String confirmCode) {
         Map<String, String> map = new HashMap<>();
-        String usernameError = null;
-        String addressError = null;
-        String sureAddressError = null;
+        String emailError = null;
+        String passwordError = null;
+        String confirmCodeError =  null;
         String Symbol = "1";
-        if (StringUtils.isBlank(username)) {
-            usernameError = LoginAndRegisterResult.NULL_USERNAME_ERROR;
+        if (EmailCode.getEmailCode.get(email) == null) {
             Symbol = "0";
-        } else if (userService.selectByName(username) != null) {
-            usernameError = LoginAndRegisterResult.USERNAME_EXIST_ERROR;
+            emailError = LoginAndRegisterResult.EMAIL_AND_CODE_ERROR;
+        } else if (!confirmCode.equals(EmailCode.getEmailCode.get(email))) {
             Symbol = "0";
+            confirmCodeError = LoginAndRegisterResult.EMAIL_CODE_ERROR;
+        } else if (userService.selectByEmail(email) != null) {
+            Symbol = "0";
+            confirmCodeError = LoginAndRegisterResult.EMAIL_EXIST_ERROR;
         }
-        if (StringUtils.isBlank(address)) {
-            addressError = LoginAndRegisterResult.NULL_PASSWORD_ERROR;
+        if (password.length() < 4 || 16 < password.length()) {
             Symbol = "0";
-        } else if (address.length() < 4) {
-            addressError = LoginAndRegisterResult.PASSWORD_FORMAT_ERROR;
-            Symbol = "0";
-        } else if (!sureAddress.equals(address)) {
-            sureAddressError = LoginAndRegisterResult.PASSWORD_CONFIRM_ERROR;
-            Symbol = "0";
+            passwordError = LoginAndRegisterResult.EMAIL_FORMAT_ERROR;
         }
         if (Symbol.equals("0")) {
-            map.put("usernameError", usernameError);
-            map.put("addressError", addressError);
-            map.put("sureAddressError", sureAddressError);
             map.put("Symbol", Symbol);
+            map.put("emailError", emailError);
+            map.put("passwordError", passwordError);
+            map.put("confirmCodeError", confirmCodeError);
         } else {
             map.put("Symbol", Symbol);
             try {
                 User user = new User();
-                user.setUsername(username);
-                user.setAddress(address);
-                userService.insert(user);
-                SecurityUtils.getSubject().login(new UsernamePasswordToken(username, address));
+                user.setEmail(email);
+                user.setUsername(RandomName.getRandomName());
+                user.setPassword(password);
+                userService.insertSelective(user);
             } catch (Exception e) {
                 map.remove("Symbol", Symbol);
                 Symbol = "2";
@@ -159,25 +182,25 @@ public class ForAll {
     public Map login3(User user){
         Map<String, String> map = new HashMap<>();
         //只要输入就不为空，只是空字符
-        System.out.println(user.getUsername());
-        System.out.println(user.getAddress());
+        System.out.println(user.getEmail());
+        System.out.println(user.getPassword());
         Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(),user.getAddress());
+        UsernamePasswordToken token = new UsernamePasswordToken(user.getEmail(),user.getPassword());
         try {
             subject.login(token);
-        }catch (NullAccountException nae) {
-            map.put("NullAccountError", LoginAndRegisterResult.NULL_USERNAME_ERROR);
+        } catch (NullAccountException nae) {
+            map.put("NullAccountError", LoginAndRegisterResult.NULL_EMAIL_ERROR);
             return map;
-        }catch (UnknownAccountException uae) {
-            map.put("UnknownAccountError", LoginAndRegisterResult.USERNAME_ERRROR);
+        } catch (UnknownAccountException uae) {
+            map.put("UnknownAccountError", LoginAndRegisterResult.EMAIL_NOTEXIST_ERROR);
             return map;
-        }catch (NullCredentialsException nce) {
+        } catch (NullCredentialsException nce) {
             map.put("NullCredentialsError", LoginAndRegisterResult.NULL_PASSWORD_ERROR);
-        }catch (IncorrectCredentialsException ice) {
+        } catch (IncorrectCredentialsException ice) {
             map.put("IncorrectCrdentialsError", LoginAndRegisterResult.PASSWORD_ERROR);
         }
         return map;
-    }
+    }*/
 
     @RequestMapping(value="/UpdateInformationPage",method={RequestMethod.GET,RequestMethod.POST})
     public String UpdateInformationPage(Model model,String username){
