@@ -1,5 +1,6 @@
 package Informal.mybatis.test4;
 
+import Informal.mybatis.Model.User;
 import org.junit.Test;
 import org.springframework.web.socket.TextMessage;
 
@@ -18,5 +19,11 @@ public class Test_null {
             System.out.println(o);
         }
         System.out.println(map.size());
+    }
+
+    @Test
+    public void testUser() {
+        User user = new User();
+        System.out.println(user.getId());
     }
 }

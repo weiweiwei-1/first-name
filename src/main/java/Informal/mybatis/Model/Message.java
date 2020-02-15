@@ -7,8 +7,10 @@ public class Message {
     private Integer senderId;
     private Integer receiverId;
     private String content;
-    private Date sendTime;
+    private String sendTime;
     private String status;
+    private String messageType;
+
 
     public Integer getId() {
         return id;
@@ -42,12 +44,20 @@ public class Message {
         this.content = content;
     }
 
-    public Date getSendTime() {
+    public String getSendTime() {
         return sendTime;
     }
 
-    public void setSendTime(Date sendTime) {
+    public void setSendTime(String sendTime) {
         this.sendTime = sendTime;
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
     }
 
     public String getStatus() {
@@ -88,6 +98,7 @@ public class Message {
                 ", content='" + content + '\'' +
                 ", sendTime=" + sendTime +
                 ", status='" + status + '\'' +
+                ", messageType='" + messageType + '\'' +
                 '}';
     }
 }

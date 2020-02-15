@@ -169,6 +169,10 @@ $(function(){
                     if(typeof(data['photo'])!=='undefined'){
                         $('.headImg img').attr("src","/web-store/"+data['photo']);
                         $('.user-img').attr("src","/web-store/"+data['photo']);
+                        if($('.RightCont').children('.clearfloat')){
+                            $('.right .chat-avatars img').attr('src',"/web-store/"+data['photo']);
+                        }
+
                     }
                     break;
                 }

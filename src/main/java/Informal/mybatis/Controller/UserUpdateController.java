@@ -1,16 +1,14 @@
 package Informal.mybatis.Controller;
 
 import Informal.mybatis.Controller.Base.UserUtils;
+import Informal.mybatis.Controller.Warning.UpdatePasswordResult;
 import Informal.mybatis.Controller.Warning.UserInformationResult;
 import Informal.mybatis.Convert.AgeJudge;
 import Informal.mybatis.Model.User;
 import Informal.mybatis.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -72,7 +70,7 @@ public class UserUpdateController {
             map.put("ageError",ageError);
             symbol = "0";
         }
-        if (!sex.equals("男") && !sex.equals("女") && !sex.equals("")) {
+        if (!"男".equals(sex) && !"女".equals(sex) && !"".equals(sex)) {
             sexError = UserInformationResult.SEX_ERROR;
             map.put("sexError",sexError);
             symbol = "0";
@@ -138,4 +136,24 @@ public class UserUpdateController {
             map.put("symbol", symbol);
             return map;
         }
+
+    @RequestMapping(value="/updatePassword")
+    @ResponseBody
+    public Map<String, String> updatePassword(String password, String newPassword) {
+        String originalPassword = UserUtils.getUserVo().getPassword();
+        Map<String, String> map = new HashMap<>();
+        if (!originalPassword.equals(password)) {
+            map.put("passwordError",UpdatePasswordResult.PASSWORD_ERROR);
+            return map;
+        } else if (newPassword.length() < 4 || 8 < newPassword.length()) {
+            map.put("newPasswordError",UpdatePasswordResult.NEW_PASSWORD_ERROR);
+            return map;
+        }
+        User user =  new User();
+        user.setPassword(newPassword);
+        user.setId(UserUtils.getUserVo().getId());
+        userService.updateByPrimaryKeySelective(user);
+        map.put("success",UpdatePasswordResult.UPDATE_SUCCESS);
+        return map;
+    }
 }

@@ -11,9 +11,10 @@ pageEncoding="UTF-8"%>
     <link rel="stylesheet" type="text/css" href="../../CSS/updatePassword.css">
 <link rel="stylesheet" type="text/css" href="../../CSS/user.css">
 <link rel="stylesheet" type="text/css" href="../../CSS/qq.css">
-    <script type="text/javascript"  <%--rel="script"--%> src="../../Jquery-min/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" <%--rel="script"--%> src="../../Javascript/chat.js"></script>
-    <script type="text/javascript" <%--rel="script"--%> src="../../Javascript/updateUser.js"></script>
+    <script type="text/javascript"  rel="script" src="../../Jquery-min/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/chat.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/updateUser.js"></script>
+    <%--<script type="text/javascript" rel="script" src="../../Javascript/updatePassword.js"></script>--%>
 </head>
 <body>
 
@@ -168,6 +169,7 @@ pageEncoding="UTF-8"%>
                 <div class="headName"></div>
 			</div>
 			<div class="RightCont">
+
 			</div>
 			<div class="RightFoot">
 				<div class="inputBox">
@@ -266,11 +268,11 @@ pageEncoding="UTF-8"%>
     <div class="update-content">
         <div class="close-block"><span>&times;</span></div>
         <div class="updatepassword-block">
-            <input type="text" id="origin-password" class="password-input" placeholder="原密码"><span class="error-confirm">原密码错误</span>
+            <input type="password" id="origin-password" class="password-input" placeholder="原密码"><span class="error-confirm"></span>
         </div>
-        <div class="updatepassword-block"><input type="text" id="new-password" class="password-input" placeholder="新密码"><span span class="error-confirm">新的密码错误</span></div>
-        <div class="updatepassword-block"><input type="text" id="sure-password" class="password-input" placeholder="确认新的密码"><span span class="error-confirm">前后密码对不上</span></div>
-        <div class="updatepassword-block"><button type="button" id="confirm-updatepassword">确认修改</button></div>
+        <div class="updatepassword-block"><input type="password" id="new-password" class="password-input" placeholder="新密码"><span span class="error-confirm"></span></div>
+        <div class="updatepassword-block"><input type="password" id="sure-password" class="password-input" placeholder="确认新的密码"><span span class="error-confirm"></span></div>
+        <div class="updatepassword-block"><button type="button" id="confirm-updatepassword" disabled="disabled">确认修改</button></div>
     </div>
 </div>
 <%--<div style="text-align:center;margin:10px 0; font:normal 14px/24px 'MicroSoft YaHei';">

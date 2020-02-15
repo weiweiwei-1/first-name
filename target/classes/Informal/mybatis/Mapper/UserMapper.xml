@@ -281,6 +281,9 @@
         <if test="introduction!=null">
             introduction=#{introduction,jdbcType=VARCHAR},
         </if>
+        <if test="photo!=null">
+            photo=#{photo,jdbcType=VARCHAR}
+        </if>
         <if test="birthday!=null">
             birthday=#{birthday,jdbcType=DATE},
         </if>

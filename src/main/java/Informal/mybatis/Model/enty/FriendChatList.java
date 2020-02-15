@@ -1,12 +1,15 @@
 package Informal.mybatis.Model.enty;
 
+import java.util.Date;
+
 public class FriendChatList {
-    Integer id;
-    Integer countId;
-    Integer maxId;
-    Integer senderId;
-    Integer receiverId;
-    String content;
+    private Integer id;
+    private Integer countId;
+    private Integer maxId;
+    private Integer senderId;
+    private Integer receiverId;
+    private Date sendTime;
+    private String content;
 
     public Integer getId() {
         return id;
@@ -56,6 +59,14 @@ public class FriendChatList {
         this.content = content;
     }
 
+    public Date getSendTime() {
+        return sendTime;
+    }
+
+    public void setSendTime(Date sendTime) {
+        this.sendTime = sendTime;
+    }
+
     @Override
     public String toString() {
         return "FriendChatList{" +
@@ -64,6 +75,7 @@ public class FriendChatList {
                 ", maxId=" + maxId +
                 ", senderId=" + senderId +
                 ", receiverId=" + receiverId +
+                ", sendTime=" + sendTime +
                 ", content='" + content + '\'' +
                 '}';
     }

@@ -30,14 +30,13 @@ public class ChatPageController {
     FriendService friendService;
 
     @RequestMapping(value="/main", method = {RequestMethod.GET, RequestMethod.POST})
-    public String main(Model model, HttpServletRequest request,HttpSession session) {
+    public String main(Model model, HttpServletRequest request) {
         User user = UserUtils.getUserVo();
         System.out.println(user);
         try{
-            /*Session session = SecurityUtils.getSubject().getSession(false);
-            int userId =  (Integer)session.getAttribute("id");*/
-            session = request.getSession(false);
-            int userId = (Integer)session.getAttribute("id");
+            /*HttpSession session = request.getSession(false);
+            System.out.println(session);*/
+            int userId = UserUtils.getUserVo().getId();
             System.out.println("session的ID为："+ userId);
             List<ReadAndUnReadMessageList> readAndUnReadMessageLists = messageService.readAndUnReadMessageList(userId);
             System.out.println(readAndUnReadMessageLists);

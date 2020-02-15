@@ -11,14 +11,15 @@ import java.util.List;
 public interface MessageMapper {
     int insertMessage(Message message);
     List<Message> selectMessages(Message message);
-    List<UnReadMessageList> selectUnReadMessageList(int userId);
-    List<ReadAndUnReadMessageList> selectReadAndUnReadMessageList(int userId);
+    List<UnReadMessageList> selectUnReadMessageList(@Param("userId")int userId);
+    List<ReadAndUnReadMessageList> selectReadAndUnReadMessageList(@Param("userId")int userId);
     Message selectByIdAndUserId(@Param("id")int id, @Param("userId")int userId);
+    int updateMessages(Message message);
     int deleteMessages(Message message);
     int deleteMessageById(int id);
     int deleteMessageByIdAndSenderId(@Param("id")int id,@Param("senderId")int senderId);
     Message selectLastUnReadMessage(Message message);
-    List<FriendChatList> frendChatList(int userId);
+    List<FriendChatList> frendChatList(@Param("userId")int userId);
     int deleteAllMessages(Message message);
     int withDrawUserMessages(Message message);
 }

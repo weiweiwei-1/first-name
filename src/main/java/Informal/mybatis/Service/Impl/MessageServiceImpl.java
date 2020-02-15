@@ -2,7 +2,6 @@ package Informal.mybatis.Service.Impl;
 
 import Informal.mybatis.Dao.FriendMapper;
 import Informal.mybatis.Dao.MessageMapper;
-import Informal.mybatis.Model.DataStructure.DataStructure;
 import Informal.mybatis.Model.Friend;
 import Informal.mybatis.Model.Message;
 import Informal.mybatis.Model.User;
@@ -43,6 +42,18 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
+    public int sendAllMessage(Message message) {
+        return messageMapper.insertMessage(message);
+    }
+
+    @Override
+    public int readMessages(int userId, int friendId) {
+        Message message = new Message(friendId, userId);
+        return messageMapper.updateMessages(message);
+    }
+
+
+    @Override
     public List<ReadAndUnReadMessageList> readAndUnReadMessageList(int userId) {
         List<UnReadMessageList> unReadMessageLists = messageMapper.selectUnReadMessageList(userId);
         List<ReadAndUnReadMessageList> readAndUnReadMessageLists = messageMapper.selectReadAndUnReadMessageList(userId);
@@ -50,7 +61,7 @@ public class MessageServiceImpl implements MessageService {
         int url = unReadMessageLists.size();
         int raul = readAndUnReadMessageLists.size();
         int fl = friendLists.size();
-        if (url == 0 || fl == 0) {
+        if (raul == 0 || fl == 0) {
             return null;
         }
         int i = 0, j = 0;
@@ -63,6 +74,8 @@ public class MessageServiceImpl implements MessageService {
                 readAndUnReadMessageLists.get(j).setUnReadMessageCount(0);
             } else {
                 readAndUnReadMessageLists.get(j).setUnReadMessageCount(unReadMessageLists.get(i).getUnReadMessageCount());
+                i++;
+                j++;
             }
         }
         i = 0; j = 0;
@@ -73,6 +86,8 @@ public class MessageServiceImpl implements MessageService {
                 j++;
             } else {
                 readAndUnReadMessageLists.get(i).setFriendMark(friendLists.get(j).getFriendMark());
+                i++;
+                j++;
             }
         }
         List<Integer> friendIdLists =  new ArrayList<>();

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 public class UserUtils {
 
-    public static int getUserSessionId(HttpServletRequest request,HttpSession session) {
+    public static int getUserSessionId(HttpServletRequest request, HttpSession session) {
         session = request.getSession(false);
         try {
             return (Integer)session.getAttribute("id");
@@ -29,8 +29,17 @@ public class UserUtils {
         User user = (User)SecurityUtils.getSubject().getPrincipal();
         if (user == null) {
             SecurityUtils.getSubject().logout();
+            user = new User();
         }
         return user;
+    }
+
+    public static Integer getUserId(){
+        User user = getUserVo();
+        if(user == null){
+            user = new User();
+        }
+        return user.getId();
     }
 
     public static String getUserName() {

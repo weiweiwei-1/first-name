@@ -205,6 +205,7 @@ display: -webkit-box;
     background-color:#0a80ff;
     color:#fff;
     text-align:center;
+    display:none;
 }
 
 
@@ -298,12 +299,24 @@ display: -webkit-box;
     box-sizing: border-box;
 }
 
+/*.right .message-time .chat-message{
+    text-align:left;
+
+}*/
+
+.right .message-time{
+    display:flex;
+    flex-direction: column;
+    float:right;
+}
+
+
 .left-time{
     color: #828282;
     margin-top: 5px;
     font-style: italic;
     font-size: 12px;
-    text-align: right;
+    text-align: left;
     -webkit-box-direction: normal;
     box-sizing: border-box;
 
