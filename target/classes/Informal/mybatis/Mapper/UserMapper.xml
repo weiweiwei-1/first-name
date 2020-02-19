@@ -406,11 +406,12 @@
     <!--注意，由于参数表现在foreach里面，因此在parameterType可以不定义,当然定义了也没什么
     这里item就是要设置的属性参数，-->
     <select id="selectForeachList" resultMap="userResultMap" parameterType="list">
-        select * from user
+        select id,username,photo from user
         where id in
         <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
              #{item}
-    </foreach>
+        </foreach>
+        order by id
     </select>
 
     <select id="selectFriendPhoto" resultMap="userResultMap" parameterType="list">
@@ -420,6 +421,14 @@
             #{item}
         </foreach>
         order by id
+    </select>
+
+    <select id="selectMainUserList" resultMap="userResultMap" parameterType="list">
+        select id,username,photo,company,school from user
+        where id in
+        <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
     </select>
 
     <select id="selectForeachArray" parameterType="arraylist" resultMap="userResultMap">
@@ -457,7 +466,7 @@
         </choose>
     </select>
 
-    <select id="selectUserNameById" parameterType="integer" resultType="string">
+    <select id="selectUserNameById" parameterType="integer" resultMap="userResultMap">
         select username from user where id=#{userId}
     </select>
 

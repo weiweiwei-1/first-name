@@ -166,6 +166,8 @@ $(function(){
                     occupationval = newoccupation;
                     hobbyval = newhobby;
                     introductionval = newintroduction;
+                    $('.overflow-hide .recomendContent').load('/AddUser/SystemRecommend',
+                    function(){});
                     if(typeof(data['photo'])!=='undefined'){
                         $('.headImg img').attr("src","/web-store/"+data['photo']);
                         $('.user-img').attr("src","/web-store/"+data['photo']);

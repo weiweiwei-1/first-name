@@ -28,11 +28,17 @@ public class AddUserServiceImpl implements AddUserService {
     private FriendMapper friendMapper;
     @Override
     public int sendAddUserApplication(int beAddId, int userId, String addName) {
-        User user=userMapper.selectByPrimaryKey(beAddId);
-        if(user!=null){
-            AddUser addUser=new AddUser(beAddId,userId,addName);
-            addUserMapper.insertAddUser(addUser);
-            return addUser.getId();
+        User user = userMapper.selectByPrimaryKey(beAddId);
+        Friend originFriend = new Friend();
+        originFriend.setUserId(userId);
+        originFriend.setFriendId(beAddId);
+        AddUser addUser =  new AddUser(beAddId, userId);
+        AddUser newAddUser = addUserMapper.selectAddIdAndBeAddId(addUser);
+        Friend friend = friendMapper.selectFriendOr(originFriend);
+        if(user != null && friend == null && newAddUser == null){
+            AddUser newAddUser2 = new AddUser(beAddId,userId,addName);
+            addUserMapper.insertAddUser(newAddUser2);
+            return newAddUser2.getId();
         }else{
             return 0;
         }

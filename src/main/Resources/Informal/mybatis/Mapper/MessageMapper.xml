@@ -74,8 +74,9 @@ select id,senderId,receiverId,content,sendTime,status from message where senderI
         select id,count(id) as unReadMessageCount,senderId as friendId,receiverId,content,sendTime from message where receiverId=#{userId} and status=0 group by senderId order by senderId
     </select>
 
-    <select id="selectReadAndUnReadMessageList" parameterType="integer" resultType="readAndUnReadMessageList">
-        select id,senderId as friendId,content,sendTime from message where receiverId=#{userId} group by senderId order by senderId
+    <select id="selectReadAndUnReadMessageList" parameterType="Integer" resultType="readAndUnReadMessageList">
+        select id,senderId as friendId,content,sendTime from message where id in (
+        select max(id) from message where receiverId = #{userId} group by senderId) order by senderId
     </select>
 
     <select id="selectByIdAndUserId" resultMap="BaseResultMap">

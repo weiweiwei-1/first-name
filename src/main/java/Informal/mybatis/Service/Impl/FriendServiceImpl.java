@@ -2,12 +2,15 @@ package Informal.mybatis.Service.Impl;
 
 import Informal.mybatis.Dao.FriendMapper;
 import Informal.mybatis.Dao.MessageMapper;
+import Informal.mybatis.Dao.UserMapper;
 import Informal.mybatis.Model.Friend;
 import Informal.mybatis.Model.Message;
+import Informal.mybatis.Model.User;
 import Informal.mybatis.Service.FriendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 public class FriendServiceImpl implements FriendService {
@@ -15,9 +18,29 @@ public class FriendServiceImpl implements FriendService {
     private FriendMapper friendMapper;
     @Autowired
     private MessageMapper messageMapper;
+    @Autowired
+    private UserMapper userMapper;
     @Override
     public List<Friend> showFriendList(int userId) {
-        return friendMapper.selectFriendListById(userId);
+        List<Integer> list = new ArrayList<>();
+        List<Friend> friendLists = friendMapper.selectFriendListById(userId);
+        for(Friend friend: friendLists) {
+            list.add(friend.getFriendId());
+        }
+        List<User> userLists = userMapper.selectMainUserList(list);
+        try {
+            for (int i = 0; i < friendLists.size(); i++) {
+                friendLists.get(i).setFriendPhoto(userLists.get(i).getPhoto());
+                friendLists.get(i).setFriendSchool(userLists.get(i).getSchool());
+                friendLists.get(i).setFriendCompany(userLists.get(i).getCompany());
+                friendLists.get(i).setFriendUserName(userLists.get(i).getUsername());
+            }
+            System.out.println(friendLists);
+            return friendLists;
+        } catch (IndexOutOfBoundsException e) {
+            return new ArrayList<Friend>();
+        }
+
     }
 
     @Override

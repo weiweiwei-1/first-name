@@ -61,7 +61,7 @@ public class MessageServiceImpl implements MessageService {
         int url = unReadMessageLists.size();
         int raul = readAndUnReadMessageLists.size();
         int fl = friendLists.size();
-        if (raul == 0 || fl == 0) {
+        if (raul==0) {
             return null;
         }
         int i = 0, j = 0;
@@ -74,6 +74,7 @@ public class MessageServiceImpl implements MessageService {
                 readAndUnReadMessageLists.get(j).setUnReadMessageCount(0);
             } else {
                 readAndUnReadMessageLists.get(j).setUnReadMessageCount(unReadMessageLists.get(i).getUnReadMessageCount());
+//                readAndUnReadMessageLists.get(j).setContent(unReadMessageLists.get(i).getContent());
                 i++;
                 j++;
             }

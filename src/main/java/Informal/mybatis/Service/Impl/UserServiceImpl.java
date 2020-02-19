@@ -75,6 +75,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> selectAllList(List<Integer> list) {
+        return userMapper.selectForeachList(list);
+    }
+
+    @Override
     public List<User> selectAll() {
         return userMapper.selectAll();
     }

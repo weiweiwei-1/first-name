@@ -5,6 +5,7 @@ import Informal.mybatis.Controller.Base.UserUtils;
 import Informal.mybatis.Controller.Base.WebSocketUtils;
 import Informal.mybatis.Model.Message;
 import Informal.mybatis.Model.User;
+import Informal.mybatis.Model.enty.ReadAndUnReadMessageList;
 import Informal.mybatis.Service.MessageService;
 import Informal.mybatis.Service.UserService;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -36,7 +37,8 @@ public class MessageController {
 
     @RequestMapping(value="/messageContent",method={RequestMethod.GET,RequestMethod.POST})
     public String chatContent(Model model, int friendId) {
-        Integer userId = UserUtils.getUserVo().getId();
+        User user = UserUtils.getUserVo();
+        Integer userId = user.getId();
         String photo = UserUtils.getUserVo().getPhoto();
         List<Message> messages = messageService.selectAllMessages(userId, friendId);
         System.out.println(messages);
@@ -74,10 +76,19 @@ public class MessageController {
         System.out.println(trueSendTime);*/
         message.setSenderId(userId);
         message.setMessageType("sendMessage");
-        int messageId = messageService.sendAllMessage(message);
+        messageService.sendAllMessage(message);
+        System.out.println("messageId为"+message.getId());
         if (WebSocketUtils.hasConnection(String.valueOf(message.getReceiverId()))) {
             WebSocketUtils.get(String.valueOf(friendId)).getAsyncRemote().sendText(gson.toJson(message));
         }
-        return messageId;
+        return message.getId();
+    }
+
+    @RequestMapping(value="/chatMessageList",method={RequestMethod.GET,RequestMethod.POST})
+    public String chatMessageList(Model model) {
+        Integer userId = UserUtils.getUserVo().getId();
+        List<ReadAndUnReadMessageList> lists = messageService.readAndUnReadMessageList(userId);
+        model.addAttribute("chatMessageList", lists);
+        return "mainproject/chatList";
     }
 }

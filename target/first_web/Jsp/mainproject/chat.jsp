@@ -9,11 +9,18 @@ pageEncoding="UTF-8"%>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>聊天页面</title>
     <link rel="stylesheet" type="text/css" href="../../CSS/updatePassword.css">
-<link rel="stylesheet" type="text/css" href="../../CSS/user.css">
-<link rel="stylesheet" type="text/css" href="../../CSS/qq.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/user.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/qq.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/recommend.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/addUser.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/permitUser.css">
     <script type="text/javascript"  rel="script" src="../../Jquery-min/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/chat.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/updateUser.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/friendList.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/chatList.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/userRecomend.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/addUserList.js"></script>
     <%--<script type="text/javascript" rel="script" src="../../Javascript/updatePassword.js"></script>--%>
 </head>
 <body>
@@ -59,101 +66,7 @@ pageEncoding="UTF-8"%>
                             </div>
                         </li>
                     </c:forEach>
-                    <%--<li class="bg">
-                        <div class="liLeft"><img src="../../Img/20170926103645_04.jpg"></div>
-                        <div class="liRight">
-                            <span class="friendName">前端交流群前端交流群前端交流群</span>
-                            <span class="lastunreadMessage">厉害了hahahhahaha</span>
-                        </div>
-                        <div class="unreadMessage">
-                            <div class="unreadMessage-count">88</div>
-                            <div class="unreadMessage-time">12:34</div>
-                        </div>
-                    </li>
-
-
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_19.jpg"></div>
-                        <div class="liRight">
-                            <span  class="friendName">赵鹏</span>
-                            <span class="lastunreadMessage">[流泪]</span>
-                        </div>
-                        <div class="unreadMessage">
-                            <div class="unreadMessage-count">23</div>
-                            <div class="unreadMessage-time">11:30</div>
-                        </div>
-                    </li>--%>
                     <%--<li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_25.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">...</span>
-                            <span class="infor">[么么哒]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_27.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">前端交流群</span>
-                            <span class="infor">前端小黑：怎么才能</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_29.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">前端交流群</span>
-                            <span class="infor">大西瓜：差评，这个下面又</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_54.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">前端交流群</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_04.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">前端交流群</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_19.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">赵鹏</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_27.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">web交流群</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_21.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">jquery插件库</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_23.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">我的phone</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_25.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">...</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>
-                    <li>
                         <div class="liLeft"><img src="../../Img/20170926103645_27.jpg"></div>
                         <div class="liRight">
                             <span  class="intername">前端交流群</span>
@@ -181,8 +94,65 @@ pageEncoding="UTF-8"%>
 	</div>
 </div>
 
+<div class="recomendBox">
+    <div class="recomend-condition">
+        <input type="text" class="recomend-text" placeholder="查找好友">
+        <button class="recomend-search">搜索</button>
+    </div>
+    <div class="promot"></div>
+    <div class="overflow-hide">
+        <div class="recomendContent">
+            <span class="system-confirm">${systemConfirm}</span>
+            <%--<div class="user-block" data-userId="12">
+                <div class="user-img">
+                    <img class="appear" src="">
+                </div>
+                <div class="user-name"></div>
+                <div class="user-school"></div>
+                <div class="user-company"></div>
+            </div>
+
+            <div class="user-block" data-userId="16">
+                <div class="user-img">
+                    <img class="appear" src="../../Img/me.jpg">
+                </div>
+                <div class="user-name">曾庆威</div>
+                <div class="user-school">合肥工业大学</div>
+                <div class="user-company">中兴通讯</div>
+            </div>--%>
+        </div>
+    </div>
+    <div class="refresh"><span>系统推荐/换一批</span></div>
+</div>
+
+<div class="unKnownUser">
+    <div class="flex-center">
+        <div class="unKnownUser-Box">
+            <div class="unKnowUser-img">
+                <img class="unKnownUserImg">
+            </div>
+            <div class="unKnowUser-name"></div>
+            <div class="add-name">我是：<input type="text" id="addName"></div>
+            <div class="add-button"><button class="add">发送申请</button></div>
+        </div>
+    </div>
+</div>
+
+<div class="permitUser">
+    <div class="flex-permitUser">
+        <div class="permitUser-Box">
+            <div class="permitUser-img">
+                <img class="permitUserImg">
+            </div>
+            <div class="permitUser-name"></div>
+            <div class="permitUser-school"></div>
+            <div class="permitUser-company"></div>
+            <div class=""></div>
+        </div>
+    </div>
+</div>
+
 <div class="userBox">
-    <%--<div class="neighborBox"></div>--%>
     <div class="userCenter">
         <div class="user-head">
             <div class="img-block">
@@ -222,41 +192,9 @@ pageEncoding="UTF-8"%>
                 <tr>
                     <td><button id="logout">注销</button> <button id="updatePassword">修改密码</button></td>
                     <td><button id="edit">编辑</button> <button id="save">保存修改</button></td>
-                    <%--<input type="file"></input>--%>
                 </tr>
             </table>
-            <%--<ul>
-                <li>
-                    <tr>
-                        <td>账号:<input type="text" name="count" id="count" class="user-text"></td>
-                        <td>用户名:<input type="text" name="username" id="username" class="user-text"></td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>性别</td>
-                        <td>年龄</td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>单位</td>
-                        <td>学校</td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>职业</td>
-                        <td>爱好</td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>保存 编辑</td>
-                        <td>修改密码 退出登录</td>
-                    </tr>
-                </li>
-            </ul>--%>
+
         </div>
     </div>
 </div>
@@ -275,7 +213,6 @@ pageEncoding="UTF-8"%>
         <div class="updatepassword-block"><button type="button" id="confirm-updatepassword" disabled="disabled">确认修改</button></div>
     </div>
 </div>
-<%--<div style="text-align:center;margin:10px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-</div>--%>
+
 </body>
 </html>

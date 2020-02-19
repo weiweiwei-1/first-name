@@ -1,0 +1,80 @@
+.unKnownUser {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    /*background: white;*/
+    background:rgba(0,0,0,0);
+    /*z-index: 1001;*/
+}
+
+.flex-center {
+    position:relative;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0,0,0,0);
+    z-index: 1001;
+}
+.unKnownUser-Box {
+    /*background-color: #fff;*/
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid deepskyblue;
+    z-index: 1003;
+    overflow: auto;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:deepskyblue;
+}
+
+.unKnownUserImg,.unKnowUser-name,.add-name,.add-button{
+    width:100%;
+    height:30px;
+    margin:10px 0;
+    text-align:center;
+}
+
+.unKnownUserImg{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    outline:none;
+}
+
+#addName {
+    width:150px;
+    height:25px;
+    border-radius:5px;
+    outline:none;
+    border:1px solid deepskyblue;
+    font-size: 15px;
+    font-weight:200;
+}
+
+.add-button{
+    margin:30px 0 0 0;
+}
+
+.add{
+    width:100px;
+    height:30px;
+    border-radius:10px;
+    outline:none;
+    border:transparent;
+    color:white;
+    font-size:15px;
+    font-weight:200;
+    background: #f40;
+    cursor:pointer;
+}

@@ -11,6 +11,8 @@ public interface AddUserMapper {
     AddUser selectByBothId(AddUser addUser);
     AddUser selectByIdAndBeAddId(@Param("id")int id, @Param("beAddId")int beAddId);
     AddUser selectAddUserById(int id);
+    AddUser selectAddIdAndBeAddId(AddUser addUser);
     int deleteAddUser(AddUser addUser);
     int deleteAddUserById(int id);
+
 }

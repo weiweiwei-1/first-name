@@ -8,7 +8,36 @@ public class Friend {
     private Integer friendId;
     private String userMark;
     private String friendMark;
+    private String friendPhoto;
+    private String friendCompany;
+    private String friendSchool;
+    private String friendUserName;
     private Date agreeAddingTime;
+
+    public String getFriendUserName() {
+        return friendUserName;
+    }
+
+    public void setFriendUserName(String friendUserName) {
+        this.friendUserName = friendUserName;
+    }
+
+    public String getFriendCompany() {
+        return friendCompany;
+    }
+
+    public void setFriendCompany(String friendCompany) {
+        this.friendCompany = friendCompany;
+    }
+
+    public String getFriendSchool() {
+        return friendSchool;
+    }
+
+    public void setFriendSchool(String friendSchool) {
+        this.friendSchool = friendSchool;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -83,6 +112,15 @@ public class Friend {
         this.userId=friendId;
         this.friendId=bridge;
     }
+
+    public String getFriendPhoto() {
+        return friendPhoto;
+    }
+
+    public void setFriendPhoto(String friendPhoto) {
+        this.friendPhoto = friendPhoto;
+    }
+
     @Override
     public String toString() {
         return "Friend{" +
@@ -91,6 +129,11 @@ public class Friend {
                 ", friendId=" + friendId +
                 ", userMark='" + userMark + '\'' +
                 ", friendMark='" + friendMark + '\'' +
+                ", friendPhoto='" + friendPhoto + '\'' +
+                ", friendCompany='" + friendCompany + '\'' +
+                ", friendSchool='" + friendSchool + '\'' +
+                ", friendUserName='" + friendUserName + '\'' +
+                ", agreeAddingTime=" + agreeAddingTime +
                 '}';
     }
 }

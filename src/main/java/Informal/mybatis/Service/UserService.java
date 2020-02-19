@@ -20,6 +20,7 @@ public interface UserService {
     User selectByPrimaryKey(Integer id);
     List<User> selectLike(String object);
     List<User> selectPhotoByList(List<Integer> list);
+    List<User> selectAllList(List<Integer> list);
     User selectByName(String name);
     User selectByEmail(String email);
     List<User> selectAll();

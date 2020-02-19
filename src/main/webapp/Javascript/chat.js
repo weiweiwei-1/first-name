@@ -30,9 +30,16 @@ $(function(){
         console.log("开始测试");
         switch(messagedata.messageType) {
             case 'hasRead':
-                if(messagedata.receiverId==rightContent.attr('data-id')) {
+                if(messagedata.receiverId==rightContent.attr('data-id')&& $('.bg').length) {
+                    console.log('已读');
                 $('.right .message-time .left-time span').text("已读");
-            }
+            } /*else if($('ul').length) {
+                    var unReadObj = $('ul li[id=' +messagedata.receiverId+ '] .unreadMessage .unreadMessage-count');
+                    var count = parseInt(unReadObj.text())+1;
+                    unReadObj.text(count);
+                    unReadObj.show();
+                    }*/
+
             break;
             case 'sendMessage':
                 console.log(messagedata.senderId);
@@ -71,8 +78,17 @@ $(function(){
                     '</div>';
                 rightContent.append(left);
                 rightContent.scrollTop(rightContent[0].scrollHeight);
-                break;
             }
+            else if($('ul li .unreadMessage-time').length) {
+                    var unReadObj = $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count');
+                    var count = Number(unReadObj.text())+1;
+                    console.log(count);
+                    var messageText = unReadObj.parent().parent().children('.liRight').children('.lastunreadMessage');
+                    messageText.text(messagedata.content);
+                    unReadObj.text(count);
+                    unReadObj.show();
+                }
+                break;
         }
     }
 
@@ -107,27 +123,69 @@ $(function(){
         $('.userBox').show();
         $('.userCenter').show();
     });
-	$('.unreadMessage-count').each(function(){
-	    if($(this).text()==0) {
+
+	$('.conLeft ul').find('.unreadMessage-count').each(function(){
+	    console.log("最后测试是否成功");
+	    if($(this).text()==0){
 	        $(this).hide();
         } else {
 	        $(this).show();
         }
-    });
+    })
 
-	$('.conLeft li').on('click',function(){
-	    $('.RightFoot').show();
-        $(this).addClass('bg').siblings().removeClass('bg');
-        var unreadMessage = $('.bg .unreadMessage .unreadMessage-count');
-        var intername=$(this).children('.liRight').children('.friendName').text();
-        var id = $('.bg').attr('id');
-        var img=$(this).children('.liLeft').children().attr("src");
-        Righthead.children('.headImg').children().attr("src",img);
-        Righthead.children('.headImg').show();
-        rightContent.attr("data-id",id);
-        $('.headName').text(intername);
-        $('.newsList').html('');
-        if(unreadMessage.text()!=='0') {
+	$('.friend-content .conLeft ul').on('click','li',function(){
+	    console.log("测试按钮是否有效");
+	    if($('li').children('.unreadMessage').length){
+            $('.RightFoot').show();
+            $(this).addClass('bg').siblings().removeClass('bg');
+            var unreadMessageCount = $('.bg .unreadMessage .unreadMessage-count');
+            var intername=$(this).children('.liRight').children('.friendName').text();
+            var unReadMessageContent = $('.bg').find('.lastunreadMessage');
+            var id = $('.bg').attr('id');
+            var img=$(this).children('.liLeft').children().attr("src");
+            Righthead.children('.headImg').children().attr("src",img);
+            Righthead.children('.headImg').show();
+            rightContent.attr("data-id",id);
+            $('.headName').text(intername);
+            // $('.newsList').html('');
+            if(unreadMessageCount.text()!=='0') {
+                $.ajax({
+                    type:"post",
+                    cache:true,
+                    async:false,
+                    contentType:"application/x-www-form-urlencoded",
+                    url:"/Message/readMessages",
+                    data:{
+                        'friendId':id
+                    },
+                    success:function() {
+
+                    },
+                    error:function() {
+
+                    }
+                });
+            }
+            $('.RightCont').load('/Message/messageContent',
+                {
+                    "friendId":id
+                },
+                function(){
+                    rightContent.scrollTop(rightContent[0].scrollHeight);
+                    unReadMessageContent.text('');
+                    unreadMessageCount.text('0');
+                    unreadMessageCount.hide();
+                }
+            )
+        } else if($(this).children('.friend-img').length){
+	        console.log("开始运行");
+            $('.RightFoot').show();
+            $(this).addClass('bg').siblings().removeClass('bg');
+            var anotherid = $('.bg').attr('id');
+            var anotherimg=$(this).children('.friend-img').children().attr("src");
+            Righthead.children('.headImg').children().attr("src",anotherimg);
+            Righthead.children('.headImg').show();
+            rightContent.attr("data-id",anotherid);
             $.ajax({
                 type:"post",
                 cache:true,
@@ -135,7 +193,7 @@ $(function(){
                 contentType:"application/x-www-form-urlencoded",
                 url:"/Message/readMessages",
                 data:{
-                    'friendId':id
+                    'friendId':anotherid
                 },
                 success:function() {
 
@@ -144,25 +202,25 @@ $(function(){
 
                 }
             });
+            $('.RightCont').load('/Message/messageContent',
+                {
+                    "friendId":anotherid
+                },
+                function(){
+                    rightContent.scrollTop(rightContent[0].scrollHeight);
+                }
+            )
+        } else{
+
         }
-        $('.RightCont').load('/Message/messageContent',
-            {
-                "friendId":id
-            },
-            function(){
-                rightContent.scrollTop(rightContent[0].scrollHeight);
-                unreadMessage.text('0');
-                unreadMessage.hide();
-            }
-        )
 	});
 
 	sendBtn.on('click', function(){
 	    var textContent = text.val().trim();
 	    var sendTime = getCurrentTime();
-	    var receiverId = $('.bg').attr('id');
+	    var receiverId = $('.RightCont').attr('data-id');
         var originalImg = boxHead.children('.headImg').children().attr("src");
-	    console.log(sendTime);
+	    // console.log(sendTime);
         $.ajax({
             type:"post",
             async:true,

@@ -14,9 +14,9 @@
     </sql>
 
     <select id="selectFriendList" resultMap="BaseResultMap" parameterType="friend">
-        select id,friendMark as friendMark from friend where userId=#{userId}
+        select id,friendId,friendMark as friendMark from friend where userId=#{userId}
         union all
-        select id,userMark as friendMark from friend where friendId=#{userId}
+        select id,userId as friendId,userMark as friendMark from friend where friendId=#{userId} order by friendId
     </select>
 
     <select id="selectFriendListById" parameterType="integer" resultMap="BaseResultMap">

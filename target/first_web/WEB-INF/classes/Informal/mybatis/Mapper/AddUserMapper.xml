@@ -57,7 +57,7 @@
     </insert>
 
     <select id="selectAddUserByUserId" parameterType="integer" resultMap="BaseResultMap">
-        select id,beAddId,addId,addTime,addName from adduser where beAddId=#{userId}
+        select id,beAddId,addId,addTime,addName from adduser where beAddId=#{userId} order by addId
     </select>
 
     <select id="selectByBothId" parameterType="addUser" resultMap="BaseResultMap">
@@ -72,6 +72,12 @@
         select
         <include refid="Base_Column_List"></include>
         from adduser where id=#{id}
+    </select>
+
+    <select id="selectAddIdAndBeAddId" parameterType="addUser" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"></include>
+        from adduser
+        where beAddId=#{beAddId} and addId=#{addId}
     </select>
 
     <delete id="deleteAddUser" parameterType="addUser">

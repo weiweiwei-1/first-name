@@ -7,8 +7,11 @@ public class AddUser {
     private Integer id;
     private Integer beAddId;
     private Integer addId;
+    private String userPhoto;
+    private String userName;
     private Date addTime;
     private String addName;
+    private String messageType;
 
     public AddUser(){}
 
@@ -63,14 +66,41 @@ public class AddUser {
         this.addName = addName;
     }
 
+    public String getUserPhoto() {
+        return userPhoto;
+    }
+
+    public void setUserPhoto(String userPhoto) {
+        this.userPhoto = userPhoto;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
+
     @Override
     public String toString() {
         return "AddUser{" +
                 "id=" + id +
                 ", beAddId=" + beAddId +
                 ", addId=" + addId +
+                ", userPhoto='" + userPhoto + '\'' +
+                ", userName='" + userName + '\'' +
                 ", addTime=" + addTime +
                 ", addName='" + addName + '\'' +
+                ", messageType='" + messageType + '\'' +
                 '}';
     }
 }

@@ -31,9 +31,11 @@ public interface UserMapper {
     List<User> selectAll();
     List<User> selectForeachList(List<Integer> id);
     List<User> selectFriendPhoto(List<Integer> id);
+    List<User> selectMainUserList(List<Integer> id);
     List<User> selectForeachArray(@Param("mingzi")String []names);
     //用了@Param,collection里面的array或者list可以用Param参数代替
     List<User> selectForeachMap(Map<String,Object> map);   //这里用了map传参，定义了多种类型的数据，非常灵活
     List<User> selectChoose(User user);
-    String selectUserNameById(int userId);
+    User selectUserNameById(int userId);
+
 }

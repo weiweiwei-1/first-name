@@ -6,6 +6,7 @@ import Informal.mybatis.Controller.Warning.UserInformationResult;
 import Informal.mybatis.Convert.AgeJudge;
 import Informal.mybatis.Model.User;
 import Informal.mybatis.Service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -65,15 +66,19 @@ public class UserUpdateController {
             map.put("schoolError",schoolError);
             symbol = "0";
         }
-        if (!AgeJudge.Judge(age)) {
-            ageError = UserInformationResult.AGE_ERROR;
-            map.put("ageError",ageError);
-            symbol = "0";
+        if (!StringUtils.isBlank(age)) {
+            if (!AgeJudge.Judge(age)) {
+                ageError = UserInformationResult.AGE_ERROR;
+                map.put("ageError",ageError);
+                symbol = "0";
         }
-        if (!"男".equals(sex) && !"女".equals(sex) && !"".equals(sex)) {
-            sexError = UserInformationResult.SEX_ERROR;
-            map.put("sexError",sexError);
-            symbol = "0";
+        }
+        if (!StringUtils.isBlank(sex)) {
+            if (!"男".equals(sex) && !"女".equals(sex)) {
+                sexError = UserInformationResult.SEX_ERROR;
+                map.put("sexError",sexError);
+                symbol = "0";
+            }
         }
         if (occupation.length() > 20) {
             occupationError = UserInformationResult.OCCUPATION_ERROR;
@@ -114,7 +119,7 @@ public class UserUpdateController {
                 map.put("photo", newfilename);
             }
             }
-            int newAge = Integer.valueOf(age);
+            Integer newAge = Integer.valueOf(age);
             user.setId(UserUtils.getUserVo().getId());
             user.setUsername(username);
             UserUtils.getUserVo().setUsername(username);
