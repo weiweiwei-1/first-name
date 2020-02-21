@@ -1,0 +1,25 @@
+.permitUser-name,.permitUser-school,.permitUser-company,.operation{
+    width:100%;
+    height:20px;
+    text-align:center;
+    margin:10px 0;
+}
+
+.addName,.operation button{
+    border-radius:10px;
+    border:0.5px solid;
+    outline:none;
+}
+.addName{
+    width:170px;
+    height:25px;
+    font-size:16px;
+}
+
+.operation button{
+    width:80px;
+    height:30px;
+    background:#f40;
+    color:white;
+    cursor:pointer;
+}

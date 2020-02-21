@@ -15,7 +15,7 @@ $(function(){
     var occupationval = occupation.val().trim();
     var hobbyval = hobby.val().trim();
     var introductionval=introduction.val().trim();
-    $('.userBox').on('click',function(e){
+    $('.user-flex').on('click',function(e){
         var area=$(".userCenter");
         if(!area.is(e.target)&&area.has(e.target).length===0){
             $(this).hide();

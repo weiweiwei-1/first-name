@@ -2,11 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Informal.mybatis.Dao.FriendMapper">
     <resultMap id="BaseResultMap" type="friend">
-        <id property="id" column="id"/>
-        <result property="userId" column="userId"></result>
-        <result property="friendId" column="friendId"></result>
-        <result property="userMark" column="userMark"></result>
-        <result property="friendMark" column="friendMark"></result>
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="userId" jdbcType="INTEGER"></result>
+        <result property="friendId" column="friendId" jdbcType="INTEGER"></result>
+        <result property="userMark" column="userMark" jdbcType="VARCHAR"></result>
+        <result property="friendMark" column="friendMark" jdbcType="VARCHAR"></result>
+        <result property="agreeAddingTime" column="agreeAddingTime" jdbcType="DATE"></result>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -28,6 +29,12 @@
 
     <select id="selectByIdAndUserId" resultMap="BaseResultMap">
         select id,userId,friendId,userMark,friendMark from friend where id=#{id} and (userId=#{userId} or friendId=#{userId})
+    </select>
+
+    <select id="selectFriendMark" resultMap="BaseResultMap">
+        select friendMark from friend where userId=#{userId} and friendId=#{friendId}
+        union all
+        select userMark as friendMark from friend where userId=#{friendId} and friendId=#{userId}
     </select>
 
     <select id="selectFriendUnion" parameterType="friend" resultMap="BaseResultMap">
@@ -62,6 +69,9 @@
             <if test="friendMark!=null">
                 friendMark,
             </if>
+            <if test="agreeAddingTime!=null and agreeAddingTime!=''">
+                agreeAddingTime
+            </if>
         </trim>
         values
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -76,6 +86,9 @@
             </if>
             <if test="friendMark!=null">
                 #{friendMark},
+            </if>
+            <if test="agreeAddingTime!=null and agreeAddingTime!=''">
+                #{agreeAddingTime}
             </if>
         </trim>
     </insert>

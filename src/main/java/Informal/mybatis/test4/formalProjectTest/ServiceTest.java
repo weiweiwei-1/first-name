@@ -34,10 +34,10 @@ public class ServiceTest {
         System.out.println(addUserService.sendAddUserApplication(10,15,"威震天"));
     }
 
-    @Test
+   /* @Test
     public void permitAddUser(){
         System.out.println(addUserService.permitAddUser(10,15,"威擎天柱"));
-    }
+    }*/
 
     @Test
     public void permitAddUserById(){

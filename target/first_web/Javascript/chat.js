@@ -13,10 +13,11 @@ $(function(){
         webSocket = new SockJS("http://localhost:8080/sockjs/socketServer");    //SockJS对应的地址
     }
     webSocket.onopen =  function() {
-        alert('webSocket连接成功');
+        // alert('webSocket连接成功');
     }
     webSocket.onclose = function() {
         alert('webSocket连接关闭');
+        window.location.href="/";
     }
     webSocket.onerror = function() {
         alert('webSocket连接错误');
@@ -25,6 +26,8 @@ $(function(){
         handleMessage(JSON.parse(event.data));
         // alert("发送成");
     }
+
+    // document.write("<script  src='../Javascript/base.js'></script>");
 
     function handleMessage(messagedata){
         console.log("开始测试");
@@ -121,7 +124,7 @@ $(function(){
 
     boxHead.children('.headImg').on('click',function() {
         $('.userBox').show();
-        $('.userCenter').show();
+        // $('.userCenter').show();
     });
 
 	$('.conLeft ul').find('.unreadMessage-count').each(function(){
@@ -134,10 +137,9 @@ $(function(){
     })
 
 	$('.friend-content .conLeft ul').on('click','li',function(){
-	    console.log("测试按钮是否有效");
+        $(this).addClass('bg').siblings().removeClass('bg');
 	    if($('li').children('.unreadMessage').length){
             $('.RightFoot').show();
-            $(this).addClass('bg').siblings().removeClass('bg');
             var unreadMessageCount = $('.bg .unreadMessage .unreadMessage-count');
             var intername=$(this).children('.liRight').children('.friendName').text();
             var unReadMessageContent = $('.bg').find('.lastunreadMessage');
@@ -145,6 +147,7 @@ $(function(){
             var img=$(this).children('.liLeft').children().attr("src");
             Righthead.children('.headImg').children().attr("src",img);
             Righthead.children('.headImg').show();
+            Righthead.attr('data-friendId',id);
             rightContent.attr("data-id",id);
             $('.headName').text(intername);
             // $('.newsList').html('');
@@ -185,6 +188,7 @@ $(function(){
             var anotherimg=$(this).children('.friend-img').children().attr("src");
             Righthead.children('.headImg').children().attr("src",anotherimg);
             Righthead.children('.headImg').show();
+            Righthead.attr("data-friendId",anotherid);
             rightContent.attr("data-id",anotherid);
             $.ajax({
                 type:"post",
@@ -211,7 +215,30 @@ $(function(){
                 }
             )
         } else{
-
+	        console.log('申请好友');
+            var unKnownUserId = $(this).attr('data-adduserid');
+            $.ajax({
+                type:"post",
+                cache:true,
+                async:true,
+                url:"/AddUser/showUser",
+                contentType:"application/x-www-form-urlencoded",
+                dataType:"json",
+                data:{
+                    "addUserId":unKnownUserId
+                },
+                success:function(data){
+                    $('.permitUser-Box').attr('data-addUserId',unKnownUserId);
+                    $('.permitUserImg').attr("src","/web-store/"+data.photo);
+                    $('.addName').val(data.userMark);
+                    $('.permitUser-school').text("学校：" +data.school);
+                    $('.permitUser-company').text("公司" +data.company);
+                    $('.permitUser').show();
+                },
+                error:function(data){
+                    alert("数据传输错误，联系管理员");
+                }
+            });
         }
 	});
 

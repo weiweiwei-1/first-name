@@ -14,6 +14,7 @@ pageEncoding="UTF-8"%>
     <link rel="stylesheet" type="text/css" href="../../CSS/recommend.css">
     <link rel="stylesheet" type="text/css" href="../../CSS/addUser.css">
     <link rel="stylesheet" type="text/css" href="../../CSS/permitUser.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/friend.css">
     <script type="text/javascript"  rel="script" src="../../Jquery-min/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/chat.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/updateUser.js"></script>
@@ -21,7 +22,9 @@ pageEncoding="UTF-8"%>
     <script type="text/javascript" rel="script" src="../../Javascript/chatList.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/userRecomend.js"></script>
     <script type="text/javascript" rel="script" src="../../Javascript/addUserList.js"></script>
-    <%--<script type="text/javascript" rel="script" src="../../Javascript/updatePassword.js"></script>--%>
+    <script type="text/javascript" rel="script" src="../../Javascript/updatePassword.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/permitUser.js"></script>
+    <script type="text/javascript" rel="script" src="../../Javascript/friendOperation.js"></script>
 </head>
 <body>
 
@@ -66,13 +69,6 @@ pageEncoding="UTF-8"%>
                             </div>
                         </li>
                     </c:forEach>
-                    <%--<li>
-                        <div class="liLeft"><img src="../../Img/20170926103645_27.jpg"></div>
-                        <div class="liRight">
-                            <span  class="intername">前端交流群</span>
-                            <span class="infor">[流泪]</span>
-                        </div>
-                    </li>--%>
                 </ul>
             </div>
         </div>
@@ -103,23 +99,6 @@ pageEncoding="UTF-8"%>
     <div class="overflow-hide">
         <div class="recomendContent">
             <span class="system-confirm">${systemConfirm}</span>
-            <%--<div class="user-block" data-userId="12">
-                <div class="user-img">
-                    <img class="appear" src="">
-                </div>
-                <div class="user-name"></div>
-                <div class="user-school"></div>
-                <div class="user-company"></div>
-            </div>
-
-            <div class="user-block" data-userId="16">
-                <div class="user-img">
-                    <img class="appear" src="../../Img/me.jpg">
-                </div>
-                <div class="user-name">曾庆威</div>
-                <div class="user-school">合肥工业大学</div>
-                <div class="user-company">中兴通讯</div>
-            </div>--%>
         </div>
     </div>
     <div class="refresh"><span>系统推荐/换一批</span></div>
@@ -142,75 +121,124 @@ pageEncoding="UTF-8"%>
     <div class="flex-permitUser">
         <div class="permitUser-Box">
             <div class="permitUser-img">
-                <img class="permitUserImg">
+                <img class="permitUserImg" src="../../Img/me.jpg">
             </div>
-            <div class="permitUser-name"></div>
+            <div class="permitUser-name">好友备注:<input class="addName" type="text" ></div>
             <div class="permitUser-school"></div>
             <div class="permitUser-company"></div>
-            <div class=""></div>
+            <div class="operation">
+                <button class="permit">通过申请</button>
+                <button class="reject">拒绝</button>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="userBox">
-    <div class="userCenter">
-        <div class="user-head">
-            <div class="img-block">
-                <input type="file" name="file" accept="image/gif,image/jpeg,image/png,image/jpg" class="img-file">
-                <P class="plus">+</P>
-                <p class="tishi">点击上传图片</p>
-                <img class="user-img" src="/web-store/${user.photo}">
+    <div class="user-flex">
+        <div class="userCenter">
+            <div class="user-head">
+                <div class="img-block">
+                    <input type="file" name="file" accept="image/gif,image/jpeg,image/png,image/jpg" class="img-file">
+                    <P class="plus">+</P>
+                    <p class="tishi">点击上传图片</p>
+                    <img class="user-img" src="/web-store/${user.photo}">
+                </div>
+                <div class="img-edit">
+                        <button id="preview" class="edit">预览</button>
+                    <button id="delete" class="edit">删除</button>
+                </div>
             </div>
-            <div class="img-edit">
-                    <button id="preview" class="edit">预览</button>
-                <button id="delete" class="edit">删除</button>
+            <div class="user-information" >
+                <table border="0" cellspacing="5" align="center">
+                    <tr>
+                        <td>账号: <span id="user-email">${user.email}</span><%--<input type="text" name="email" class="email" readonly="readonly">--%></td>
+                        <td>名字：<input type="text" name="username" class="edit-text" id='username' readonly="readonly" value="${user.username}"></td>
+                    </tr>
+                    <tr>
+                        <td>公司：<input type="text" name="company" class="edit-text" id='company' readonly="readonly" value="${user.company}"></td>
+                        <td>学校：<input type="text" name="school" class="edit-text" id='school' readonly="readonly" value="${user.school}"></td>
+                    </tr>
+                    <tr>
+                        <td>年龄：<input type="text" name="age" class="edit-text" id='age' readonly="readonly" value="${user.age}"></td>
+                        <td>性别：<input type="text" name="sex" class="edit-text" id='sex' readonly="readonly" value="${user.sex}"></td>
+                    </tr>
+                    <tr>
+                        <td>职业：<input type="text" name="occupation" class="edit-text" id='occupation' readonly="readonly" value="${user.occupation}"></td>
+                        <td>爱好：<input type="text" name="hobby" class="edit-text" id='hobby' readonly="readonly" value="${user.hobby}"></td>
+                    </tr>
+                    <tr>
+                        <td class="introduction-head">个人介绍：</td>
+                        <td><textarea id="introduction-content" name="introduction-content" class="introduction-content" readonly="readonly">${user.introduction}</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><button id="logout">注销</button> <button id="updatePassword">修改密码</button></td>
+                        <td><button id="edit">编辑</button> <button id="save">保存修改</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <div class="user-information" >
-            <table border="0" cellspacing="5" align="center">
-                <tr>
-                    <td>账号: <span id="user-email">${user.email}</span><%--<input type="text" name="email" class="email" readonly="readonly">--%></td>
-                    <td>名字：<input type="text" name="username" class="edit-text" id='username' readonly="readonly" value="${user.username}"></td>
-                </tr>
-                <tr>
-                    <td>公司：<input type="text" name="company" class="edit-text" id='company' readonly="readonly" value="${user.company}"></td>
-                    <td>学校：<input type="text" name="school" class="edit-text" id='school' readonly="readonly" value="${user.school}"></td>
-                </tr>
-                <tr>
-                    <td>年龄：<input type="text" name="age" class="edit-text" id='age' readonly="readonly" value="${user.age}"></td>
-                    <td>性别：<input type="text" name="sex" class="edit-text" id='sex' readonly="readonly" value="${user.sex}"></td>
-                </tr>
-                <tr>
-                    <td>职业：<input type="text" name="occupation" class="edit-text" id='occupation' readonly="readonly" value="${user.occupation}"></td>
-                    <td>爱好：<input type="text" name="hobby" class="edit-text" id='hobby' readonly="readonly" value="${user.hobby}"></td>
-                </tr>
-                <tr>
-                    <td class="introduction-head">个人介绍：</td>
-                    <%--<input type="text" name="introduction" class="introduction">--%>
-                    <td><textarea id="introduction-content" name="introduction-content" class="introduction-content" readonly="readonly">${user.introduction}</textarea></td>
-                </tr>
-                <tr>
-                    <td><button id="logout">注销</button> <button id="updatePassword">修改密码</button></td>
-                    <td><button id="edit">编辑</button> <button id="save">保存修改</button></td>
-                </tr>
-            </table>
+    </div>
+</div>
 
+<div class="friend-Box">
+    <div class="friend-flex">
+        <div class="friend-center">
+            <div class="user-head">
+                <img src="../../Img/me.jpg" class="user-img">
+            </div>
+            <div class="user-information">
+                <table border="0" cellspacing="5" align="center">
+                    <tr>
+                        <td id="friendName">昵称：曾庆威</td>
+                        <td>备注：<input type="text" id="friendMark"></td>
+                    </tr>
+                    <tr>
+                        <td id="friendCompany">公司：中兴通讯</td>
+                        <td id="friendSchool">学校：合肥工业大学</td>
+                    </tr>
+                    <tr>
+                        <td id="friendSex">性别：男</td>
+                        <td id="friendAge">年龄：24</td>
+                    </tr>
+                    <tr>
+                        <td id="friendOccupation">职业：软件开发工程师</td>
+                        <td id="friendHobby">爱好:篮球</td>
+                    </tr>
+                    <tr>
+                        <td>个人介绍：</td>
+                        <td id="friendIntroduction"><textarea class="introduction-content">一c撒哈c撒哈佛我阿c撒哈佛我阿c撒哈佛我阿c撒哈佛我阿c撒哈佛我阿c撒哈佛我阿佛我阿发还c撒哈佛我阿c撒哈佛我阿c撒哈佛我阿是覅</textarea></td>
+                    </tr>
+                    <tr>
+                        <td id="addTime">添加好友时间：<fmt:formatDate value="" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                    </tr>
+                    <tr>
+                        <td><button class="edit-friendMark">修改备注</button></td>
+                        <td><button class="delete-friend">删除好友</button></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
 <div class="img-Box">
-    <img src="../../Img/me.jpg" alt="图片" class="preview-img">
+    <div class="img-flex">
+        <img src="../../Img/me.jpg" alt="图片" class="preview-img">
+    </div>
+
 </div>
 
 <div class="update-password">
-    <div class="update-content">
-        <div class="close-block"><span>&times;</span></div>
-        <div class="updatepassword-block">
-            <input type="password" id="origin-password" class="password-input" placeholder="原密码"><span class="error-confirm"></span>
+    <div class="updatePassword-flex">
+        <div class="update-content">
+            <div class="close-block"><span>&times;</span></div>
+            <div class="updatepassword-block">
+                <input type="password" id="origin-password" class="password-input" placeholder="原密码"><span class="error-confirm"></span>
+            </div>
+            <div class="updatepassword-block"><input type="password" id="new-password" class="password-input" placeholder="新密码"><span span class="error-confirm"></span></div>
+            <div class="updatepassword-block"><input type="password" id="sure-password" class="password-input" placeholder="确认新的密码"><span span class="error-confirm"></span></div>
+            <div class="updatepassword-block"><button type="button" id="confirm-updatepassword" disabled="disabled">确认修改</button></div>
         </div>
-        <div class="updatepassword-block"><input type="password" id="new-password" class="password-input" placeholder="新密码"><span span class="error-confirm"></span></div>
-        <div class="updatepassword-block"><input type="password" id="sure-password" class="password-input" placeholder="确认新的密码"><span span class="error-confirm"></span></div>
-        <div class="updatepassword-block"><button type="button" id="confirm-updatepassword" disabled="disabled">确认修改</button></div>
     </div>
 </div>
 

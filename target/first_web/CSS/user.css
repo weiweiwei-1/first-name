@@ -2,36 +2,78 @@ li{
     list-style-type: none   ;
 }
 
-.userBox{
-    position:absolute;
+.userBox,.img-Box,.update-password,.friend-Box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.user-flex,.img-flex,.updatePassword-flex,.friend-flex{
+    position:relative;
     width:100%;
     height:100%;
     top:0;
     left:0;
-    display:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background:rgba(0,0,0,0.4);
-    z-index:1001;
-    /*-moz-opacity: 0.8;
-    opacity:.80;
-    filter: alpha(opacity=88);*/
 }
 
-.userCenter{
-    position:absolute;
-    background-color:#fff;
-    top:20%;
-    left:25%;
+.user-flex,.friend-flex{
+    z-index: 1001;
+}
+
+/*.friend-flex{
+    z-index: 1001;
+}*/
+
+.userCenter,.friend-center{
+    z-index:1003;
+}
+
+.img-flex {
+    z-index: 1005;
+    /*z-index: 1001;*/
+}
+
+.preview-img{
+    z-index:1007;
+    /*z-index: 1003;*/
+}
+
+.updatePassword-flex{
+    z-index: 1009;
+    /*z-index:1001;*/
+}
+
+.update-content{
+    z-index: 1011;
+    /*z-index:1003;*/
+}
+
+.userCenter,.preview-img,.update-content,.friend-center{
     width:600px;
     height:400px;
     border-radius: 15px;
     border: transparent;
-    z-index:1003;
     overflow: auto;
     opacity: 1;
     display:flex;
     align-items:center;
     flex-direction:column;
+    background-color:#fff;
 }
+
+/*.userCenter,.update-content,.friend-center{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color:#fff;
+    !*z-index:1003;*!
+}*/
 
 .user-head{
     width:600px;
@@ -46,10 +88,8 @@ li{
 .img-block {
     width: 100px;
     height: 100px;
-    /*position:relative;*/
     text-align: center;
     display: block;
-    /*border: 1px dotted #000;*/
     position: absolute;
 
 }
@@ -86,18 +126,14 @@ li{
     cursor: pointer;
     opacity: 0;
     display:block;
-    /*background-image:none;*/
-    /*z-index: 111;*/
 }
 
 .img-block img{
     width:100%;
     height:100%;
-    /*margin:10px 0;*/
     border-radius:50%;
     cursor:pointer;
     display:inline-block;
-    /*z-index: 111;*/
 }
 
 p{
@@ -163,30 +199,4 @@ td button{
 table tr:last-child{
     text-align:center;
 }
-
-.img-Box{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    display:none;
-    background:rgba(0,0,0,0.4);
-    z-index:1005;
-    text-align:center;
-}
-
-.preview-img{
-    position:absolute;
-    top:20%;
-    left:25%;
-    width:600px;
-    height:400px;
-    border-radius: 15px;
-    border: transparent;
-    z-index:1007;
-    overflow: auto;
-    opacity: 1;
-}
-
 

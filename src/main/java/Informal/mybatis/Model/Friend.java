@@ -12,7 +12,33 @@ public class Friend {
     private String friendCompany;
     private String friendSchool;
     private String friendUserName;
-    private Date agreeAddingTime;
+    private String agreeAddingTime;
+    private String messageType;
+
+    @Override
+    public String toString() {
+        return "Friend{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", friendId=" + friendId +
+                ", userMark='" + userMark + '\'' +
+                ", friendMark='" + friendMark + '\'' +
+                ", friendPhoto='" + friendPhoto + '\'' +
+                ", friendCompany='" + friendCompany + '\'' +
+                ", friendSchool='" + friendSchool + '\'' +
+                ", friendUserName='" + friendUserName + '\'' +
+                ", agreeAddingTime='" + agreeAddingTime + '\'' +
+                ", messageType='" + messageType + '\'' +
+                '}';
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
 
     public String getFriendUserName() {
         return friendUserName;
@@ -78,11 +104,11 @@ public class Friend {
         this.friendMark = friendMark;
     }
 
-    public Date getAgreeAddingTime() {
+    public String getAgreeAddingTime() {
         return agreeAddingTime;
     }
 
-    public void setAgreeAddingTime(Date agreeAddingTime) {
+    public void setAgreeAddingTime(String agreeAddingTime) {
         this.agreeAddingTime = agreeAddingTime;
     }
 
@@ -121,19 +147,4 @@ public class Friend {
         this.friendPhoto = friendPhoto;
     }
 
-    @Override
-    public String toString() {
-        return "Friend{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", friendId=" + friendId +
-                ", userMark='" + userMark + '\'' +
-                ", friendMark='" + friendMark + '\'' +
-                ", friendPhoto='" + friendPhoto + '\'' +
-                ", friendCompany='" + friendCompany + '\'' +
-                ", friendSchool='" + friendSchool + '\'' +
-                ", friendUserName='" + friendUserName + '\'' +
-                ", agreeAddingTime=" + agreeAddingTime +
-                '}';
-    }
 }

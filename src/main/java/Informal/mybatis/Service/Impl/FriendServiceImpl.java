@@ -44,6 +44,11 @@ public class FriendServiceImpl implements FriendService {
     }
 
     @Override
+    public Friend selectFriendMark(Friend friend) {
+        return friendMapper.selectFriendUnion(friend);
+    }
+
+    @Override
     public int deleteFriend(int userId, int friendId) {
         Friend friend=new Friend(userId,friendId);
         Friend confirmFriend=friendMapper.selectFriendUnion(friend);
@@ -103,6 +108,11 @@ public class FriendServiceImpl implements FriendService {
         return 0;
     }
 
+    @Override
+    public int addFriend(Friend friend) {
+        friendMapper.insertFriend(friend);
+        return friend.getId();
+    }
 
     @Override
     public List<Friend> searchFriend(String keyCondition) {

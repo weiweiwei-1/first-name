@@ -31,7 +31,7 @@ public class ChatPageController {
     FriendService friendService;
 
     @RequestMapping(value="/main", method = {RequestMethod.GET, RequestMethod.POST})
-    public String main(Model model, HttpServletRequest request) {
+    public String main(Model model) {
         User user = UserUtils.getUserVo();
         String systemConfirm = "想找到感兴趣的人？点击编辑公司和学校";
         System.out.println(user);

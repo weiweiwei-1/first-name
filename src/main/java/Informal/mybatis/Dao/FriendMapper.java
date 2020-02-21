@@ -10,6 +10,7 @@ public interface FriendMapper {
     List<Friend> selectFriendList(Friend friend);
     List<Friend> selectFriendListById(int userId);
     Friend selectByIdAndUserId(@Param("id")int id, @Param("userId")int userId);
+    Friend selectFriendMark(Friend friend);
     Friend selectFriendUnion(Friend friend);
     Friend selectFriendOr(Friend friend);
     Friend selectFriendById(int id);

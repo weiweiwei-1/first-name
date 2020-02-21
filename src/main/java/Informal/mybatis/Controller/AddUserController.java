@@ -68,11 +68,16 @@ public class AddUserController {
 
     @RequestMapping(value="/showUser",method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
-    public User showUser(Integer userId) {
-        if (userId == null) {
+    public User showUser(Integer addUserId) {
+        if (addUserId == null) {
             return null;
         }
-        return userService.selectByPrimaryKey(userId);
+        Integer userId = UserUtils.getUserId();
+        AddUser addUser = new AddUser(userId, addUserId);
+        AddUser newAddUser = addUserService.selectAddUser(addUser);
+        User user = userService.selectByPrimaryKey(userId);
+        user.setUserMark(newAddUser.getAddName());
+        return user;
     }
 
     @RequestMapping(value="/sendAddUser",method={RequestMethod.GET,RequestMethod.POST})
@@ -115,4 +120,22 @@ public class AddUserController {
         model.addAttribute("addUserList",addUserList);
         return "mainproject/userApplicationList";
     }
+
+    @RequestMapping(value="/permitUser",method={RequestMethod.GET,RequestMethod.POST})
+    @ResponseBody
+    public Integer permitUser(Integer addId, String friendMark, String agreeAddingTime) {
+        Integer userId = UserUtils.getUserId();
+        int count = addUserService.permitAddUser(userId, addId, friendMark, agreeAddingTime);
+        if (WebSocketUtils.hasConnection(String.valueOf(addId))) {
+            Friend friend = new Friend(userId, addId, UserUtils.getUserName());
+            friend.setMessageType("permitUser");
+            friend.setFriendMark(UserUtils.getUserVo().getUsername());
+            friend.setFriendPhoto(UserUtils.getUserVo().getPhoto());
+            friend.setFriendSchool(UserUtils.getUserVo().getSchool());
+            friend.setFriendCompany(UserUtils.getUserVo().getCompany());
+            WebSocketUtils.get(String.valueOf(addId)).getAsyncRemote().sendText(gson.toJson(friend));
+        }
+        return count;
+    }
+
 }

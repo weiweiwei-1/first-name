@@ -56,10 +56,43 @@ public class User implements Serializable{
 
     private String introduction;
 
+    private String userMark;
+
+    public String getUserMark() {
+        return userMark;
+    }
+
+    public void setUserMark(String userMark) {
+        this.userMark = userMark;
+    }
+
     private Orders orders;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", birthday=" + birthday +
+                ", sex='" + sex + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", photo='" + photo + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", occupation='" + occupation + '\'' +
+                ", school='" + school + '\'' +
+                ", company='" + company + '\'' +
+                ", hobby='" + hobby + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", userMark='" + userMark + '\'' +
+                ", orders=" + orders +
+                '}';
+    }
+
     /*设置无参构造方法，new一个对象时，可以选择传入属性参数，
-    也可以直接new一个无参对象,为了下面批量插入数据时不产生冲突*/
+        也可以直接new一个无参对象,为了下面批量插入数据时不产生冲突*/
     public User() {
     }
 
@@ -200,25 +233,4 @@ public class User implements Serializable{
         this.introduction = introduction;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", birthday=" + birthday +
-                ", sex='" + sex + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                ", password='" + password + '\'' +
-                ", age=" + age +
-                ", photo='" + photo + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", occupation='" + occupation + '\'' +
-                ", school='" + school + '\'' +
-                ", company='" + company + '\'' +
-                ", hobby='" + hobby + '\'' +
-                ", introduction='" + introduction + '\'' +
-                ", orders=" + orders +
-                '}';
-    }
 }

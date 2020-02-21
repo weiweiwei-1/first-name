@@ -1,0 +1,18 @@
+.friend-center .introduction-content{
+    border:transparent;
+    position:relative;
+    top:15px;
+}
+
+.introduction-content::-webkit-scrollbar{
+    width:0;
+}
+
+.edit-block{
+    text-align:center;
+    margin:15px 0;
+}
+
+.friend-center button{
+    margin:10px 0;
+}

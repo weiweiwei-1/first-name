@@ -6,8 +6,9 @@ import java.util.List;
 
 public interface AddUserService {
     int sendAddUserApplication(int beAddId,int userId,String addName);
-    int permitAddUser(int userId,int addId,String addName);
+    int permitAddUser(int userId,int addId,String addName,String agreeAddingTime);
     int permitAddUserById(int id,int userId,String addName);
+    AddUser selectAddUser(AddUser addUser);
     List<AddUser> showAddUserList(int userId);
     int rejectAddUser(int userId,int addId);
     int rejectAddUserById(int id,int userId);

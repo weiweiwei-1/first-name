@@ -1,4 +1,4 @@
-.unKnownUser {
+.unKnownUser,.permitUser {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -10,7 +10,7 @@
     /*z-index: 1001;*/
 }
 
-.flex-center {
+.flex-center,.flex-permitUser {
     position:relative;
     width:100%;
     height:100%;
@@ -22,12 +22,11 @@
     background:rgba(0,0,0,0);
     z-index: 1001;
 }
-.unKnownUser-Box {
+.unKnownUser-Box,.permitUser-Box {
     /*background-color: #fff;*/
     width: 300px;
     height: 300px;
     border-radius: 15px;
-    color: white;
     border: 1px solid deepskyblue;
     z-index: 1003;
     overflow: auto;
@@ -35,17 +34,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color:deepskyblue;
 }
 
-.unKnownUserImg,.unKnowUser-name,.add-name,.add-button{
+.unKnownUser-Box{
+    background-color:deepskyblue;
+    color: white;
+}
+
+.permitUser-Box{
+    background-color:#44c4b8;
+    color:white;
+}
+
+.unKnownUserImg,.unKnowUser-name,.permitUser-name,.add-button{
     width:100%;
     height:30px;
     margin:10px 0;
     text-align:center;
 }
 
-.unKnownUserImg{
+.unKnownUserImg,.permitUserImg{
     width:80px;
     height:80px;
     border-radius:50%;
@@ -78,3 +86,4 @@
     background: #f40;
     cursor:pointer;
 }
+

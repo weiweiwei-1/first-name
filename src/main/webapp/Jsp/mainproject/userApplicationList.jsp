@@ -15,7 +15,7 @@
         <div class="addUser-img">
             <img src="/web-store/${user.userPhoto}">
         </div>
-        <div class="addUser-name">${user.userName}</div>
+        <div class="addUser-name">${user.addName}</div>
         <div class="system-confirm">
             <div class="addUser-time"><fmt:formatDate value="${user.addTime}" pattern="yyyy-MM-dd"/></div>
             <div class="addconfirm">请求添加好友</div>

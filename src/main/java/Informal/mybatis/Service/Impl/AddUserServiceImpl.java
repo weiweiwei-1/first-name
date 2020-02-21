@@ -51,16 +51,17 @@ public class AddUserServiceImpl implements AddUserService {
     }
 
     @Override
-    public int permitAddUser(int userId,int addId,String addName) {
+    public int permitAddUser(int userId,int addId,String addName, String agreeAddingTime) {
         AddUser addUserBase=new AddUser(userId,addId);
         AddUser addUser=addUserMapper.selectByBothId(addUserBase);
         if(addUser!=null){
         User user=userService.selectByPrimaryKey(userId);
         Friend friend=new Friend(userId,addId,user.getUsername(),addName);
+        friend.setAgreeAddingTime(agreeAddingTime);
         friendMapper.insertFriend(friend);
-        return addUserMapper.deleteAddUser(addUserBase);}else{
-            return 0;
+        return addUserMapper.deleteAddUser(addUserBase);
         }
+        return 0;
     }
 
     @Override
@@ -74,6 +75,11 @@ public class AddUserServiceImpl implements AddUserService {
             return addUserMapper.deleteAddUserById(id);}else{
             return 0;
         }
+    }
+
+    @Override
+    public AddUser selectAddUser(AddUser addUser) {
+        return addUserMapper.selectByBothId(addUser);
     }
 
     @Override
