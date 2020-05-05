@@ -1,389 +1,333 @@
 $(function(){
     var webSocket = null;
     if ('WebSocket' in window) {
-        //Websocket的连接
-        webSocket = new WebSocket("ws://localhost:8080/websocket/socketServer");//WebSocket对应的地址
+        webSocket = new WebSocket("ws://weichat.online:80/websocket/socketServer");//WebSocket对应的地址
     }
     else if ('MozWebSocket' in window) {
-        //Websocket的连接
-        webSocket = new MozWebSocket("ws://localhost:8080/websocket/socketServer");//SockJS对应的地址
+        webSocket = new MozWebSocket("ws://weichat.online:80/websocket/socketServer");//SockJS对应的地址
     }
     else {
-        //SockJS的连接
-        webSocket = new SockJS("http://localhost:8080/sockjs/socketServer");    //SockJS对应的地址
+        webSocket = new SockJS("http://weichat.online:80/sockjs/socketServer"); //SockJS对应的地址
     }
-    webSocket.onopen =  function() {
-        // alert('webSocket连接成功');
-    }
+    webSocket.onopen = function() {
+    };
     webSocket.onclose = function() {
-        alert('webSocket连接关闭');
-        window.location.href="/";
-    }
+        var affirm = confirm("tcp连接关闭，点击确定刷新重连");
+        if (affirm === true) {
+            window.location.href = "/ChatPage/main";
+        }
+    };
     webSocket.onerror = function() {
-        alert('webSocket连接错误');
-    }
+        var affirm = confirm("tcp连接错误，点击确定刷新重连");
+        if (affirm === true) {
+            window.location.href = "/ChatPage/main";
+        }
+    };
     webSocket.onmessage = function(event) {
         handleMessage(JSON.parse(event.data));
-        // alert("发送成");
+    };
+
+    var sendBtn = $('.sendBtn');
+    var rightHead = $('.Righthead');
+    var rightFoot = $('.RightFoot');
+    var rightContent = $('.RightCont');
+    var boxHead = $('.BoxHead');
+    var text = $('#dope');
+
+    function messagePosition(messagedata){
+        if($('ul li .unreadMessage').length) {
+            if($('ul li[id=' + messagedata.senderId + ']').length) {
+                var unReadObj = $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count');
+                var count = Number(unReadObj.text()) + 1;
+                var messageText = $('ul li[id=' + messagedata.senderId + '] .liRight .lastUnReadMessage');
+                messageText.text(messagedata.content);
+                unReadObj.text(count);
+                unReadObj.show();
+            } else {
+                var newChat = '<li class="" id="' + messagedata.senderId + '">' +
+                    '<div class="liLeft">' +
+                    '<img src="/web-store/' + messagedata.senderPhoto + '">' +
+                    '</div>' +
+                    '<div class="liRight">' +
+                    '<span class="friend-name">' + messagedata.senderName +
+                    '</span>' +
+                    '<span class="lastUnReadMessage">' + messagedata.content +
+                    '</span>' +
+                    '</div>' +
+                    '<div class="unreadMessage">' +
+                    '<div class="unreadMessage-count">' + 1 +
+                    '</div>' +
+                    '<div class="unreadMessage-time">' + messagedata.sendTime +
+                    '</div>' +
+                    '</div>' +
+                    '</li>';
+                $('.conLeft ul').prepend(newChat);
+                $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count').show();
+            }
+        }
     }
 
-    // document.write("<script  src='../Javascript/base.js'></script>");
-
     function handleMessage(messagedata){
-        console.log("开始测试");
         switch(messagedata.messageType) {
             case 'hasRead':
-                if(messagedata.receiverId==rightContent.attr('data-id')&& $('.bg').length) {
-                    console.log('已读');
+                console.log(messagedata.receiverId);
+                if(messagedata.receiverId == rightContent.attr('data-id')) {
+                    console.log("已读");
                 $('.right .message-time .left-time span').text("已读");
-            } /*else if($('ul').length) {
-                    var unReadObj = $('ul li[id=' +messagedata.receiverId+ '] .unreadMessage .unreadMessage-count');
-                    var count = parseInt(unReadObj.text())+1;
-                    unReadObj.text(count);
-                    unReadObj.show();
-                    }*/
-
+            }
             break;
             case 'sendMessage':
-                console.log(messagedata.senderId);
-                console.log(messagedata.receiverId);
-                console.log(messagedata.content);
-                console.log(messagedata.sendTime);
-                if(messagedata.senderId==rightContent.attr('data-id')) {
-                    console.log("在左边");
-                    $.ajax({
-                        type: "post",
-                        cache: true,
-                        async: false,
-                        contentType: "application/x-www-form-urlencoded",
-                        url: "/Message/readMessages",
-                        data: {
-                            'friendId': messagedata.senderId
-                        },
-                        success: function () {
+                var obj = rightContent.attr('data-id');
+                if(typeof obj !== typeof undefined) {
+                    if (messagedata.senderId == obj) {
+                        $.ajax({
+                            type: "post",
+                            cache: true,
+                            async: true,
+                            contentType: "application/x-www-form-urlencoded",
+                            url: "/Message/readMessages",
+                            data: {
+                                'friendId': messagedata.senderId
+                            },
+                            success: function () {
+                                var unReadObj = $('ul li[id=' + messagedata.receiverId + '] .unreadMessage .unreadMessage-count');
+                                var unReadContent = $('ul li[id=' + messagedata.receiverId + '] .liRight .lastUnReadMessage');
+                                if(typeof unReadObj !== typeof undefined && typeof unReadContent !== typeof undefined) {
+                                    unReadObj.text('0');
+                                    unReadObj.hide();
+                                    unReadContent.text(messagedata.content);
+                                }
+                            },
+                            error: function () {
+                                alert('后台错误，刷新重试，或者联系管理员')
+                            }
+                        });
 
-                        },
-                        error: function () {
-
+                        var left = '<div class="clearfloat">' +
+                            '<div class="left">' +
+                            '<div class="chat-avatars"><img src="' + $('.Righthead .headImg img').attr('src') +
+                            '"></div>' +
+                            '<div class="message-time">' +
+                            '<div class="chat-message">' + messagedata.content +
+                            '</div>' +
+                            '<div class="left-time">' + messagedata.sendTime +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+                        rightContent.append(left);
+                        rightContent.scrollTop(rightContent[0].scrollHeight);
+                        if($('ul li .unreadMessage').length) {
+                            if($('ul li[id=' + messagedata.senderId + ']').length) {
+                                var unReadObj = $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count');
+                                var unReadContent = $('ul li[id=' + messagedata.senderId + '] .liRight .lastUnReadMessage');
+                                unReadObj.text('0');
+                                unReadObj.hide();
+                                unReadContent.text(messagedata.content);
+                            } else {
+                                var newChat = '<li class="" id="' + messagedata.senderId + '">' +
+                                    '<div class="liLeft">' +
+                                    '<img src="/web-store/' + messagedata.senderPhoto + '">' +
+                                    '</div>' +
+                                    '<div class="liRight">' +
+                                    '<span class="friend-name">' + messagedata.senderName +
+                                    '</span>' +
+                                    '<span class="lastUnReadMessage">' + messagedata.content +
+                                    '</span>' +
+                                    '</div>' +
+                                    '<div class="unreadMessage">' +
+                                    '<div class="unreadMessage-count">' + 0 +
+                                    '</div>' +
+                                    '<div class="unreadMessage-time">' + messagedata.sendTime +
+                                    '</div>' +
+                                    '</div>' +
+                                    '</li>';
+                                $('.conLeft ul').prepend(newChat);
+                                $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count').hide();
+                            }
                         }
-                    });
-                var left='<div class="clearfloat">' +
-                    '<div class="left">' +
-                    '<div class="chat-avatars"><img src="' +$(".bg").children('.liLeft').children().attr("src")+
-                    '"></div>' +
-                    '<div class="message-time">' +
-                    '<div class="chat-message">' + messagedata.content +
-                    '</div>' +
-                    '<div class="left-time">' +messagedata.sendTime+
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>';
-                rightContent.append(left);
-                rightContent.scrollTop(rightContent[0].scrollHeight);
-            }
-            else if($('ul li .unreadMessage-time').length) {
-                    var unReadObj = $('ul li[id=' + messagedata.senderId + '] .unreadMessage .unreadMessage-count');
-                    var count = Number(unReadObj.text())+1;
-                    console.log(count);
-                    var messageText = unReadObj.parent().parent().children('.liRight').children('.lastunreadMessage');
-                    messageText.text(messagedata.content);
-                    unReadObj.text(count);
-                    unReadObj.show();
+                    } else {
+                        messagePosition(messagedata);
+                    }
+                } else {
+                    messagePosition(messagedata);
                 }
                 break;
+            case 'addUser':
         }
     }
 
     Date.prototype.Format = function(fmt) { // author: meizz
         var o = {
-            "M+" : this.getMonth() + 1, // 月份
-            "d+" : this.getDate(), // 日
-            "h+" : this.getHours(), // 小时
-            "m+" : this.getMinutes(), // 分
-            "s+" : this.getSeconds(), // 秒
-            "q+" : Math.floor((this.getMonth() + 3) / 3), // 季度
-            "S" : this.getMilliseconds()// 毫秒
+            "M+": this.getMonth() + 1, // 月份
+            "d+": this.getDate(), // 日
+            "h+": this.getHours(), // 小时
+            "m+": this.getMinutes(), // 分
+            "s+": this.getSeconds(), // 秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), // 季度
+            "S": this.getMilliseconds()// 毫秒
         };
         if (/(y+)/.test(fmt))
-            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            {fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));}
         for ( var k in o)
-            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            {if (new RegExp("(" + k + ")").test(fmt)) {fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));}}
         return fmt;
-    }
+    };
 
     function getCurrentTime() {
         return new Date().Format("yyyy-MM-dd hh:mm:ss");
     }
 
-    var sendBtn = $('.sendBtn');
-	var Righthead = $('.Righthead');
-	var rightContent = $('.RightCont');
-	var boxHead = $('.BoxHead');
-	var text = $('#dope');
-
     boxHead.children('.headImg').on('click',function() {
         $('.userBox').show();
-        // $('.userCenter').show();
     });
 
 	$('.conLeft ul').find('.unreadMessage-count').each(function(){
-	    console.log("最后测试是否成功");
-	    if($(this).text()==0){
+	    if($(this).text() == '0'){
 	        $(this).hide();
         } else {
 	        $(this).show();
         }
-    })
+    });
 
-	$('.friend-content .conLeft ul').on('click','li',function(){
-        $(this).addClass('bg').siblings().removeClass('bg');
-	    if($('li').children('.unreadMessage').length){
-            $('.RightFoot').show();
-            var unreadMessageCount = $('.bg .unreadMessage .unreadMessage-count');
-            var intername=$(this).children('.liRight').children('.friendName').text();
-            var unReadMessageContent = $('.bg').find('.lastunreadMessage');
-            var id = $('.bg').attr('id');
-            var img=$(this).children('.liLeft').children().attr("src");
-            Righthead.children('.headImg').children().attr("src",img);
-            Righthead.children('.headImg').show();
-            Righthead.attr('data-friendId',id);
-            rightContent.attr("data-id",id);
-            $('.headName').text(intername);
-            // $('.newsList').html('');
-            if(unreadMessageCount.text()!=='0') {
+	$('.friend-content ul').on('click','li',function(){
+        if($(this).children('.unreadMessage').length || $(this).children('.friend-img').length){
+            rightFoot.show();
+            rightHead.find('.headImg').show();
+            $(this).addClass('bg').siblings().removeClass('bg');
+            var aim = $('.bg');
+            var id = aim.attr('id');
+            var img = $('.bg img').attr('src');
+            rightHead.find('img').attr('src',img);
+            rightHead.attr('data-friendId',id);
+            rightContent.attr('data-id',id);
+            if($(this).children('.unreadMessage').length) {
+                var friendName = aim.find('.friendName').text();
+                rightHead.find('.headName').text(friendName);
+                var unreadMessageCount = $('.bg .unreadMessage .unreadMessage-count');
+                if(unreadMessageCount.text() !== '0'){
+                    $.ajax({
+                        type: "post",
+                        cache: true,
+                        async: true,
+                        contentType: "application/x-www-form-urlencoded",
+                        url: "/Message/readMessages",
+                        data: {
+                            'friendId': id
+                        },
+                        success: function() {
+                            unreadMessageCount.text('0');
+                            unreadMessageCount.hide();
+                        },
+                        error: function() {
+                            alert('后台或者网络错误，请刷新');
+                        }
+                    });
+                }
+            }
+            if($(this).children('.friend-information').length){
+                var friendName1 = aim.find('.friend-name').text();
+                rightHead.find('.headName').text(friendName1);
                 $.ajax({
-                    type:"post",
-                    cache:true,
-                    async:false,
-                    contentType:"application/x-www-form-urlencoded",
-                    url:"/Message/readMessages",
-                    data:{
-                        'friendId':id
+                    type: "post",
+                    cache: true,
+                    async: true,
+                    contentType: "application/x-www-form-urlencoded",
+                    url: "/Message/readMessages",
+                    data: {
+                        'friendId': id
                     },
-                    success:function() {
+                    success: function() {
 
                     },
-                    error:function() {
-
+                    error: function() {
+                        alert('读消息时后台或者网络错误，请刷新，或者联系管理员');
                     }
                 });
             }
-            $('.RightCont').load('/Message/messageContent',
+            rightContent.load('/Message/messageContent',
                 {
-                    "friendId":id
-                },
-                function(){
-                    rightContent.scrollTop(rightContent[0].scrollHeight);
-                    unReadMessageContent.text('');
-                    unreadMessageCount.text('0');
-                    unreadMessageCount.hide();
-                }
-            )
-        } else if($(this).children('.friend-img').length){
-	        console.log("开始运行");
-            $('.RightFoot').show();
-            $(this).addClass('bg').siblings().removeClass('bg');
-            var anotherid = $('.bg').attr('id');
-            var anotherimg=$(this).children('.friend-img').children().attr("src");
-            Righthead.children('.headImg').children().attr("src",anotherimg);
-            Righthead.children('.headImg').show();
-            Righthead.attr("data-friendId",anotherid);
-            rightContent.attr("data-id",anotherid);
-            $.ajax({
-                type:"post",
-                cache:true,
-                async:false,
-                contentType:"application/x-www-form-urlencoded",
-                url:"/Message/readMessages",
-                data:{
-                    'friendId':anotherid
-                },
-                success:function() {
-
-                },
-                error:function() {
-
-                }
-            });
-            $('.RightCont').load('/Message/messageContent',
-                {
-                    "friendId":anotherid
+                    "friendId": id
                 },
                 function(){
                     rightContent.scrollTop(rightContent[0].scrollHeight);
                 }
             )
-        } else{
-	        console.log('申请好友');
+            } else {
             var unKnownUserId = $(this).attr('data-adduserid');
             $.ajax({
-                type:"post",
-                cache:true,
-                async:true,
-                url:"/AddUser/showUser",
-                contentType:"application/x-www-form-urlencoded",
-                dataType:"json",
-                data:{
-                    "addUserId":unKnownUserId
+                type: "post",
+                cache: true,
+                async: true,
+                url: "/AddUser/showUser",
+                contentType: "application/x-www-form-urlencoded",
+                dataType: "json",
+                data: {
+                    "addUserId": unKnownUserId
                 },
-                success:function(data){
+                success: function(data){
                     $('.permitUser-Box').attr('data-addUserId',unKnownUserId);
-                    $('.permitUserImg').attr("src","/web-store/"+data.photo);
+                    $('.permitUserImg').attr("src","/web-store/" + data.photo);
                     $('.addName').val(data.userMark);
-                    $('.permitUser-school').text("学校：" +data.school);
-                    $('.permitUser-company').text("公司" +data.company);
+                    $('.permitUser-school').text("学校：" + data.school);
+                    $('.permitUser-company').text("公司：" + data.company);
                     $('.permitUser').show();
                 },
-                error:function(data){
+                error: function(){
                     alert("数据传输错误，联系管理员");
                 }
             });
         }
-	});
+    });
 
 	sendBtn.on('click', function(){
 	    var textContent = text.val().trim();
 	    var sendTime = getCurrentTime();
 	    var receiverId = $('.RightCont').attr('data-id');
         var originalImg = boxHead.children('.headImg').children().attr("src");
-	    // console.log(sendTime);
-        $.ajax({
-            type:"post",
-            async:true,
-            cache:false,
-            url:"/Message/sendMessage",
-            contentType:"application/x-www-form-urlencoded",
-            dataType:"json",
-            data:{
-                "receiverId":receiverId,
-                "content":textContent,
-                "sendTime":sendTime
-            },
-            success:function(data) {
-                var right='<div class="clearfloat">' +
-                    '<div class="right" data-messageId=' +data+'>' +
-                    '<div class="message-time"><div class="chat-message">' +textContent+
-                    '</div>' +
-                    '<div class="left-time"><span class="read"></span>'+sendTime+'</div></div>' +
-                    '<div class="chat-avatars"><img src="' + originalImg+
-                    '"></div>' +
-                    '</div>' +
-                    '</div>';
-                rightContent.append(right);
-                text.val('');
-                rightContent.scrollTop(rightContent[0].scrollHeight);
-            },
-            error:function(){
-                alert("数据传输错误，请联系管理员");
-            }
-        })
-    });
-
-    })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /*  boxHead.children('.headImg').on('click',function(){
-        $('.userBox').show();
-        $('.userCenter').show();
-
-});
-
-
-var originalImg=boxHead.children('.headImg').children().attr("src");
-
-	sendBtn.on('click',function(){
-        var textContent = text.val();
-        if (textContent !== '') {
-            var left='<div class="clearfloat">' +
-                '<div class="left">' +
-                '<div class="chat-avatars"><img src="' +$(".bg").children('.liLeft').children().attr("src")+
-                '"></div>' +
-                '<div class="message-time">' +
-                '<div class="chat-message">' +
-                '我asdhfdhasdgahsghdrgverghrdghrgvuigdfffwo a击杀东方红打法 阿斯顿发放reauighiuerghearatg一开始就' +
-                '</div>' +
-                '<div class="left-time">12:23:23</div>' +
-                '</div>' +
-                '</div>' +
-                '</div>';
-            rightContent.append(left);
-            var right='<div class="clearfloat">' +
-                // '<div class="author-name"><small class="chat-date"></small></div>' +
-                '<div class="right">' +
-                '<div class="message-time"><div class="chat-message">' +textContent+
-                '</div>' +
-                '<div class="left-time"><span class="read">已读  </span>12:00:23</div></div>' +
-                '<div class="chat-avatars"><img src="' + originalImg+
-                '"></div>' +
-                '</div>' +
-                '</div>';
-            $(".RightCont").append(right);
-            $("#dope").val("");
-            $(document).ready(function () {
-                rightContent.scrollTop(rightContent[0].scrollHeight);
-            });
+        if(textContent.length === 0){
+            alert('请输入内容');
         }
-		/!*var news=$('#dope').val();
-		if(news==''){
-			alert('不能为空');
-		}else{
-			$('#dope').val('');
-		var str='';
-		str+='<li>'+
-				'<div class="nesHead"><img src="../../Img/6.jpg"/></div>'+
-				'<div class="news"><img class="jiao" src="../../Img/20170926103645_03_02.jpg">'+"<span>"+news+"</span>"+'</div>'+
-			'</li>';
-		$('.newsList').append(str);
-		setTimeout(answers,1000);
-		$('.conLeft').find('li.bg').children('.liRight').children('.infor').text(news);
-		$('.RightCont').scrollTop($('.RightCont')[0].scrollHeight );
-	}*!/
-	})
-	function answers(){
-		var arr=["你好","今天天气很棒啊","你吃饭了吗？","我最美我最美","我是可爱的僵小鱼","你们忍心这样子对我吗？","spring天下无敌，实习工资850","我不管，我最帅，我是你们的小可爱","段友出征，寸草不生","一入段子深似海，从此节操是路人","馒头：嗷","突然想开个车","段子界混的最惨的两个狗：拉斯，普拉达。。。"];
-		var aa=Math.floor((Math.random()*arr.length));
-		var answer='';
-		answer+='<li>'+
-					'<div class="answerHead"><img src="../../Img/tou.jpg"/></div>'+
-					'<div class="answers"><img class="jiao" src="../../Img/jiao.jpg">'+arr[aa]+'</div>'+
-				'</li>';
-		$('.newsList').append(answer);
-		$('.RightCont').scrollTop($('.RightCont')[0].scrollHeight );
-	}
-
-
-
-
-
-
-	$('.ExP').on('mouseenter',function(){
-		$('.emjon').show();
-	})
-	$('.emjon').on('mouseleave',function(){
-		$('.emjon').hide();
-	})
-	$('.emjon li').on('click',function(){
-		var imgSrc=$(this).children('img').attr('src');
-		var str="";
-		str+='<li>'+
-				'<div class="nesHead"><img src="../../Img/6.jpg"/></div>'+
-				'<div class="news"><img class="jiao" src="../../Img/20170926103645_03_02.jpg"><img class="Expr" src="'+imgSrc+'"></div>'+
-			'</li>';
-		$('.newsList').append(str);
-		$('.emjon').hide();
-		$('.RightCont').scrollTop($('.RightCont')[0].scrollHeight );
-	})*/
+        if(textContent.length > 400){
+            alert('消息长度超过400，请重新输入');
+        }
+        else{
+            $.ajax({
+                type: "post",
+                async: false,
+                cache: false,
+                url: "/Message/sendMessage",
+                contentType: "application/x-www-form-urlencoded",
+                dataType: "json",
+                data: {
+                    "receiverId": receiverId,
+                    "content": textContent,
+                    "sendTime": sendTime
+                },
+                success: function(data) {
+                    var right = '<div class="clearfloat">' +
+                        '<div class="right" data-messageId=' + data + '>' +
+                        '<div class="message-time"><div class="chat-message">' + textContent +
+                        '</div>' +
+                        '<div class="left-time"><span class="read"></span>' + sendTime + '</div></div>' +
+                        '<div class="chat-avatars"><img src="' + originalImg +
+                        '"></div>' +
+                        '</div>' +
+                        '</div>';
+                    rightContent.append(right);
+                    text.val('');
+                    rightContent.scrollTop(rightContent[0].scrollHeight);
+                },
+                error: function(){
+                    alert("数据传输错误，请联系管理员");
+                }
+            })
+        }
+    });
+	text.keydown(function(){
+	    var e = e || window.event;
+	    if(e.keyCode === 13){
+	        sendBtn.click();
+        }
+    });
+    });

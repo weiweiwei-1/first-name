@@ -1,6 +1,5 @@
 $(function(){
     $('.refresh span').on('click',function(){
-        console.log("测试系统推荐");
         $('.overflow-hide .recomendContent').load('/AddUser/SystemRecommend',
             function(){
             if(!$('.recomendContent').children('.user-block').length) {
@@ -25,45 +24,69 @@ $(function(){
     });
 
     $('.flex-center').on('click',function(e){
-        var area=$(".unKnownUser-Box");
-        if(!area.is(e.target)&&area.has(e.target).length===0){
+        var area = $(".unKnownUser-Box");
+        if(!area.is(e.target) && area.has(e.target).length === 0){
             $('.unKnownUser').hide();
         }
     });
 
-    $('.add').on('click',function(){
-        var addName = $('#addName').val().trim();
-        var beAddId = $('.unKnownUser-Box').attr('data-userId');
-        console.log(addName);
-        if(addName.length > 15 || addName.length < 2) {
-            alert("输入名称长度介于2-15");
-        } else {
-            $.ajax({
-                type:"post",
-                async:true,
-                cache:false,
-                url:"/AddUser/sendAddUser",
-                contentType:"application/x-www-form-urlencoded",
-                dataType:"json",
-                data:{
-                    "beAddId":beAddId,
-                    "addName":addName
-                },
-                success:function(data){
-                    console.log(data);
-                    if(data!==0) {
-                        $('.unKnownUser').hide();
-                        alert("发送好友申请成功");
-                        $('.recomendContent .user-block[data-userId='+beAddId+']').remove();
-                    } else {
-                        alert("发送失败，查看该用户是否已经在您的好友列表中");
-                    }
-                },
-                error:function(data){
-                    alert("发送失败，后台错误，联系管理员");
-                }
-            });
+    var add = $('.add');
+    $('#addName').keydown(function() {
+        var e = event || window.event;
+        if (e.keyCode === 13) {
+            add.click();
         }
     });
 
+    add.on('click',function(){
+    var addName = $('#addName').val().trim();
+    var beAddId = $('.unKnownUser-Box').attr('data-userId');
+    if(addName.length > 15 || addName.length < 2) {
+        alert("输入名称长度介于2-15");
+    } else {
+        $.ajax({
+            type: "post",
+            async: true,
+            cache: false,
+            url: "/AddUser/sendAddUser",
+            contentType: "application/x-www-form-urlencoded",
+            dataType: "json",
+            data: {
+                "beAddId": beAddId,
+                "addName": addName
+            },
+            success: function(data){
+                if(data !== 0) {
+                    $('.unKnownUser').hide();
+                    alert("发送好友申请成功");
+                    $('.recomendContent .user-block[data-userId=' + beAddId + ']').remove();
+                } else {
+                    alert("发送失败，您可能已经发送过该申请，或者该用户是您的好友");
+                }
+            },
+            error: function(data){
+                alert("发送失败，后台错误，联系管理员");
+            }
+        });
+    }
+    });
+
+    $('.recomend-search').on('click',function(){
+        var condition = $('.recomend-text').val();
+        $('.overflow-hide .recomendContent').load('/AddUser/searchUser',
+            {
+                condition: condition
+            },
+            function(){
+
+            }
+        )
+    });
+
+    $('.recomend-text').keydown(function(){
+        var e = e || window.event;
+        if(e.keyCode === 13){
+            $('.recomend-search').click();
+        }
+    })
 });

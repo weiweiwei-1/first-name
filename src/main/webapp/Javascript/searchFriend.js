@@ -2,9 +2,13 @@ $(function(){
     var friendImg = $('.friendImg');
     var messageImg = $('.messageImg');
     var addfriendImg = $('.addfriendImg');
-    friendImg.on('click',function(){
+    $('.search-submit').on('click',function(){
+        var condition = $('.search-condition').val();
         $('.conLeft ul').load(
-            "/Friend/friendList",
+            "/Friend/searchFriend",
+            {
+                condition: condition
+            },
             function(){
                 friendImg.css("border","1px solid #f40");
                 messageImg.css('border',"transparent");
@@ -13,4 +17,10 @@ $(function(){
         )
     });
 
+    $(".search-condition").keydown(function () {
+        var e = e || window.event;
+        if(e.keyCode === 13){
+            $(".search-submit").click();
+        }
+    });
 });
